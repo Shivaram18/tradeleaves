@@ -1,0 +1,1171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Tradeleaves</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/bootstrap.min.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <script src='js/bootstrap.min.js'></script>
+    <script src="js/script.js"></script>
+
+</head>
+
+<body>
+    <div class='wrapper'>
+        <!-- Header Code Start Here-->
+        <header class='header-wrapper'>
+            <nav class="navbar navbar-expand-lg navbar-light pt-3">
+                <div class="container-fluid">
+                    <div class='col-md-9 col-lg-2 col-xl-3 col-sm-8 col-7'>
+                        <a class="navbar-brand d-inline-block p-0 logo" href="index.html">
+                            <img src="img/TL-Logo.png" class="tl-logo-container position-relative" alt="TradeLeaves">
+                            <span class="float-end font-size-16 font-italic orange-fg lh-1">India</span>
+                        </a>
+                    </div>
+                    <div class="mobile-action-btns mobile-search col-5 col-md-3 col-sm-4 end-0 d-flex align-items-center justify-content-around d-lg-none">
+                        <span class="abc">
+                            <button class="btn primary-bg" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#searchBar" aria-controls="searchBar" aria-expanded="false"
+                                aria-label="Toggle navigation"> <i class="fa fa-search white-fg" aria-hidden="true"></i>
+                            </button>
+                        </span>
+                        <div class="dropdown">
+                           <a href="" class="text-center d-inline-block"                           
+                           role="button" data-bs-toggle="dropdown" aria-expanded="false"
+                            id="navbarDropdown-account"> <i class="fa fa-user fs-1"></i><br>
+                            <span class=" accent-fg text-center d-block font-size-14 line-height-10">
+                                Account
+                            </span>
+                             </a>
+                             <div class="dropdown-menu xs-account-dropdown-menu font-size-13"  aria-labelledby="navbarDropdown-account">
+                                <p class="nav-item dropdown-item">
+                                    <a data-bs-toggle="modal" data-bs-dismiss="modal"
+                                        data-bs-target="#Login-register-toggle" class="primary-fg d-block"
+                                        href="#">
+                                         Login/Join Free
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                        <a  data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"> <span class="navbar-toggler-icon"></span></a>
+
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                          <div class="offcanvas-header profile-user-avatar">
+                            <div class="nav-item dropdown">
+                                <h5 id="offcanvasRightLabel"><i class="fa fa-user-circle"></i> Guest</h5> 
+                                <a class="nav-link dropdown-toggle white-bg mt-2" href="#" id="navbarDropdown-Lob-mob"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img class="d-inline-block"
+                                        style="width: 28px !important; padding-right: 4px;" alt="flag"
+                                        src="img/ind-flag.svg">
+                                    <span>IN</span>
+                                </a>
+                                <ul class="dropdown-menu font-size-13 drop-down-mobile-lob" aria-labelledby="navbarDropdown-Lob-mob">
+                                    <li><a class="dropdown-item" href="#">IN</a></li>
+                                    <li><a class="dropdown-item" href="#">US</a></li>
+                                </ul>
+                            </div>                                                       
+                            <button type="button" class="btn-close btn-close-white  text-reset font-size-12" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                          </div>
+                          <div class="offcanvas-body">
+                                <ul>
+                                    <li>
+                                        <a href="" class="dark-grey-fg link-hover font-size-12"> Membership</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="dark-grey-fg link-hover font-size-12"> Buyer Inquiries</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="dark-grey-fg link-hover font-size-12"> Categories <i class="fa fa-angle-right grey-fg font-size-14 lh-lg flo-rt"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="dark-grey-fg link-hover font-size-12"> Post Inquiry</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="dark-grey-fg link-hover font-size-12"> Help</a>
+                                    </li>
+                                </ul>
+                          </div>
+                        </div>
+                    </div>
+                    <div class='col-md-12 col-lg-10 col-xl-9 col-sm-12 col-12 d-flex Ipad_portrait'>
+                        <div class="collapse navbar-collapse target1" id="navbarSupportedContent">
+                            <div
+                                class="col-md-5 col-lg-5 col-xl-6 col-12 col-sm-12 Ipad_portrait d-none d-lg-block d-xl-block">
+                                <form
+                                    class="col-md-9 col-lg-12 col-12 col-sm-12 flo-rt position-relative Ipad_portrait">
+                                    <input
+                                        class="form-control search_input me-2 w-100 border-success border-radius-30 p-2 ps-3"
+                                        type="search" aria-label="Search" placeholder="Please enter a product name">
+                                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 position-absolute right-30 top-0">
+                                        <li class="nav-item dropdown mx-2">
+                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-search-lob"
+                                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Products
+                                            </a>
+                                            <ul class="dropdown-menu font-size-13"
+                                                aria-labelledby="navbarDropdown-search-lob">
+                                                <li><a class="dropdown-item" href="#">Products</a></li>
+                                                <li><a class="dropdown-item" href="#">Suppliers</a></li>
+                                                <li><a class="dropdown-item" href="#">Services</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <a class="btn btn-outline-success position-absolute search_btn primary-bg"
+                                        href="product-search.html">
+                                        <i class="fa fa-search white-fg" style="line-height:35px;"
+                                            aria-hidden="true"></i>
+                                    </a>
+                                </form>
+                            </div>
+                            <div class="col-md-12 col-lg-7 col-xl-6 col-12 col-sm-12 Ipad_portrait">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0 float-end">
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-contact"
+                                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Contact Us
+                                        </a>
+                                        <ul class="dropdown-menu font-size-13" aria-labelledby="navbarDropdown-contact">
+                                            <li><a class="dropdown-item" href="#"><i class="fa fa-phone"
+                                                        aria-hidden="true"></i> +91 7702 625 588</a></li>
+                                            <li><a class="dropdown-item" href="#"><i class="fa fa-commenting"
+                                                        aria-hidden="true"></i> Chat with Us</a></li>
+                                            <li><a class="dropdown-item" href="#"  data-bs-target="#contact-us-dialog" data-bs-toggle="modal" data-bs-dismiss="modal"><i class="fa fa-envelope"
+                                                        aria-hidden="true"></i> Contact Us</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="category.html"
+                                            id="navbarDropdown-categories" role="button" data-bs-toggle="dropdown"
+                                            aria-expanded="false">
+                                            Categories
+                                        </a>
+                                        <ul class="dropdown-menu font-size-13"
+                                            aria-labelledby="navbarDropdown-categories">
+                                            <li><a class="dropdown-item" href="#">Sports</a></li>
+                                            <li><a class="dropdown-item" href="#">Business Services</a></li>
+                                            <li><a class="dropdown-item" href="#">Automobiles</a></li>
+                                            <li><a class="dropdown-item primary-fg" href="category.html">All
+                                                    Categories</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a data-bs-toggle="modal" data-bs-dismiss="modal"
+                                            data-bs-target="#Login-register-toggle" class="nav-link primary-fg"
+                                            href="#"><i class="fa fa-user" aria-hidden="true"></i> Login/Join Free</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-Lob"
+                                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <img class="d-inline-block"
+                                                style="width: 28px !important; padding-right: 4px;" alt="flag"
+                                                src="img/ind-flag.svg">
+                                            <span>IN</span>
+                                        </a>
+                                        <ul class="dropdown-menu font-size-13" aria-labelledby="navbarDropdown-Lob">
+                                            <li><a class="dropdown-item" href="#">IN</a></li>
+                                            <li><a class="dropdown-item" href="#">US</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div id="searchBar"
+                            class="collapse navbar-collapse target2 search-bar col-12 justify-content-center">
+                            <div class="Ipad_portrait d-block d-lg-none d-xl-none">
+                                <form class="position-relative Ipad_portrait">
+                                    <input
+                                        class="form-control search_input me-2 w-100 border-success border-radius-30 p-2 ps-3"
+                                        type="search" aria-label="Search" placeholder="Please enter a product name">
+                                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 position-absolute right-30 top-0">
+                                        <li class="nav-item dropdown mx-2">
+                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-search"
+                                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Products
+                                            </a>
+                                            <ul class="dropdown-menu font-size-13"
+                                                aria-labelledby="navbarDropdown-search">
+                                                <li><a class="dropdown-item" href="#">Products</a></li>
+                                                <li><a class="dropdown-item" href="#">Suppliers</a></li>
+                                                <li><a class="dropdown-item" href="#">Services</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <p class="btn btn-outline-success position-absolute search_btn primary-bg">
+                                        <a href="product-search.html"> <i class="fa fa-search white-fg"
+                                                aria-hidden="true"></i></a>
+                                    </p>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- Header Code Ends Here-->
+
+        <!-- Banner Code Start Here-->
+        <section class="banner_section">
+            <div class='container'>
+                <div class="row">
+                    <div class="bliss-banner-left position-relative col-lg-8 col-sm-12">
+                        <h4 class="white-fg">
+                            <span class="homepage-banner-heading">Next Generation Platform</span>
+                            <span>connecting</span>
+                            <br>
+                            <strong>Buyers, Sellers and Service Providers</strong>
+                        </h4>
+                        <p>Buy the best, Sell the most, Service the best – Domestic or Global.</p>
+                    </div>
+                    <div class="intrested-in-classifieds text-center white-fg font-weight-600 col-lg-4 col-sm-12">
+                        <div class="homepage-banner-blue-bg position-relative">
+                            <a href="#" class="white-fg">Post Inquiry <i
+                                    class="fa fa-chevron-right position-absolute banner_arrow lh-base"
+                                    aria-hidden="true"></i></a>
+                        </div>
+                        <div class="homepage-banner-blue-bg position-relative">
+                            <a class="white-fg" href="#">Buyer Inquiries <i
+                                    class="fa fa-chevron-right position-absolute banner_arrow lh-base"
+                                    aria-hidden="true"></i></a>
+                        </div>
+                        <div class="homepage-banner-blue-bg position-relative">
+                            <a class="white-fg" href="#" target="_blank">Explore Classifieds <i
+                                    class="fa fa-chevron-right position-absolute banner_arrow lh-base"
+                                    aria-hidden="true"></i></a>
+                        </div>
+                        <div class="homepage-banner-blue-bg position-relative">
+                            <a class="white-fg" href="#">Membership Plans <i
+                                    class="fa fa-chevron-right position-absolute banner_arrow lh-base"
+                                    aria-hidden="true"></i></a>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Banner Code Ends Here-->
+
+        <!---->
+        <div id="featureContainer">
+            <div class="container">
+                <div class="row">
+                    <div id="Categories" class="mb-4">
+                        <div class="section-title">
+                            <h5 class="Categories-Heading">Categories</h5>
+                            <a href="category.html" class="accent-fg link-hover font-size-20">
+                                <span>View all</span>
+                            </a>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="cat col-xl-3 col-lg-3 col-sm-12 col-md-6">
+                                <a class="mx-2 cat-card" href="category.html">
+                                    <div class="cat-img inner_image_block_main">
+                                        <div class="inner_image_block">
+                                            <img src="img/agriculture.jpg" alt="cat-img">
+                                        </div>
+                                    </div>
+                                    <div class="cat-title mt-3 mb-3">
+                                        <h4>Agriculture & Food</h4>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="cat col-xl-3 col-lg-3 col-sm-12 col-md-6">
+                                <a class="mx-2 cat-card" href="category.html">
+                                    <div class="cat-img inner_image_block_main">
+                                        <div class="inner_image_block">
+                                            <img src="img/images.jfif" alt="cat-img">
+                                        </div>
+                                    </div>
+                                    <div class="cat-title mt-3 mb-3">
+                                        <h4>Electronics</h4>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="cat col-xl-3 col-lg-3 col-sm-12 col-md-6">
+                                <a class="mx-2 cat-card" href="category.html">
+                                    <div class="cat-img inner_image_block_main">
+                                        <div class="inner_image_block">
+                                            <img src="img/pharma.png" alt="cat-img">
+                                        </div>
+                                    </div>
+                                    <div class="cat-title mt-3 mb-3">
+                                        <h4>Pharmacetical</h4>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="cat col-xl-3 col-lg-3 col-sm-12 col-md-6">
+                                <a class="mx-2 cat-card" href="category.html">
+                                    <div class="cat-img inner_image_block_main">
+                                        <div class="inner_image_block">
+                                            <img src="img/belt-belts-colors-65280.jpg" alt="cat-img">
+                                        </div>
+                                    </div>
+                                    <div class="cat-title mt-3 mb-3">
+                                        <h4>Leather(MP)</h4>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="mx-auto my-auto justify-content-center mb-4" id="products">            
+                    <div class="section-title">   
+                        <h5 class="Categories-Heading mb-3">Top Products</h5>
+                        <a href="" class="accent-fg link-hover font-size-12">
+                            <span>View all</span>
+                        </a>
+                    </div>
+                    <div id="featureCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="float-end pe-md-4 corosel-scroll-buttons">
+                            <a class="indicator" href="#featureCarousel" role="button" data-bs-slide="prev">
+                                <span class="fa fa-chevron-left" aria-hidden="true"></span>
+                            </a> &nbsp;&nbsp;
+                            <a class="w-aut indicator  indicator-right" href="#featureCarousel" role="button" data-bs-slide="next">
+                                <span class="fa fa-chevron-right" aria-hidden="true"></span>
+                            </a>
+                        </div>
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active">
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <div class="cat">
+                                            <div class="mx-2 cat-card">
+                                                <div class="cat-img">
+                                                    <img src="img/2-New.jpeg" alt="cat-img">
+                                                </div>
+                                                <div class="cat-title mt-2 mb-2">
+                                                    <h4 class="mb-1 dark">Dry Fruits</h4>
+                                                    <p class="mb-1 text-center medium-gray-fg">
+                                                        REESHA INDUSTRIES
+                                                    </p>
+                                                    <p class="text-center orange-fg">
+                                                        ₹250.00/packet
+                                                    </p>
+                                                </div>
+                                            </div>                    
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <div class="cat">
+                                            <div class="mx-2 cat-card">
+                                                <div class="cat-img">
+                                                    <img src="img/handicraft1.jpg" alt="cat-img">
+                                                </div>
+                                                <div class="cat-title mt-2 mb-2">
+                                                    <h4 class="mb-1 dark">Handicrafts & Dhurries</h4>
+                                                    <p class="mb-1 text-center medium-gray-fg">
+                                                        Leather Textiles
+                                                    </p>
+                                                    <p class="text-center orange-fg">
+                                                        ₹120.00/peice
+                                                    </p>
+                                                </div>
+                                            </div>                    
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <div class="cat">
+                                            <div class="mx-2 cat-card">
+                                                <div class="cat-img">
+                                                    <img src="img/Pomegranate.jpg" alt="cat-img">
+                                                </div>
+                                                <div class="cat-title mt-2 mb-2">
+                                                    <h4 class="mb-1 dark">Promogranate</h4>
+                                                    <p class="mb-1 text-center medium-gray-fg">
+                                                    Gro Store Fresh
+                                                    </p>
+                                                    <p class="text-center orange-fg">
+                                                        ₹120.00/kg - ₹200/kg
+                                                    </p>
+                                                </div>
+                                            </div>                    
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <div class="cat">
+                                            <div class="mx-2 cat-card">
+                                                <div class="cat-img">
+                                                    <img src="img/handicrafts.jpg" alt="cat-img">
+                                                </div>
+                                                <div class="cat-title mt-2 mb-2">
+                                                    <h4 class="mb-1 dark">Woolen Blankets</h4>
+                                                    <p class="mb-1 text-center medium-gray-fg">
+                                                    F&D Home Needs
+                                                    </p>
+                                                    <p class="text-center orange-fg">
+                                                        ₹1200.00/kg - ₹2500/kg
+                                                    </p>
+                                                </div>
+                                            </div>                    
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <div class="cat">
+                                            <div class="mx-2 cat-card">
+                                                <div class="cat-img">
+                                                    <img src="img/Almonds-1.jpg" alt="cat-img">
+                                                </div>
+                                                <div class="cat-title mt-2 mb-2">
+                                                    <h4 class="mb-1 dark">California Almonds</h4>
+                                                    <p class="mb-1 text-center medium-gray-fg">
+                                                    TGLIA Services
+                                                    </p>
+                                                    <p class="text-center orange-fg">
+                                                        $25.00/Packets
+                                                    </p>
+                                                </div>
+                                            </div>                    
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <div class="cat">
+                                            <div class="mx-2 cat-card">
+                                                <div class="cat-img">
+                                                    <img src="img/pharma.png" alt="cat-img">
+                                                </div>
+                                                <div class="cat-title mt-2 mb-2">
+                                                    <h4 class="mb-1 dark">Hand Sanitizers</h4>
+                                                    <p class="mb-1 text-center medium-gray-fg">
+                                                    CGLIA Pharmacetical
+                                                    </p>
+                                                    <p class="text-center orange-fg">
+                                                        $25.00/Packets
+                                                    </p>
+                                                </div>
+                                            </div>                    
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+        
+                    </div>
+                </div> -->
+                    <div class="mx-auto my-auto justify-content-center mb-4" id="products">
+                        <div class="section-title">
+                            <h5 class="Categories-Heading mb-3"> Recently Added Products</h5>
+                            <a href="product-search.html" class="accent-fg link-hover font-size-20">
+                                <span>View all</span>
+                            </a>
+                        </div>
+                        <div id="featureCarousel" class="carousel slide" data-interval="false">
+                            <div class="float-end pe-md-4 corosel-scroll-buttons">
+                                <a class="indicator corosel-scroll-buttons-1" href="#featureCarousel" role="button"
+                                    data-bs-slide="prev">
+                                    <span class="fa fa-chevron-left" aria-hidden="true"></span>
+                                </a> &nbsp;&nbsp;
+                                <a class="w-aut indicator  indicator-right corosel-scroll-button-2"
+                                    href="#featureCarousel" role="button" data-bs-slide="next">
+                                    <span class="fa fa-chevron-right" aria-hidden="true"></span>
+                                </a>
+                            </div>
+                            <div class="carousel-inner" role="listbox">
+                                <div class="carousel-item active">
+                                    <div class="col-xl-3 col-lg-3 col-sm-12 col-md-6">
+                                        <div class="card">
+                                            <div class="cat">
+                                                <div class="mx-2 cat-card">
+                                                    <div class="cat-img inner_image_block_main">
+                                                        <div class="inner_image_block">
+                                                            <img src="img/2-New.jpeg" alt="cat-img">
+                                                        </div>
+                                                    </div>
+                                                    <div class="cat-title mt-2 mb-2">
+                                                        <h4 class="mb-1 dark">
+                                                            <a href="product-details.html" class="dark-grey-fg"> Dry
+                                                                Fruits</a>
+                                                        </h4>
+                                                        <p class="mb-1 text-center medium-gray-fg">
+                                                            REESHA INDUSTRIES
+                                                        </p>
+                                                        <p class="text-center orange-fg">
+                                                            ₹250.00/packet
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="col-xl-3 col-lg-3 col-sm-12 col-md-6">
+                                        <div class="card">
+                                            <div class="cat">
+                                                <div class="mx-2 cat-card">
+                                                    <div class="cat-img inner_image_block_main">
+                                                        <div class="inner_image_block">
+                                                            <img src="img/handicraft1.jpg" alt="cat-img">
+                                                        </div>
+                                                    </div>
+                                                    <div class="cat-title mt-2 mb-2">
+                                                        <h4 class="mb-1 dark">
+                                                            <a href="product-details.html" class="dark-grey-fg">
+                                                                Handicrafts & Dhurries</a>
+                                                        </h4>
+                                                        <p class="mb-1 text-center medium-gray-fg">
+                                                            Leather Textiles
+                                                        </p>
+                                                        <p class="text-center orange-fg">
+                                                            ₹120.00/peice
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="col-xl-3 col-lg-3 col-sm-12 col-md-6">
+                                        <div class="card">
+                                            <div class="cat">
+                                                <div class="mx-2 cat-card">
+                                                    <div class="cat-img inner_image_block_main">
+                                                        <div class="inner_image_block">
+                                                            <img src="img/Pomegranate.jpg" alt="cat-img">
+                                                        </div>
+                                                    </div>
+                                                    <div class="cat-title mt-2 mb-2">
+                                                        <h4 class="mb-1 dark">
+                                                            <a href="product-details.html" class="dark-grey-fg">
+                                                                Promogranate</a>
+                                                        </h4>
+                                                        <p class="mb-1 text-center medium-gray-fg">
+                                                            Gro Store Fresh
+                                                        </p>
+                                                        <p class="text-center orange-fg">
+                                                            ₹120.00/kg - ₹200/kg
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="col-xl-3 col-lg-3 col-sm-12 col-md-6">
+                                        <div class="card">
+                                            <div class="cat">
+                                                <div class="mx-2 cat-card">
+                                                    <div class="cat-img inner_image_block_main">
+                                                        <div class="inner_image_block">
+                                                            <img src="img/handicrafts.jpg" alt="cat-img">
+                                                        </div>
+                                                    </div>
+                                                    <div class="cat-title mt-2 mb-2">
+                                                        <h4 class="mb-1 dark">
+                                                            <a href="product-details.html" class="dark-grey-fg"> Woolen
+                                                                Blankets</a>
+                                                        </h4>
+                                                        <p class="mb-1 text-center medium-gray-fg">
+                                                            F&D Home Needs
+                                                        </p>
+                                                        <p class="text-center orange-fg">
+                                                            ₹1200.00/kg - ₹2500/kg
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="col-xl-3 col-lg-3 col-sm-12 col-md-6">
+                                        <div class="card">
+                                            <div class="cat">
+                                                <div class="mx-2 cat-card">
+                                                    <div class="cat-img inner_image_block_main">
+                                                        <div class="inner_image_block">
+                                                            <img src="img/Almonds-1.jpg" alt="cat-img">
+                                                        </div>
+                                                    </div>
+                                                    <div class="cat-title mt-2 mb-2">
+                                                        <h4 class="mb-1 dark">
+                                                            <a href="product-details.html" class="dark-grey-fg">
+                                                                California Almonds</a>
+                                                        </h4>
+                                                        <p class="mb-1 text-center medium-gray-fg">
+                                                            TGLIA Services
+                                                        </p>
+                                                        <p class="text-center orange-fg">
+                                                            $25.00/Packets
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="col-xl-3 col-lg-3 col-sm-12 col-md-6">
+                                        <div class="card">
+                                            <div class="cat">
+                                                <div class="mx-2 cat-card">
+                                                    <div class="cat-img inner_image_block_main">
+                                                        <div class="inner_image_block">
+                                                            <img src="img/pharma.png" alt="cat-img">
+                                                        </div>
+                                                    </div>
+                                                    <div class="cat-title mt-2 mb-2">
+                                                        <h4 class="mb-1 dark">
+                                                            <a href="product-details.html" class="dark-grey-fg"> Hand
+                                                                Sanitizers</a>
+                                                        </h4>
+                                                        <p class="mb-1 text-center medium-gray-fg">
+                                                            CGLIA Pharmacetical
+                                                        </p>
+                                                        <p class="text-center orange-fg">
+                                                            $25.00/Packets
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- Changes on 15th july  -->
+                    <div id="inquiries" class="mb-4">
+                        <div class="section-title">
+                            <h5 class="Categories-Heading">Recent Inquiries</h5>
+                            <a href="" class="accent-fg link-hover font-size-20">
+                                <span>View all</span>
+                            </a>
+                        </div>
+                        <!-- Changes on 15th july  -->
+                        <div class="mt-3 corosel-horizontal-scrollbar pb-2 inquiries-container">
+                            <div class="cat inquiries-card col-sm-12 col-lg-3 col-md-3">
+                                <div class="mx-2 p-2">
+                                    <div>
+                                        <span class="medium-gray-fg">Posted &nbsp;</span>
+                                        <span class="medium-gray-fg">10 days ago</span>
+                                    </div>
+                                    <p class="">Generic Needs
+                                    </p>
+                                    <div class="mt-3">
+                                        <h6 class="inquiry-supplier">Gro store generic needs</h6>
+                                        <p class="medium-gray-fg">India</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cat inquiries-card col-sm-12 col-lg-3 col-md-3">
+                                <div class="mx-2 p-2">
+                                    <div>
+                                        <span class="medium-gray-fg">Posted &nbsp;</span>
+                                        <span class="medium-gray-fg">15 days ago</span>
+                                    </div>
+                                    <p class="">Looking for Drafting
+                                    </p>
+                                    <div class="mt-3">
+                                        <h6 class="inquiry-supplier">Adroit IP Patent Services</h6>
+                                        <p class="medium-gray-fg">India</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cat inquiries-card col-sm-12 col-lg-3 col-md-3">
+                                <div class="mx-2 p-2">
+                                    <div>
+                                        <span class="medium-gray-fg">Posted &nbsp;</span>
+                                        <span class="medium-gray-fg">18 days ago</span>
+                                    </div>
+                                    <p class="">bamboo handicrafts post inquir
+                                    </p>
+                                    <div class="mt-3">
+                                        <h6 class="inquiry-supplier">Sun Crop Group</h6>
+                                        <p class="medium-gray-fg">India</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cat inquiries-card col-sm-12 col-lg-3 col-md-3">
+                                <div class="mx-2 p-2">
+                                    <div>
+                                        <span class="medium-gray-fg">Posted &nbsp;</span>
+                                        <span class="medium-gray-fg">27 days ago</span>
+                                    </div>
+                                    <p class="">Urgent Requirement
+                                    </p>
+                                    <div class="mt-3">
+                                        <h6 class="inquiry-supplier">HIL Private Limited</h6>
+                                        <p class="medium-gray-fg">India</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Categories Code Ends Here-->
+
+        <!-- Business Section Code Start Here -->
+        <div id="business-section">
+            <div class="container">
+                <div class="row">
+                    <div class="business-section white-bg mt-24 mb-4">
+                        <h2
+                            class="font-weight-400 text-center business-section-title tl-dom-business-section-title font-size-xs-24 font-weight-xs-400 line-height-xs-36 xs-pl-pr-40">
+                            Connect. Communicate. And Grow.
+                        </h2>
+                        <p
+                            class="business-title-des text-center business-section-desc tl-dom-business-section-desc font-size-xs-14 font-weight-xs-400 line-height-xs-20">
+                            Seal the deal in one single piece.</p>
+                    </div>
+                    <div class="col-lg-7 col-sm-12  padding px-lg-4">
+                        <div class="row buy-section-1 py-4">
+                            <div class="width-120 m-2 col">
+                                <img src="img/handshake.png" alt="" class="margin-auto">
+                            </div>
+                            <div class="content-business col-8 br-white">
+                                <h5>Buy the Best</h5>
+                                <p>Compare sellers and choose the best that fits your needs</p>
+                            </div>
+                            <div class="business-action-btn col d-flex align-items-center  justify-content-center">
+                                <a href="" class="white-fg ">
+                                    <span>Learn More</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row buy-section-2 py-4">
+                            <div class="width-120 m-2 col">
+                                <img src="img/sell.png" alt="" class="margin-auto">
+                            </div>
+                            <div class="content-business col-8  br-white">
+                                <h5>Sell the Most</h5>
+                                <p>Expand your business worldwide, no matter how small it is</p>
+                            </div>
+                            <div class="business-action-btn col  d-flex align-items-center justify-content-center">
+                                <a href="" class="white-fg ">
+                                    <span>Learn More</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row buy-section-3 py-4">
+                            <div class="width-120 m-2 col">
+                                <img src="img/service.png" alt="" class="margin-auto">
+                            </div>
+                            <div class="content-business col-8 br-white">
+                                <h5>Buy the Best</h5>
+                                <p>Provide your services to buyers and sellers including freight forwarding,
+                                    inspection, brokering,
+                                    packaging, labs/certification services and more</p>
+                            </div>
+                            <div class="business-action-btn col  d-flex align-items-center justify-content-center">
+                                <a href="" class="white-fg ">
+                                    <span>Learn More</span>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-5 col-sm-12 padding p-2 just-try py-4">
+                        <h4 class="text-center easy-123">It really is as easy as 1-2-3!</h4>
+                        <ul class="easy-steps mx-5 mt-4">
+                            <li>
+                                <h4 class="white-fg join1">JOIN FOR FREE</h4>
+                                <p class="white-fg join-text">Sign up now and evaluate the TradeLeaves
+                                    platform!</p>
+                            </li>
+                            <li>
+                                <h4 class="white-fg join1">SEARCH</h4>
+                                <p class="white-fg join-text">Search for vast network for products and
+                                    partners!</p>
+                            </li>
+                            <li>
+                                <h4 class="white-fg join1">TRADE</h4>
+                                <p class="white-fg join-text">Connect through our platform and start trading
+                                    today!</p>
+                            </li>
+                        </ul>
+                        <div class="text-center">
+                            <button class="btn btn-primary white-fg border-radius-30 font-size-13"  data-bs-toggle="modal" data-bs-dismiss="modal"
+                            data-bs-target="#Login-register-toggle">Sign Me Up for free
+                                today</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Business Section Code Start Here -->
+
+
+        <!-- -->
+        <div class="bg-color-f2f2f2 pt-4 pb-4">
+            <h4 class="business-section-desc text-center mb-5 font-weight-500">Start Selling on our user-friendly
+                digital marketplace.<br> It takes only a few minutes to get started</h4>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7 col-sm-12 border-radius-15 white-bg">
+                        <div class="support-from-tl">
+                            <h5 class="mb-2 font-weight-500">Create a Powerful Presence Online</h5>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="info-items-left">
+                                        <span class="rounded-white-bg">
+                                            <img src="img/Vector(3).png" alt="" class="h-w-35">
+                                        </span>
+                                        <p>Get
+                                            noticed by local and global buyers &amp; sellers</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="info-items-left">
+                                        <span class="rounded-white-bg">
+                                            <img src="img/Vector(8).png" alt="" class="h-w-35">
+                                        </span>
+                                        <p>Promote your
+                                            products and services on your own online shop</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="info-items-left">
+                                        <span class="rounded-white-bg">
+                                            <img src="img/Vector(9).png" alt="" class="h-w-35">
+                                        </span>
+                                        <p>Live chat
+                                            with buyers &amp; sellers</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="info-items-left">
+                                        <span class="rounded-white-bg">
+                                            <img src="img/Vector(10).png" alt="" class="h-w-35">
+                                        </span>
+                                        <p>Get a
+                                            Verified seal for your business</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="info-items-left">
+                                        <span class="rounded-white-bg">
+                                            <img src="img/Vector(11).png" alt="" class="h-w-35">
+                                        </span>
+                                        <p class="ng-scope">Measure responses
+                                            for your page</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="info-items-left">
+                                        <span class="rounded-white-bg">
+                                            <img src="img/Vector(12).png" alt="" class="h-w-35">
+                                        </span>
+                                        <p>Get genuine and relevant inquiries from anywhere in the world</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class=" col-lg-5 col-sm-12">
+                        <div class="support-from-tl border-radius-15 white-bg">
+                            <h5 class="mb-3 font-weight-500 text-center">Register for free and start trading</h5>
+                            <form class="px-lg-5 p-0">
+                                <input class="form-control border-bottom-0 border-radius-0" type="text"
+                                    placeholder="Full Name">
+                                <input class="form-control border-bottom-0 border-radius-0" type="text"
+                                    placeholder="Email">
+                                <input class="form-control border-bottom-0 border-radius-0" type="number"
+                                    placeholder="Phone Number">
+                                <input class="form-control border-bottom-0 border-radius-0" type="text"
+                                    placeholder="Company Name">
+                                <input class="form-control border-bottom-0 border-radius-0" type="password"
+                                    placeholder="Password">
+                                <input class="form-control border-bottom-0 border-radius-0" type="password"
+                                    placeholder="Confirm Password">
+                                <input class="form-control border-radius-0" type="text" placeholder="Referral Source">
+                                <div class="form-check mt-2 mb-3 text-lg-start">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label font-size-13" for="flexCheckDefault">
+                                        I agree to receive SMS.
+                                    </label>
+                                </div>
+                                <div class="text-center"><button
+                                        class="btn btn-primary white-fg border-radius-30 font-size-13 mb-3">Register
+                                        your
+                                        account</button></div>
+                                <p class="text-center font-size-13">By registering an account you are agreeing to our
+                                    <a href="#" tabindex="0" class="">terms of use</a>&nbsp;and
+                                    <a href="#" tabindex="0" class="">privacy policy</a>
+                                </p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- -->
+
+
+        <!-- Add Section Code Start Here-->
+        <div class="text-center mp_buy_sell">
+            <h3 class="white-fg mb-3">Join our vibrant, rapidly expanding community <br> to get all the benefits before
+                the offer runs out!</h3>
+            <button class="btn btn-primary white-fg border-radius-30 font-size-13"  data-bs-toggle="modal" data-bs-dismiss="modal"
+            data-bs-target="#Login-register-toggle">Sign Me Up for free today</button>
+        </div>
+        <!-- Add Section Code Ends Here-->
+
+        <!-- login dialog content starts -->
+        <!-- Modal -->
+        <div class="modal fade" id="Login-register-toggle" aria-hidden="true"
+            aria-labelledby="Login-register-toggle-label" tabindex="-1">
+            <div class="modal-dialog tl-modal-dailog modal-lg modal-dialog-centered">
+                <div class="modal-content tl-modal-content">
+                    <div class="modal-header tl-modal-header">
+                        <h5 class="modal-title tl-modal-title" id="Login-register-toggle-label">Login or Join Free</h5>
+                        <button type="button" class="btn-close tl-btn-close" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex login-register-body">
+                        <div class="col-md-6 col-12 border-end d-md-block" id="registerForm">
+                            <p class="text-center dark-grey-fg pb-2">Not a Member? Join Free Now</p>
+                            <form class="pe-md-4 ps-md-2">
+                                <input class="form-control border-bottom-0 border-radius-0" type="text"
+                                    placeholder="Full Name">
+                                <input class="form-control border-bottom-0 border-radius-0" type="text"
+                                    placeholder="Email">
+                                <input class="form-control border-bottom-0 border-radius-0" type="number"
+                                    placeholder="Phone Number">
+                                <input class="form-control border-bottom-0 border-radius-0" type="text"
+                                    placeholder="Company Name">
+                                <input class="form-control border-bottom-0 border-radius-0" type="password"
+                                    placeholder="Password">
+                                <input class="form-control border-bottom-0 border-radius-0" type="password"
+                                    placeholder="Confirm Password">
+                                <input class="form-control border-radius-0" type="text" placeholder="Referral Source">
+                                <div class="form-check mt-2 mb-3 text-lg-start">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label font-size-13" for="flexCheckDefault">
+                                        I agree to receive SMS.
+                                    </label>
+                                </div>
+                                <div class="text-center mx-3"><button
+                                        class="btn btn-primary-light col-12 px-4 white-fg border-radius-30 font-size-13 mb-3">Register
+                                        your
+                                        account</button></div>
+                                <p class="text-center font-size-13">By registering an account you are agreeing to our
+                                    <a href="#" tabindex="0" class="">terms of use</a>&nbsp;and
+                                    <a href="#" tabindex="0" class="">privacy policy</a>
+                                </p>
+                                <div class="text-center d-block d-md-none">
+                                    <p class="text-center d-block d-md-none">Already a member?
+                                        <a class="accent-fg link-hover" id="mobile-login"
+                                            onclick="showLogin()">Login</a>
+                                    </p>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-12 col-md-6" id="loginForm">
+                            <p class="text-center dark-grey-fg mb-3">Already a Member?</p>
+                            <form class="ms-md-4 me-md-2">
+                                <input class="form-control border-radius-0 mb-3" type="text" placeholder="Enter Email">
+                                <input class="form-control  border-radius-0 mb-3" type="password"
+                                    placeholder="Enter Password">
+                                <div class="form-check mb-2 text-lg-start">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label font-size-13" for="flexCheckDefault">
+                                        Remember Me
+                                    </label>
+                                </div>
+                                <div class="text-center mx-3 mb-3">
+                                    <button
+                                        class="btn btn-primary-light col-12 px-4 white-fg border-radius-30 font-size-13 mb-3">
+                                        Sign In</button>
+                                </div>
+                                <div class="mb-3">
+                                    <a href="" data-bs-toggle="modal" data-bs-target="#forgotPassword"
+                                        data-bs-toggle="modal" data-bs-dismiss="modal"
+                                        class="accent-fg link-hover text-center d-block"> Forgot your password?</a>
+                                </div>
+                                <div class="mb-3">
+                                    <p class="dark-grey-fg  text-center">
+                                        <i class="fa fa-question-circle fst-normal accent-fg"></i>
+                                        Having trouble signing in?
+                                        <a class="accent-fg link-hover d-inline-block" data-bs-target="#contact-us-dialog" data-bs-toggle="modal"
+                                            data-bs-dismiss="modal">
+                                            Click here
+                                        </a>
+                                    </p>
+                                </div>
+                                <div class="text-center d-block d-md-none">
+                                    <p class="text-center dark-grey-fg">Do not have an account?
+                                        <a class="accent-fg link-hover" id="mobile-register"
+                                            onclick="showRegister()">Join Free</a>
+                                    </p>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="forgotPassword" aria-hidden="true" aria-labelledby="forgotPasswordLabel"
+            tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered tl-modal-dailog">
+                <div class="modal-content tl-modal-content">
+                    <div class="modal-header tl-modal-header">
+                        <h5 class="modal-title tl-modal-title" id="forgotPasswordLabel">Forgot Password</h5>
+                        <button type="button" class="btn-close tl-btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="text-center mb-3">Forgot Password</p>
+                        <input class="form-control border-radius-0 mb-3" type="text" placeholder="Enter Email">
+                        <button
+                            class="btn btn-primary-light col-8 margin-auto d-block px-4 white-fg border-radius-30 font-size-13 mb-3">
+                            Continue</button>
+
+                    </div>
+                    <div class="modal-footer">
+                        <a class="aceent-fg link-hover" data-bs-target="#Login-register-toggle" data-bs-toggle="modal"
+                            data-bs-dismiss="modal">back to sign In</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- login dialog content ends -->
+       <!-- contact us dialog -->
+       <div class="modal fade" id="contact-us-dialog" aria-hidden="true"
+       aria-labelledby="contact-us-dialog-label" tabindex="-1">
+            <div class="modal-dialog tl-modal-dailog modal-lg modal-dialog-centered">
+                <div class="modal-content tl-modal-content">
+                    <div class="modal-header tl-modal-header">
+                        <h5 class="modal-title tl-modal-title" id="Login-register-toggle-label">Contact Us</h5>
+                        <button type="button" class="btn-close tl-btn-close" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex login-register-body">
+                        <h4 class="text-center margin-auto font-size-16 dark-grey-fg">How can we help you?</h4>
+                    </div>
+                </div>
+            </div>
+       </div>
+       <!-- contact us dialog ends -->
+        <!-- Footer Code Start Here-->
+        <footer class="p-2 pt-4 pb-4">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="footer_section col-md-3 col-lg-2 col-sm-12">
+                        <h2 class="footer-menu-title">Buy &amp; Sell</h2>
+                        <ul class="pt-4 footer_links">
+                            <li class="">
+                                <a href="#" class="gray-fg font-size-13 font-weight-500">View Marketplace Categories</a>
+                            </li>
+                            <li class="">
+                                <a href="#" class="gray-fg font-size-13 font-weight-500"  data-bs-toggle="modal" data-bs-dismiss="modal"
+                                data-bs-target="#Login-register-toggle">Login/Join Free</a>
+                            </li>
+                            <li class="">
+                                <a href="#" class="gray-fg font-size-13 font-weight-500">Membership</a>
+                            </li>
+                            <li class="">
+                                <a href="#" class="gray-fg font-size-13 font-weight-500">Buyer Inquiries</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer_section col-md-3 col-lg-2 col-sm-12">
+                        <h2 class="footer-menu-title">SUPPORT</h2>
+                        <ul class="pt-4 footer_links">
+                            <li class="">
+                                <a href="#" class="gray-fg font-size-13 font-weight-500">Blogs & Knowledge Base</a>
+                            </li>
+                            <li class="">
+                                <a href="#" class="gray-fg font-size-13 font-weight-500">FAQs</a>
+                            </li>
+                            <li class="">
+                                <a href="#" class="gray-fg font-size-13 font-weight-500"
+                                 data-bs-target="#contact-us-dialog" data-bs-toggle="modal" data-bs-dismiss="modal">
+                                 Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer_section col-md-3 col-lg-2 col-sm-12">
+                        <h2 class="footer-menu-title">COMPANY</h2>
+                        <ul class="pt-4 footer_links">
+                            <li class="">
+                                <a href="#" class="gray-fg font-size-13 font-weight-500">Classifieds</a>
+                            </li>
+                            <li class="">
+                                <a href="#" class="gray-fg font-size-13 font-weight-500">About</a>
+                            </li>
+                            <li class="">
+                                <a href="#" class="gray-fg font-size-13 font-weight-500">Privacy Policy</a>
+                            </li>
+                            <li class="">
+                                <a href="#" class="gray-fg font-size-13 font-weight-500">Terms of use & sale</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer_section col-md-3 col-lg-2 col-sm-12">
+                        <a href="index.html">
+                            <img class="mb-3" src="img/TL-Logo.png" alt="Logo" style="height:30px;">
+                        </a>
+                        <p class="gray-fg font-size-13 font-weight-500 mb-3">Business partners to grow your business.
+                            Global service
+                            providers to deliver the goods.</p>
+                        <a href="" class="mx-2 gray-fg social_icons"><i class="bi bi-facebook"></i></a>
+                        <a href="" class="mx-2 gray-fg social_icons"><i class="bi bi-twitter"></i></a>
+                        <a href="" class="mx-2 gray-fg social_icons"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                    <div class="pt-4 pb-2">
+                        <p class="font-size-12 gray-fg text-center pb-16 pt-10 footer-menu-links-text">&copy;
+                            TradeLeaves,
+                            Inc 2022</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer Code Ends Here-->
+
+    </div>
+    <script>
+        let items = document.querySelectorAll('#featureContainer .carousel .carousel-item');
+        items.forEach((el) => {
+            const minPerSlide = 4
+            let next = el.nextElementSibling
+            for (var i = 1; i < minPerSlide; i++) {
+                if (!next) {
+                    // wrap carousel by using first child
+                    next = items[0]
+                }
+                let cloneChild = next.cloneNode(true)
+                el.appendChild(cloneChild.children[0])
+                next = next.nextElementSibling
+            }
+        })
+    </script>
+</body>
+
+</html>

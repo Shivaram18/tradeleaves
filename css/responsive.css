@@ -1,0 +1,225 @@
+@media screen and (max-width: 767px){
+    #registerForm{
+        display: none;
+    }
+    .business-section-desc {
+        width: 100%!important;
+        font-size: 15px;
+        line-height: 21px!important;
+        margin-bottom: 20px !important;
+    }
+   .support-from-tl h5{
+        font-size: 16px;
+        text-align: center;
+        margin-bottom: 12px !important;
+    }
+    .business-section-title {
+        margin-bottom: 0;
+        font-size: 28px;
+    }
+    .business-title-des {
+        font-size: 18px;
+    }
+    #Categories .cat-card{
+        width: 320px !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+    .cat-card{
+        width: 320px !important;
+    } 
+    .indicator-right {
+        margin-right: 10px !important;
+    }
+    .inquiries-card {
+        margin-right: 0 !important;
+    }
+    .bliss-banner-left {
+        background-image: url(../img/lady-image-mobile.png);
+        background-size: contain;
+        background-color: hsl(204deg 87% 61%);
+        height:280px;
+        background-position: center bottom;
+        padding:20px 0 0 0;
+        background-repeat: no-repeat;
+    }
+    .intrested-in-classifieds {
+        padding: 50px 25px 0 25px;
+    }
+    .mp_buy_sell h3{
+        font-size: 16px;
+        font-weight: 100;
+        line-height: 26px;
+    }
+    .mp_buy_sell{
+        padding: 80px 16px;
+    }
+    .footer_section {
+        border-bottom: 1px solid #848484 !important;
+        border-left: none !important;
+        padding: 0 20px 10px;
+        margin: 0 0 20px;
+    }
+    .footer_section:last-child{
+        border-bottom: 0px solid #fff !important;
+    }
+    /* .just-try {
+        border-radius: 0;
+    } */
+    .allCategoriesListContainer .eachCard {
+		margin: 20px auto;
+	}
+    .allCategoriesListContainer.category-card .imageContainer {
+	    min-height: auto !important;
+	}
+
+	.allCategoriesListContainer.category-card .imageContainer img {
+	    height: 100px !important;
+	}
+    .address_info{
+        max-width:100%;
+    }
+}
+@media screen and (max-width: 576px){
+    .tl-modal-dailog{
+        max-width: 85%;
+        margin: 0 auto;
+    }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+	.allCategoriesListContainer .eachCard {
+		max-width: 300px;
+		margin: 20px 10px;
+	}
+}
+@media screen and (max-width: 767px) and (orientation: portrait){
+    #products {
+        padding: 16px;
+    }
+    #searchBar{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .bliss-banner-left h4{
+        font-size: 20px;
+        text-align: center;
+        padding-bottom: 135px;
+    }
+    .bliss-banner-left p{
+        text-align: center;
+        color: #003a5b!important;
+        font-size: 14px;
+        line-height: 20px;
+        margin: 0 auto;
+        position: absolute;
+        bottom: -48px;
+        right: 0;
+        left: 0;
+        width: 65%;
+    }
+}
+@media screen and (max-width: 767px) and (orientation: landscape){
+    #searchBar{
+        width: 70%;
+        margin: 0 auto;
+    }
+    .bliss-banner-left{       
+        height: 230px;
+        background-position: center bottom;
+        padding: 42px 0 0 26px;
+        background-repeat: no-repeat;
+        background: -webkit-radial-gradient(20% 95%,circle farthest-corner,rgba(69,173,242,1) 0,rgba(69,173,412,0.7) 100%),url(../img/lady-image-mobile.png) 95% 10% no-repeat;
+    }
+    .bliss-banner-left h4{
+        font-size: 22px !important;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {    
+    .tl-modal-dailog{
+        max-width: 80%;
+    }
+}
+@media screen and (min-width: 1025px) and (max-width: 1224px) {
+    .nav-link{
+        font-size: 14px !important;
+    } 
+}
+@media screen and (max-width: 991px) {
+    .navbar-collapse {
+        flex-basis: initial;
+        flex-grow: initial;
+    }
+    .mobile-search{
+        padding: 0 3px !important;
+        font-size: 1.2rem;
+        height: 35px;
+        margin: 18px 0 0 0;
+        position: absolute;
+        right: 70px;
+        top: 0;
+    }
+    
+    #searchBar{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .aside-product-details-page{
+        width: 100%;
+    }
+}
+@media screen and (min-width: 992px) {
+    .navbar-expand-lg .navbar-collapse.search-bar {
+        display: none!important;
+        flex-basis: auto;
+    }
+    .mobile-search{
+        display: none;
+    }
+    .aside-product-details-page{
+        width: 240px;
+    }
+}
+@media screen and (min-width: 991px) and (max-width: 1199px) {
+    .Ipad_portrait{
+        margin-left: 5px;
+    }
+    .nav-link{
+        font-size: 14px !important;
+    }
+    
+}
+@media screen and (min-width: 1024px) and (max-width: 1366px) {
+    /* .homepage-banner-blue-bg a {
+        font-size: 17px !important;
+    } */
+}
+@media screen and (min-width: 1366px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl {
+        max-width: 1340px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .bliss-banner-left {
+        background-image: url(../img/lady-image.png);
+        background-size: contain;
+        background-color: hsl(204deg 87% 61%);
+        height: 300px;
+        background-position: center bottom;
+        padding: 42px 0 0 26px;
+        background-repeat: no-repeat;
+    }
+}
+@media screen and (min-width: 576px) and (max-width:767px) {
+    /* .product-search-img img{
+        width: 100px;
+    } */
+    .tl-modal-dailog{
+        max-width: 75%;
+    }
+}
+@media screen and (min-width: 1441px) {
+    .search-results{
+        margin: 0 auto;
+        max-width: 1440px;
+    }
+}

@@ -1,0 +1,1787 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Tradeleaves</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/bootstrap.min.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <script src='js/bootstrap.min.js'></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+         <!-- Header Code Start Here-->
+        <header class='header-wrapper'>
+            <nav class="navbar navbar-expand-lg navbar-light pt-3">
+                <div class="container-fluid">
+                    <div class='col-md-9 col-lg-2 col-xl-3 col-sm-8 col-7'>
+                        <a class="navbar-brand d-inline-block p-0 logo" href="index.html">
+                            <img src="img/TL-Logo.png" class="tl-logo-container position-relative" alt="TradeLeaves">
+                            <span class="float-end font-size-16 font-italic orange-fg lh-1">India</span>
+                        </a>
+                    </div>
+                    <div class="mobile-action-btns mobile-search col-5 col-md-3 col-sm-4 end-0 d-flex align-items-center justify-content-around d-lg-none">
+                        <span class="abc">
+                            <button class="btn primary-bg" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#searchBar" aria-controls="searchBar" aria-expanded="false"
+                                aria-label="Toggle navigation"> <i class="fa fa-search white-fg" aria-hidden="true"></i>
+                            </button>
+                        </span>
+                        <div class="dropdown">
+                           <a href="" class="text-center d-inline-block"                           
+                           role="button" data-bs-toggle="dropdown" aria-expanded="false"
+                            id="navbarDropdown-account"> <i class="fa fa-user fs-1"></i><br>
+                            <span class=" accent-fg text-center d-block font-size-14 line-height-10">
+                                Account
+                            </span>
+                             </a>
+                             <div class="dropdown-menu xs-account-dropdown-menu font-size-13"  aria-labelledby="navbarDropdown-account">
+                                <p class="nav-item dropdown-item">
+                                    <a data-bs-toggle="modal" data-bs-dismiss="modal"
+                                        data-bs-target="#Login-register-toggle" class="primary-fg d-block"
+                                        href="#">
+                                         Login/Join Free
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                        <a  data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"> <span class="navbar-toggler-icon"></span></a>
+
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                          <div class="offcanvas-header profile-user-avatar">
+                            <div class="nav-item dropdown">
+                                <h5 id="offcanvasRightLabel"><i class="fa fa-user-circle"></i> Guest</h5> 
+                                <a class="nav-link dropdown-toggle white-bg mt-2" href="#" id="navbarDropdown-Lob-mob"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img class="d-inline-block"
+                                        style="width: 28px !important; padding-right: 4px;" alt="flag"
+                                        src="img/ind-flag.svg">
+                                    <span>IN</span>
+                                </a>
+                                <ul class="dropdown-menu font-size-13 drop-down-mobile-lob" aria-labelledby="navbarDropdown-Lob-mob">
+                                    <li><a class="dropdown-item" href="#">IN</a></li>
+                                    <li><a class="dropdown-item" href="#">US</a></li>
+                                </ul>
+                            </div>                                                       
+                            <button type="button" class="btn-close btn-close-white  text-reset font-size-12" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                          </div>
+                          <div class="offcanvas-body">
+                                <ul>
+                                    <li>
+                                        <a href="" class="dark-grey-fg link-hover font-size-12"> Membership</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="dark-grey-fg link-hover font-size-12"> Buyer Inquiries</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="dark-grey-fg link-hover font-size-12"> Categories <i class="fa fa-angle-right grey-fg font-size-14 lh-lg flo-rt"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="dark-grey-fg link-hover font-size-12"> Post Inquiry</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="dark-grey-fg link-hover font-size-12"> Help</a>
+                                    </li>
+                                </ul>
+                          </div>
+                        </div>
+                    </div>
+                    <div class='col-md-12 col-lg-10 col-xl-9 col-sm-12 col-12 d-flex Ipad_portrait'>
+                        <div class="collapse navbar-collapse target1" id="navbarSupportedContent">
+                            <div
+                                class="col-md-5 col-lg-5 col-xl-6 col-12 col-sm-12 Ipad_portrait d-none d-lg-block d-xl-block">
+                                <form
+                                    class="col-md-9 col-lg-12 col-12 col-sm-12 flo-rt position-relative Ipad_portrait">
+                                    <input
+                                        class="form-control search_input me-2 w-100 border-success border-radius-30 p-2 ps-3"
+                                        type="search" aria-label="Search" placeholder="Please enter a product name">
+                                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 position-absolute right-30 top-0">
+                                        <li class="nav-item dropdown mx-2">
+                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-search-lob"
+                                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Products
+                                            </a>
+                                            <ul class="dropdown-menu font-size-13"
+                                                aria-labelledby="navbarDropdown-search-lob">
+                                                <li><a class="dropdown-item" href="#">Products</a></li>
+                                                <li><a class="dropdown-item" href="#">Suppliers</a></li>
+                                                <li><a class="dropdown-item" href="#">Services</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <a class="btn btn-outline-success position-absolute search_btn primary-bg"
+                                        href="product-search.html">
+                                        <i class="fa fa-search white-fg" style="line-height:35px;"
+                                            aria-hidden="true"></i>
+                                    </a>
+                                </form>
+                            </div>
+                            <div class="col-md-12 col-lg-7 col-xl-6 col-12 col-sm-12 Ipad_portrait">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0 float-end">
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-contact"
+                                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Contact Us
+                                        </a>
+                                        <ul class="dropdown-menu font-size-13" aria-labelledby="navbarDropdown-contact">
+                                            <li><a class="dropdown-item" href="#"><i class="fa fa-phone"
+                                                        aria-hidden="true"></i> +91 7702 625 588</a></li>
+                                            <li><a class="dropdown-item" href="#"><i class="fa fa-commenting"
+                                                        aria-hidden="true"></i> Chat with Us</a></li>
+                                            <li><a class="dropdown-item" href="#"><i class="fa fa-envelope"
+                                                        aria-hidden="true"></i> Contact Us</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="category.html"
+                                            id="navbarDropdown-categories" role="button" data-bs-toggle="dropdown"
+                                            aria-expanded="false">
+                                            Categories
+                                        </a>
+                                        <ul class="dropdown-menu font-size-13"
+                                            aria-labelledby="navbarDropdown-categories">
+                                            <li><a class="dropdown-item" href="#">Sports</a></li>
+                                            <li><a class="dropdown-item" href="#">Business Services</a></li>
+                                            <li><a class="dropdown-item" href="#">Automobiles</a></li>
+                                            <li><a class="dropdown-item primary-fg" href="category.html">All
+                                                    Categories</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a data-bs-toggle="modal" data-bs-dismiss="modal"
+                                            data-bs-target="#Login-register-toggle" class="nav-link primary-fg"
+                                            href="#"><i class="fa fa-user" aria-hidden="true"></i> Login/Join Free</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-Lob"
+                                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <img class="d-inline-block"
+                                                style="width: 28px !important; padding-right: 4px;" alt="flag"
+                                                src="img/ind-flag.svg">
+                                            <span>IN</span>
+                                        </a>
+                                        <ul class="dropdown-menu font-size-13" aria-labelledby="navbarDropdown-Lob">
+                                            <li><a class="dropdown-item" href="#">IN</a></li>
+                                            <li><a class="dropdown-item" href="#">US</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div id="searchBar"
+                            class="collapse navbar-collapse target2 search-bar col-12 justify-content-center">
+                            <div class="Ipad_portrait d-block d-lg-none d-xl-none">
+                                <form class="position-relative Ipad_portrait">
+                                    <input
+                                        class="form-control search_input me-2 w-100 border-success border-radius-30 p-2 ps-3"
+                                        type="search" aria-label="Search" placeholder="Please enter a product name">
+                                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 position-absolute right-30 top-0">
+                                        <li class="nav-item dropdown mx-2">
+                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-search"
+                                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Products
+                                            </a>
+                                            <ul class="dropdown-menu font-size-13"
+                                                aria-labelledby="navbarDropdown-search">
+                                                <li><a class="dropdown-item" href="#">Products</a></li>
+                                                <li><a class="dropdown-item" href="#">Suppliers</a></li>
+                                                <li><a class="dropdown-item" href="#">Services</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <p class="btn btn-outline-success position-absolute search_btn primary-bg">
+                                        <a href="product-search.html"> <i class="fa fa-search white-fg"
+                                                aria-hidden="true"></i></a>
+                                    </p>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- Header Code Ends Here-->
+
+        <!--start product search results section -->
+        <div class="search-results">
+            <div class="results-action-filters row gx-0 border-bottom p-2 align-items-center">
+                <div class=" px-xl-3 left-text d-flex col-10 col-sm-10 col-md-9 col-xl-4 align-items-center">
+                        <div class="mr-5 d-block d-sm-block d-md-block d-xl-none d-xxl-none">
+                            <a class="" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                                <i class="fa fa-filter fs-5 accent-fg"></i>
+                              </a>  
+                            </div>
+                        <p>Total 
+                            <span class="black-fg accent-fg"> 50 </span>product(s)
+                             from 
+                             <span class="black-fg accent-fg"> 31 </span>supplier(s) found for
+                            <span class="black-fg"> "leather"</span>
+                        </p>
+                </div>
+                <div class="right-actions col-2 col-sm-2 col-md-3 col-xl-8 d-flex justify-content-end">
+                    <div class="d-flex gx-0 align-items-center">
+                        <div class="mx-3 d-none d-sm-none d-md-none  d-xl-block" >
+                            <a class="contact-supplier" href="supplier-search.html">View Suppliers</a>
+                        </div>
+                        <div class="mx-3 d-none d-sm-none d-md-none d-xl-block">
+                            <div class="gx-0 align-items-center">
+                               <span class="attrvalue">Sold By:</span> 
+                                <select  class="select-dropdown">
+                                    <option value="Relevance" selected="selected">Relevance</option>
+                                    <option value="Rating">rating</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="mx-3 d-none d-sm-none d-md-none  d-xl-block"> 
+                            <div class="row gx-0 align-items-center">
+                                <label  class="col mx-1 attrvalue">Show:</label>
+                                <p class="col accent-fg br px-2">10</p>
+                                <p class="col br px-2">20</p>
+                                <p class="col px-2">50</p>
+                            </div>
+                        </div>
+                        <div class="pagination-search mx-3 d-none d-sm-none d-md-none  d-xl-block">
+                            <div class="row gx-0 align-items-center">
+                                <a  class="col">
+                                    <i class="fa fa-caret-left fs-6 mx-2 gx-0 grey-fg"></i>
+                                </a>
+                                <span class="col"> 
+                                    <button class="page-no-box">1</button>
+                                </span>
+                                <span class="col mx-1">/</span>
+                                <span class="col"> 
+                                    <button class="page-no-box">6</button>
+                                </span>
+                                <a  class="col">
+                                    <i class="fa fa-caret-right fs-6 mx-2 gx-0 "></i>
+                                </a>
+                            </div>                            
+                        </div>                        
+                        <ul class="change-view d-md-flex d-flex d-sm-flex d-xl-none">
+                            <li class="mx-1">
+                                <a title="Post Inquiry"> 
+                                    <i class="fa fa-wpforms fs-5 accent-fg"></i>
+                                    <!-- <img src="img/postinquiry.svg" class="w-50" alt=""> -->
+                                </a>
+                            </li>
+                            <li class="mx-1">
+                               <a title="View Suppliers" href="supplier-search.html"><i class="fa fa-users accent-fg fs-5"></i></a>
+                            </li>
+                        </ul>
+                        <ul class="mx-md-3 change-view d-xl-flex d-none d-md-flex d-sm-flex" onclick="myFunction(event)">
+                            <li class="mx-1">
+                                <a id="listViewLink" onclick="toggleListView()" title="List View"> <i class="fa fa-list fs-5 active"></i></a>
+                            </li>
+                            <li class="mx-1">
+                               <a id="gridViewLink" onclick="toggleGridView()" title="Grid View"><i class="fa fa-th fs-5"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="search-results-main row gx-0">
+                <!-- desktop filter -->
+                <div class="search-sidenav search-sidenav-products col-2 d-none d-sm-none d-md-none d-xl-block">
+                    <div class="border d-none d-sm-none d-md-block">
+                        <div class="accordion" id="accordionPanelsStayOpenExample">
+                            <div class="accordion-item">
+                              <ul class="accordion-header" id="panelsStayOpen-headingOne">
+                                <!-- <button class="d-flex justify-content-between accordion-custom-btn" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                                    Product Attributes
+                                </button> -->
+                                <li class="accordion-button accordion-custom-btn p-2 bg-grey cursor-pointer" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                                    Product Attributes
+                                    <!-- <span class="fa fa-angle-down text-right right-align-icon fs-6"></span> -->
+                                </li>
+                              </ul>
+                              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                                <div class="accordion-body p-0">
+                                    <div class="accordion-item bb">
+                                        <p role="alert" class="d-flex justify-content-between px-3 mb-1 py-0 pt-2 accordion-custom-btn no-bg" data-bs-toggle="collapse"
+                                            data-bs-target="#panelsStayOpen-collapseOne-1" aria-expanded="true"
+                                            aria-controls="panelsStayOpen-collapseOne">
+                                            <span class="filter-title"> Order Eligibility </span>
+                                            <span class="accent-fg link-hover  text-right float-right">
+                                                Clear 
+                                            </span>
+                                            
+                                        </p>
+                                        <div id="panelsStayOpen-collapseOne-1" class="accordion-collapse collapse show"
+                                            aria-labelledby="panelsStayOpen-headingOne">
+                                            <p class="px-3 b-2 cursor-pointer  d-flex justify-content-between">
+                                                <span> <input type="checkbox"> Yes</span>
+                                                <span class="available-pr-count">(15)</span>
+                                                <!-- <span class="fa fa-angle-down text-right right-align-icon fs-6"></span> -->
+                                            </p>
+                                            <p class="px-3 cursor-pointer  d-flex justify-content-between">
+                                                <span> <input type="checkbox"> No</span>
+                                                <span  class="available-pr-count ">(14)</span>
+                                                <!-- <span class="fa fa-angle-down text-right right-align-icon fs-6"></span> -->
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item bb">
+                                        <p role="alert" class="d-flex justify-content-between px-3 mb-1 py-0 pt-2 accordion-custom-btn no-bg" data-bs-toggle="collapse"
+                                            data-bs-target="#panelsStayOpen-collapseOne-2" aria-expanded="true"
+                                            aria-controls="panelsStayOpen-collapseOne">
+                                            <span class="filter-title"> Leather Type </span>
+                                            <span class="accent-fg link-hover  text-right float-right">Clear</span>
+                                        </p>
+                                        <div id="panelsStayOpen-collapseOne-2" class="accordion-collapse collapse show"
+                                            aria-labelledby="panelsStayOpen-headingOne">
+                                            <p class="px-3 b-2 cursor-pointer  d-flex justify-content-between">
+                                                <span> <input type="checkbox"> Calf</span>
+                                                <span  class="available-pr-count ">(32)</span>
+                                                <!-- <span class="fa fa-angle-down text-right right-align-icon fs-6"></span> -->
+                                            </p>
+                                            <p class="px-3 cursor-pointer d-flex justify-content-between">
+                                                <span> <input type="checkbox"> Salmon leather</span>                                                
+                                                <span  class="available-pr-count ">(54)</span>
+                                                <!-- <span class="fa fa-angle-down text-right right-align-icon fs-6"></span> -->
+                                            </p>
+                                            <p class="px-3 cursor-pointer d-flex justify-content-between">
+                                                <span> <input type="checkbox" > Sheep skin</span>
+                                                <span  class="available-pr-count ">(4)</span>
+                                                <!-- <span class="fa fa-angle-down text-right right-align-icon fs-6"></span> -->
+                                            </p>
+                                            <p class="px-3 cursor-pointer  d-flex justify-content-between">
+                                                <span> <input type="checkbox" > Cow Skin</span>
+                                                <span  class="available-pr-count ">(25)</span>
+                                                <!-- <span class="fa fa-angle-down text-right right-align-icon fs-6"></span> -->
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item bb">
+                                        <p class="d-flex justify-content-between px-3 mb-1 py-0 pt-2 accordion-custom-btn no-bg" data-bs-toggle="collapse"
+                                            data-bs-target="#panelsStayOpen-collapseOne-5" aria-expanded="true"
+                                            aria-controls="panelsStayOpen-collapseOne">
+                                            <span class="filter-title"> Certification</span>
+                                            <span class="accent-fg link-hover  text-right float-right">Clear</span>
+                                        </p>
+                                        <div id="panelsStayOpen-collapseOne-5" class="accordion-collapse collapse show"
+                                            aria-labelledby="panelsStayOpen-headingOne">
+                                            <p class="px-3 b-2 cursor-pointer  d-flex justify-content-between">
+                                                <span> 
+                                                    <input type="checkbox" >
+                                                    <span>ISO</span>
+                                                </span>
+                                                <span  class="available-pr-count ">(85)</span>
+                                                <!-- <span class="fa fa-angle-down text-right right-align-icon fs-6"></span> -->
+                                            </p>
+                                            <p class="px-3 cursor-pointer  d-flex justify-content-between">
+                                                <span> 
+                                                    <input type="checkbox" >
+                                                    <span>IEC</span>
+                                                </span>
+                                                <span  class="available-pr-count ">(4)</span>
+                                                <!-- <span class="fa fa-angle-down text-right right-align-icon fs-6"></span> -->
+                                            </p>
+                                            <p class="px-3 cursor-pointer  d-flex justify-content-between">
+                                                <span>
+                                                    <input type="checkbox" >
+                                                    <span>HACCP</span>
+                                                </span>
+                                                <span  class="available-pr-count ">(6)</span>
+                                                <!-- <span class="fa fa-angle-down text-right right-align-icon fs-6"></span> -->
+                                            </p>
+                                            <p class="px-3 cursor-pointer  d-flex justify-content-between">
+                                                <span>
+                                                    <input type="checkbox" >
+                                                    <span>IIEC</span>
+                                                </span>
+                                                <span  class="available-pr-count ">(9)</span>
+                                                <!-- <span class="fa fa-angle-down text-right right-align-icon fs-6"></span> -->
+                                            </p>
+                                            <p class="px-3 cursor-pointer  d-flex justify-content-between">
+                                                <span>
+                                                     <input type="checkbox" >
+                                                    <span>MSME</span>
+                                                </span>
+                                                <span  class="available-pr-count ">(11)</span>
+                                                <!-- <span class="fa fa-angle-down text-right right-align-icon fs-6"></span> -->
+                                            </p>
+                                            <p class="px-3 cursor-pointer  d-flex justify-content-between">
+                                                <span>
+                                                     <input type="checkbox" >
+                                                     <span>TEST</span>
+                                                </span>                                                
+                                                <span  class="available-pr-count ">(14)</span>
+                                                <!-- <span class="fa fa-angle-down text-right right-align-icon fs-6"></span> -->
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item bb">
+                                        <p class="d-flex justify-content-between px-3 mb-1 py-0 pt-2 accordion-custom-btn no-bg" data-bs-toggle="collapse"
+                                            data-bs-target="#panelsStayOpen-collapseOne-6" aria-expanded="true"
+                                            aria-controls="panelsStayOpen-collapseOne">
+                                            <span class="filter-title"> Leather Type </span>
+                                            <span class="accent-fg link-hover  text-right float-right">Clear</span>
+                                        </p>
+                                        <div id="panelsStayOpen-collapseOne-6" class="accordion-collapse collapse show"
+                                            aria-labelledby="panelsStayOpen-headingOne">
+                                            <p class="px-3 b-2 cursor-pointer  d-flex justify-content-between">
+                                                <span> 
+                                                    <input type="checkbox" >
+                                                    <span>Calf</span>
+                                                </span>                                             
+                                                <span  class="available-pr-count ">(14)</span>
+                                            </p>
+                                            <p class="px-3 cursor-pointer  d-flex justify-content-between">
+                                                <span> 
+                                                    <input type="checkbox" >
+                                                    <span>Salmon leather</span>
+                                                </span>                                                
+                                                <span  class="available-pr-count ">(5)</span>
+                                            </p>
+                                            <p class="px-3 cursor-pointer  d-flex justify-content-between">
+                                                <span> 
+                                                    <input type="checkbox" >
+                                                    <span>Sheep skin</span>
+                                                </span>                                               
+                                                <span  class="available-pr-count ">(15)</span>
+                                            </p>
+                                            <p class="px-3 cursor-pointer d-flex justify-content-between">
+                                                <span>
+                                                     <input type="checkbox" >
+                                                    <span>Cow Skin</span>
+                                                 </span>                                                
+                                                <span  class="available-pr-count ">(22)</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion-item">
+                              <ul class="accordion-header" id="panelsStayOpen-headingTwo">
+                                <li class="accordion-button collapsed accordion-custom-btn p-2 bg-grey cursor-pointer"  data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="true" aria-controls="panelsStayOpen-collapseTwo">
+                                    Supplier Attributes
+                                </li>
+                            </ul>
+                              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                                <div class="accordion-body p-0">
+                                    <div class="accordion-item bb">
+                                        <p class="d-flex justify-content-between px-3 mb-1 py-0 pt-2 accordion-custom-btn no-bg" data-bs-toggle="collapse"
+                                            data-bs-target="#panelsStayOpen-collapseOne-3" aria-expanded="true"
+                                            aria-controls="panelsStayOpen-collapseOne">
+                                            <span class="filter-title"> Order Eligibility </span>
+                                            <span class="accent-fg link-hover  text-right float-right">Clear</span>
+                                        </p>
+                                        <div id="panelsStayOpen-collapseOne-3" class="accordion-collapse collapse show"
+                                            aria-labelledby="panelsStayOpen-headingOne">
+                                            <p class="px-3 b-2 cursor-pointer">
+                                                <span> <input type="checkbox" ></span>
+                                                <span>Yes</span>
+                                                <!-- <span class="fa fa-angle-down text-right right-align-icon fs-6"></span> -->
+                                            </p>
+                                            <p class="px-3 cursor-pointer">
+                                                <span> <input type="checkbox" ></span>
+                                                <span>No</span>
+                                                <!-- <span class="fa fa-angle-down text-right right-align-icon fs-6"></span> -->
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item bb">
+                                        <p class="d-flex justify-content-between px-3 mb-1 py-0 pt-2 accordion-custom-btn no-bg" data-bs-toggle="collapse"
+                                            data-bs-target="#panelsStayOpen-collapseOne-4" aria-expanded="true"
+                                            aria-controls="panelsStayOpen-collapseOne">
+                                            <span class="filter-title"> Leather Type </span>
+                                            <span class="accent-fg link-hover  text-right float-right">Clear</span>
+                                        </p>
+                                        <div id="panelsStayOpen-collapseOne-4" class="accordion-collapse collapse show"
+                                            aria-labelledby="panelsStayOpen-headingOne">
+                                            <p class="px-3 b-2 cursor-pointer">
+                                                <span> <input type="checkbox" ></span>
+                                                <span>Calf</span>
+                                                <!-- <span class="fa fa-angle-down text-right right-align-icon fs-6"></span> -->
+                                            </p>
+                                            <p class="px-3 cursor-pointer">
+                                                <span> <input type="checkbox" ></span>
+                                                <span>Salmon leather</span>
+                                                <!-- <span class="fa fa-angle-down text-right right-align-icon fs-6"></span> -->
+                                            </p>
+                                            <p class="px-3 cursor-pointer">
+                                                <span> <input type="checkbox" ></span>
+                                                <span>Sheep skin</span>
+                                                <!-- <span class="fa fa-angle-down text-right right-align-icon fs-6"></span> -->
+                                            </p>
+                                            <p class="px-3 cursor-pointer">
+                                                <span> <input type="checkbox" ></span>
+                                                <span>Cow Skin</span>
+                                                <!-- <span class="fa fa-angle-down text-right right-align-icon fs-6"></span> -->
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- <div class="accordion-item">
+                              <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                                <button class="d-flex justify-content-between collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                  Accordion Item #3
+                                </button>
+                              </h2>
+                              <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                                <div class="accordion-body">
+                                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                              </div>
+                            </div> -->
+                          </div>
+                        <!-- <ul>
+                            <li class="p-2 bg-grey mb-2 cursor-pointer">
+                                Product Attributes
+                                <span class="fa fa-angle-down text-right right-align-icon fs-6"></span>
+                            </li>
+                            <li class="p-2 bg-grey cursor-pointer">
+                                Supplier Attributes
+                                <span class="fa fa-angle-down text-right right-align-icon fs-6"></span>
+                            </li>
+                        </ul> -->
+                        
+                    </div>
+                </div>
+                <!-- desktop filter ends -->
+                <!-- mobile filter starts -->
+                <div class="offcanvas offcanvas-start" tabindex="-1"
+                     id="offcanvasExample" aria-labelledby="offcanvasExampleLabel"
+                     class="search-sidenav col-2 d-block d-sm-block d-md-none d-xl-none">
+                     <div class="offcanvas-header">
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                      </div>
+                    <div class="offcanvas-body">
+                        <div class="accordion" id="accordionPanelsStayOpenExample">
+                            <div class="accordion-item">
+                              <ul class="accordion-header" id="panelsStayOpen-headingOne">
+                                <li class="accordion-button accordion-custom-btn p-2 bg-grey cursor-pointer" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                                    Product Attributes
+                                </li>
+                              </ul>
+                              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                                <div class="accordion-body p-0">
+                                    <div class="accordion-item bb">
+                                        <p class="d-flex justify-content-between px-3 mb-1 py-0 pt-2 accordion-custom-btn no-bg" data-bs-toggle="collapse"
+                                            data-bs-target="#panelsStayOpen-collapseOne-1" aria-expanded="true"
+                                            aria-controls="panelsStayOpen-collapseOne">
+                                            <span class="filter-title"> Order Eligibility </span>
+                                            <span class="accent-fg link-hover  text-right float-right">
+                                                Clear 
+                                            </span>
+                                            
+                                        </p>
+                                        <div id="panelsStayOpen-collapseOne-1" class="accordion-collapse collapse show"
+                                            aria-labelledby="panelsStayOpen-headingOne">
+                                            <p class="px-3 b-2 cursor-pointer  d-flex justify-content-between">
+                                                <span> <input type="checkbox" > Yes</span>
+                                                <span class="available-pr-count">(15)</span>
+                                            </p>
+                                            <p class="px-3 cursor-pointer  d-flex justify-content-between">
+                                                <span> <input type="checkbox" > No</span>
+                                                <span  class="available-pr-count ">(14)</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item bb">
+                                        <p class="d-flex justify-content-between px-3 mb-1 py-0 pt-2 accordion-custom-btn no-bg" data-bs-toggle="collapse"
+                                            data-bs-target="#panelsStayOpen-collapseOne-2" aria-expanded="true"
+                                            aria-controls="panelsStayOpen-collapseOne">
+                                            <span class="filter-title"> Leather Type </span>
+                                            <span class="accent-fg link-hover  text-right float-right">Clear</span>
+                                        </p>
+                                        <div id="panelsStayOpen-collapseOne-2" class="accordion-collapse collapse show"
+                                            aria-labelledby="panelsStayOpen-headingOne">
+                                            <p class="px-3 b-2 cursor-pointer  d-flex justify-content-between">
+                                                <span> <input type="checkbox" > Calf</span>
+                                                <span  class="available-pr-count ">(32)</span>
+                                            </p>
+                                            <p class="px-3 cursor-pointer d-flex justify-content-between">
+                                                <span> <input type="checkbox" > Salmon leather</span>                                                
+                                                <span  class="available-pr-count ">(54)</span>
+                                            </p>
+                                            <p class="px-3 cursor-pointer d-flex justify-content-between">
+                                                <span> <input type="checkbox" > Sheep skin</span>
+                                                <span  class="available-pr-count ">(4)</span>
+                                            </p>
+                                            <p class="px-3 cursor-pointer  d-flex justify-content-between">
+                                                <span> <input type="checkbox" > Cow Skin</span>
+                                                <span  class="available-pr-count ">(25)</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item bb">
+                                        <p class="d-flex justify-content-between px-3 mb-1 py-0 pt-2 accordion-custom-btn no-bg" data-bs-toggle="collapse"
+                                            data-bs-target="#panelsStayOpen-collapseOne-5" aria-expanded="true"
+                                            aria-controls="panelsStayOpen-collapseOne">
+                                            <span class="filter-title"> Certification</span>
+                                            <span class="accent-fg link-hover  text-right float-right">Clear</span>
+                                        </p>
+                                        <div id="panelsStayOpen-collapseOne-5" class="accordion-collapse collapse show"
+                                            aria-labelledby="panelsStayOpen-headingOne">
+                                            <p class="px-3 b-2 cursor-pointer  d-flex justify-content-between">
+                                                <span> 
+                                                    <input type="checkbox" >
+                                                    <span>ISO</span>
+                                                </span>
+                                                <span  class="available-pr-count ">(85)</span>
+                                            </p>
+                                            <p class="px-3 cursor-pointer  d-flex justify-content-between">
+                                                <span> 
+                                                    <input type="checkbox" >
+                                                    <span>IEC</span>
+                                                </span>
+                                                <span  class="available-pr-count ">(4)</span>
+                                            </p>
+                                            <p class="px-3 cursor-pointer  d-flex justify-content-between">
+                                                <span>
+                                                    <input type="checkbox" >
+                                                    <span>HACCP</span>
+                                                </span>
+                                                <span  class="available-pr-count ">(6)</span>
+                                            </p>
+                                            <p class="px-3 cursor-pointer  d-flex justify-content-between">
+                                                <span>
+                                                    <input type="checkbox" >
+                                                    <span>IIEC</span>
+                                                </span>
+                                                <span  class="available-pr-count ">(9)</span>
+                                            </p>
+                                            <p class="px-3 cursor-pointer  d-flex justify-content-between">
+                                                <span>
+                                                     <input type="checkbox" >
+                                                    <span>MSME</span>
+                                                </span>
+                                                <span  class="available-pr-count ">(11)</span>
+                                            </p>
+                                            <p class="px-3 cursor-pointer  d-flex justify-content-between">
+                                                <span>
+                                                     <input type="checkbox" >
+                                                     <span>TEST</span>
+                                                </span>                                                
+                                                <span  class="available-pr-count ">(14)</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item bb">
+                                        <p class="d-flex justify-content-between px-3 mb-1 py-0 pt-2 accordion-custom-btn no-bg" data-bs-toggle="collapse"
+                                            data-bs-target="#panelsStayOpen-collapseOne-6" aria-expanded="true"
+                                            aria-controls="panelsStayOpen-collapseOne">
+                                            <span class="filter-title"> Leather Type </span>
+                                            <span class="accent-fg link-hover  text-right float-right">Clear</span>
+                                        </p>
+                                        <div id="panelsStayOpen-collapseOne-6" class="accordion-collapse collapse show"
+                                            aria-labelledby="panelsStayOpen-headingOne">
+                                            <p class="px-3 b-2 cursor-pointer  d-flex justify-content-between">
+                                                <span> 
+                                                    <input type="checkbox" >
+                                                    <span>Calf</span>
+                                                </span>                                             
+                                                <span  class="available-pr-count ">(14)</span>
+                                            </p>
+                                            <p class="px-3 cursor-pointer  d-flex justify-content-between">
+                                                <span> 
+                                                    <input type="checkbox" >
+                                                    <span>Salmon leather</span>
+                                                </span>                                                
+                                                <span  class="available-pr-count ">(5)</span>
+                                            </p>
+                                            <p class="px-3 cursor-pointer  d-flex justify-content-between">
+                                                <span> 
+                                                    <input type="checkbox" >
+                                                    <span>Sheep skin</span>
+                                                </span>                                               
+                                                <span  class="available-pr-count ">(15)</span>
+                                            </p>
+                                            <p class="px-3 cursor-pointer d-flex justify-content-between">
+                                                <span>
+                                                     <input type="checkbox" >
+                                                    <span>Cow Skin</span>
+                                                 </span>                                                
+                                                <span  class="available-pr-count ">(22)</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion-item">
+                              <ul class="accordion-header" id="panelsStayOpen-headingTwo">
+                                <li class="accordion-button collapsed accordion-custom-btn p-2 bg-grey cursor-pointer"  data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="true" aria-controls="panelsStayOpen-collapseTwo">
+                                    Supplier Attributes
+                                </li>
+                            </ul>
+                              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                                <div class="accordion-body p-0">
+                                    <div class="accordion-item bb">
+                                        <p class="d-flex justify-content-between px-3 mb-1 py-0 pt-2 accordion-custom-btn no-bg" data-bs-toggle="collapse"
+                                            data-bs-target="#panelsStayOpen-collapseOne-3" aria-expanded="true"
+                                            aria-controls="panelsStayOpen-collapseOne">
+                                            <span class="filter-title"> Order Eligibility </span>
+                                            <span class="accent-fg link-hover  text-right float-right">Clear</span>
+                                        </p>
+                                        <div id="panelsStayOpen-collapseOne-3" class="accordion-collapse collapse show"
+                                            aria-labelledby="panelsStayOpen-headingOne">
+                                            <p class="px-3 b-2 cursor-pointer">
+                                                <span> <input type="checkbox" ></span>
+                                                <span>Yes</span>
+                                            </p>
+                                            <p class="px-3 cursor-pointer">
+                                                <span> <input type="checkbox" ></span>
+                                                <span>No</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item bb">
+                                        <p class="d-flex justify-content-between px-3 mb-1 py-0 pt-2 accordion-custom-btn no-bg" data-bs-toggle="collapse"
+                                            data-bs-target="#panelsStayOpen-collapseOne-4" aria-expanded="true"
+                                            aria-controls="panelsStayOpen-collapseOne">
+                                            <span class="filter-title"> Leather Type </span>
+                                            <span class="accent-fg link-hover  text-right float-right">Clear</span>
+                                        </p>
+                                        <div id="panelsStayOpen-collapseOne-4" class="accordion-collapse collapse show"
+                                            aria-labelledby="panelsStayOpen-headingOne">
+                                            <p class="px-3 b-2 cursor-pointer">
+                                                <span> <input type="checkbox" ></span>
+                                                <span>Calf</span>
+                                            </p>
+                                            <p class="px-3 cursor-pointer">
+                                                <span> <input type="checkbox" ></span>
+                                                <span>Salmon leather</span>
+                                            </p>
+                                            <p class="px-3 cursor-pointer">
+                                                <span> <input type="checkbox" ></span>
+                                                <span>Sheep skin</span>
+                                            </p>
+                                            <p class="px-3 cursor-pointer">
+                                                <span> <input type="checkbox" ></span>
+                                                <span>Cow Skin</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>                        
+                    </div>
+                </div>
+                <!-- mobile filter ends -->
+                <div class="results-main col-xl-8 col-12">
+                    <div class="my-2 row">
+                        <p class=" d-flex justify-content-end">
+                            <span>Not able to find products?</span>
+                            <a  class="accent-fg link-hover mx-1">Post Inquiry</a>
+                        </p>
+                    </div> 
+                    <div class="row mx-2 products-list-view" id="productListView">
+                        <!-- desktop products -- seperate code for products in mobile and desktop -->
+                        <div class="border row mb-2 pb-3 pt-1 d-none d-sm-flex"> 
+                            <div class="col-3 col-sm-2 col-md-3 pt-2 product-search-img">
+                                <div class="inner_image_block_main">
+                                    <div class="inner_image_block">
+                                         <img src="img/Almonds-1.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3 col-sm-3 col-md-3 pt-2">
+                                <div class="mx-2">
+                                    <p>
+                                        <a href="product-details.html" class="attrvalue fw-normal fs-6  cursor-pointer">
+                                            Almonds new</a>
+                                    </p>
+                                    
+                                    <small class="rating-prd light-accent-fg fs-6">4.6*</small>
+                                    <small for="ratings" class="font-size-10 grey-fg">Rating</small>
+                                    <p>
+                                        <span class="attrname">Product keyword:</span>
+                                        <span class="attrvalue ">Almonds</span>
+                                    </p>
+                                    <p>
+                                        <span class="attrname">Style:</span>
+                                        <span class="attrvalue ">Classic</span>
+                                    </p>
+                                    <p>
+                                        <span class="attrname">Certification:</span>
+                                        <span class="attrvalue ">ISO</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-3 col-sm-3 col-md-3 pt-2">
+                                <div class="mx-1">
+                                    <p>
+                                        <a href="product-details.html" class="accent-fg fw-normal fs-7 cursor-pointer">
+                                            Tglia Services</a>
+                                    </p>
+                                    <div class="light-accent-fg">
+                                        <img src="img/verified-icon.png" alt="v" class="w-12 d-inline-block">
+                                        <span class="font-size-12">Verified Supplier</span>
+                                    </div>
+                                    <small class="attrname">guntur, India</small>
+                                    <div>
+                                        <small class="rating-prd light-accent-fg">4.6*</small>
+                                        <small for="ratings attrvalue" class="font-size-10 grey-fg">Rating</small>
+                                    </div>                                    
+                                    <p>
+                                        <span class="attrname">Turn Over:</span>
+                                        <span class="attrvalue ">₹430,000</span>
+                                    </p>
+                                    <p>
+                                        <span class="attrname">No. of Employees:</span>
+                                        <span class="attrvalue ">120</span>
+                                    </p>
+                                </div>                               
+                            </div>
+                            <div class="col-2 col-sm-3 col-md-2 pt-2">
+                                <p class="mb-2">
+                                    <span class="attrname">Min. Order:</span>
+                                    <span class="attrvalue ">20 packets</span>
+                                </p>
+                                <button class="btn-secondary on-hover-img mybtnhover d-flex position-relative mb-2"> 
+                                    <img src="img/askforprice.svg" alt="" class="ask-price-icon mx-1 defaultimg">
+                                    <img src="img/askforpriceonhover.svg" alt="" class="ask-price-icon onhoverimg mx-1">
+                                     <span>Ask for Price</span>
+                                </button>
+                                <button class="btn-secondary d-flex position-relative mb-2"> 
+                                    <i class="fa fa-envelope-o fa-icon-tl-btn"></i>
+                                     Contact Supplier
+                                </button>
+                                <button class="btn-secondary d-flex position-relative"> 
+                                    <i class="fa fa-plus-circle lh-sm fs-6 mr-3"></i>
+                                     Add to compare
+                                </button>
+                            </div>
+                            <div class="col-1 col-sm-1 col-md-1 pt-2 text-center">
+                                <div class="row align-items-center">
+                                    <a class="product-actions" title="Chat">
+                                        <i class="fa fa-commenting fs-5 accent-fg"></i>
+                                    </a>
+                                    <a  class="product-actions" title="Add to shortlist">
+                                        <i class="fa fa-file-text fs-5 accent-fg"></i>
+                                    </a>
+                                    <a  class="product-actions" title="Add to Favorites">
+                                        <i class="fa fa-heart-o fs-5 accent-fg"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border row mb-2 pb-3 pt-1  d-none d-sm-flex">
+                            <div class="col-3 col-sm-2 col-md-3 pt-2 product-search-img">
+                                <div class="inner_image_block_main">
+                                    <div class="inner_image_block">
+                                        <img src="img/pharma.png" alt="">
+                                    </div>
+                                </div>                                
+                            </div>
+                            <div class="col-3 col-sm-3 col-md-3 pt-2">
+                                <div class="mx-2">
+                                    <p>
+                                        <a href="product-details.html" class="attrvalue fw-normal fs-6  cursor-pointer">
+                                            Sanitizer</a>
+                                    </p>
+                                    <small class="rating-prd light-accent-fg fs-6">4.6*</small>
+                                    <small for="ratings attrvalue" class="font-size-10 grey-fg">Rating</small>
+                                    <p>
+                                        <span class="attrname">Product keyword:</span>
+                                        <span class="attrvalue ">Almonds</span>
+                                    </p>
+                                    <p>
+                                        <span class="attrname">Style:</span>
+                                        <span class="attrvalue ">Classic</span>
+                                    </p>
+                                    <p>
+                                        <span class="attrname">Certification:</span>
+                                        <span class="attrvalue ">ISO</span>
+                                    </p>
+                                    <p class="onHoverShowLink">
+                                        <a href="supplier-template-default-static.html" class="accent-fg link-hover"> View Similar Products</a>
+                                        <span class="onHoverShow">
+                                            <span class="d-flex">
+                                                <img class="w-50 border" src="img/Almonds-1.jpg" alt="">
+                                                <img class="w-50 border" src="img/carpets.jpg" alt="">
+                                            </span>
+                                            <a  class="w-50 link-hover text-center border d-flex align-items-center lh-1">View More</a>
+                                        </span>
+                                    </p>
+                                   
+                                </div>
+                            </div>
+                            <div class="col-3 col-sm-3 col-md-3 pt-2">
+                                <div class="mx-1">
+                                    <p>
+                                        <a href="product-details.html" class="accent-fg fw-normal fs-7 cursor-pointer">
+                                            Suncrop Pharma</a>
+                                    </p>
+                                    <div class="light-accent-fg">
+                                        <img src="img/verified-icon.png" alt="v" class="w-12 d-inline-block">
+                                        <span class="font-size-12">Verified Supplier</span>
+                                    </div>
+                                    <small class="attrname">guntur, India</small>
+                                    <div>
+                                        <small class="rating-prd light-accent-fg">4.6*</small>
+                                        <small for="ratings attrvalue" class="font-size-10 grey-fg">Rating</small>
+                                    </div>
+                                    <p>
+                                        <span class="attrname">Turn Over:</span>
+                                        <span class="attrvalue ">₹430,000</span>
+                                    </p>
+                                    <p>
+                                        <span class="attrname">No. of Employees:</span>
+                                        <span class="attrvalue ">120</span>
+                                    </p>
+                                </div>                               
+                            </div>
+                            <div class="col-2 col-sm-3 col-md-2 pt-2">
+                                <p class="fs-7 lh-sm">
+                                    <span class="orange-fg">₹3,325.00 / pieces</span>
+                                    <span class="grey-fg text-decoration-line-through ">₹3,500.00</span> 
+                                </p>
+                                <p class="">
+                                    <span class="attrname">Min. Order:</span>
+                                    <span class="attrvalue ">20 packets</span>
+                                </p>
+                                <button class="btn-secondary d-flex position-relative mb-2 justify-content-center"> 
+                                    <i class="fa fa-cart-plus fa-icon-tl-btn"></i>
+                                     Add to Order
+                                </button>
+                                <button class="btn-secondary d-flex position-relative mb-2"> 
+                                    <i class="fa fa-envelope-o fa-icon-tl-btn"></i>
+                                     Contact Supplier
+                                </button>
+                                <button class="btn-secondary d-flex position-relative"> 
+                                    <i class="fa fa-plus-circle lh-sm fs-6 mr-3"></i>
+                                     Add to compare
+                                </button>
+                            </div>
+                            <div class="col-1 col-sm-1 col-md-1 pt-2 text-center">
+                                <div class="row align-items-center">
+                                    <a class="product-actions" title="Chat">
+                                        <i class="fa fa-commenting fs-5 accent-fg"></i>
+                                    </a>
+                                    <a  class="product-actions" title="Add to shortlist">
+                                        <i class="fa fa-file-text fs-5 accent-fg"></i>
+                                    </a>
+                                    <a  class="product-actions" title="Add to Favorites">
+                                        <i class="fa fa-heart-o fs-5 accent-fg"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border row mb-2 pb-3 pt-1  d-none d-sm-flex">
+                            <div class="col-3 col-sm-2 col-md-3 pt-2 product-search-img">
+                                <div class="inner_image_block_main">
+                                    <div class="inner_image_block">
+                                        <img src="img/agriculture.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3 col-sm-3 col-md-3 pt-2">
+                                <div class="mx-2">
+                                    <p>
+                                        <a href="product-details.html" class="attrvalue fw-normal fs-6  cursor-pointer">
+                                            Paddy</a>
+                                    </p>
+                                    <small class="rating-prd light-accent-fg fs-6">4.6*</small>
+                                    <small for="ratings attrvalue" class="font-size-10 grey-fg">Rating</small>
+                                    <p>
+                                        <span class="attrname">Product keyword:</span>
+                                        <span class="attrvalue ">Almonds</span>
+                                    </p>
+                                    <p>
+                                        <span class="attrname">Style:</span>
+                                        <span class="attrvalue ">Classic</span>
+                                    </p>
+                                    <p>
+                                        <span class="attrname">Certification:</span>
+                                        <span class="attrvalue ">ISO</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-3 col-sm-3 col-md-3 pt-2">
+                                <div class="mx-1">
+                                    <p>
+                                        <a href="product-details.html" class="accent-fg fw-normal fs-7 cursor-pointer">
+                                            Organic Products</a>
+                                    </p>
+                                    <div class="light-accent-fg">
+                                        <img src="img/verified-icon.png" alt="v" class="w-12 d-inline-block">
+                                        <span class="font-size-12">Verified Supplier</span>
+                                    </div>
+                                    <small class="attrname">guntur, India</small>
+                                    <div>
+                                        <small class="rating-prd light-accent-fg">4.6*</small>
+                                        <small for="ratings attrvalue" class="font-size-10 grey-fg">Rating</small>
+                                    </div>
+                                    <p>
+                                        <span class="attrname">Turn Over:</span>
+                                        <span class="attrvalue ">₹430,000</span>
+                                    </p>
+                                    <p>
+                                        <span class="attrname">No. of Employees:</span>
+                                        <span class="attrvalue ">120</span>
+                                    </p>
+                                </div>                               
+                            </div>
+                            <div class="col-2 col-sm-3 col-md-2 pt-2">
+                                <p class="mb-2">
+                                    <span class="attrname">Min. Order:</span>
+                                    <span class="attrvalue ">20 packets</span>
+                                </p>
+                                <button class="btn-secondary on-hover-img mybtnhover d-flex position-relative mb-2"> 
+                                    <img src="img/askforprice.svg" alt="" class="ask-price-icon mx-1 defaultimg">
+                                    <img src="img/askforpriceonhover.svg" alt="" class="ask-price-icon onhoverimg mx-1">
+                                     Ask for Price
+                                </button>
+                                <button class="btn-secondary d-flex position-relative mb-2"> 
+                                    <i class="fa fa-envelope-o fa-icon-tl-btn"></i>
+                                     Contact Supplier
+                                </button>
+                                <button class="btn-secondary d-flex position-relative"> 
+                                    <i class="fa fa-plus-circle lh-sm fs-6 mr-3"></i>
+                                     Add to compare
+                                </button>
+                            </div>
+                            <div class="col-1 col-sm-1 col-md-1 pt-2 text-center">
+                                <div class="row align-items-center">
+                                    <a class="product-actions" title="Chat">
+                                        <i class="fa fa-commenting fs-5 accent-fg"></i>
+                                    </a>
+                                    <a  class="product-actions" title="Add to shortlist">
+                                        <i class="fa fa-file-text fs-5 accent-fg"></i>
+                                    </a>
+                                    <a  class="product-actions" title="Add to Favorites">
+                                        <i class="fa fa-heart-o fs-5 accent-fg"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- desktop products code ends -->
+                        <!-- mobile products code starts -- seperate code for products in mobile and desktop -->
+                        <div class="mobile-product-search-view d-block d-sm-none">
+                            <div class="mobile-product-card border">
+                                <div class="d-flex row">
+                                    <div class="col-4 product-search-img">
+                                        <div class="inner_image_block_main">
+                                            <div class="inner_image_block">
+                                                <img src="img/Almonds-1.jpg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-8 p-2">
+                                        <p>
+                                            <a href="product-details.html" class="attrvalue fw-normal fs-6  cursor-pointer">
+                                                Almonds new</a>
+                                        </p>
+                                        <button class="btn-secondary on-hover-img mybtnhover d-flex position-relative mb-1 mt-1"> 
+                                            <img src="img/askforprice.svg" alt="" class="ask-price-icon mx-1 defaultimg">
+                                            <img src="img/askforpriceonhover.svg" alt="" class="ask-price-icon onhoverimg mx-1">
+                                             <span>Ask for Price</span>
+                                        </button>
+                                        <p class="">                                           
+                                            <span class="attrname ">20 packets</span>
+                                            <span class="attrvalue">(min. Order)</span>
+                                        </p>
+                                        <p>
+                                            <a href="product-details.html" class="accent-fg fw-normal fs-7 cursor-pointer">
+                                                Tglia Services</a>
+                                        </p>
+                                    <div class="light-accent-fg">
+                                        <img src="img/verified-icon.png" alt="v" class="w-12 d-inline-block">
+                                        <span class="font-size-12">Verified Supplier</span>
+                                    </div>
+                                        <div class="grid-similar-products">
+                                            <p class="">
+                                                <span > Similar Products:</span>
+                                                <span class="">
+                                                    <span class="d-flex">
+                                                        <img class="similar-products-card" src="img/Almonds-1.jpg" alt="">
+                                                        <img class="similar-products-card" src="img/carpets.jpg" alt="">
+                                                        <a  class="similar-products-card link-hover text-center d-flex justify-content-center align-items-center">View More</a>
+                                                    </span>
+                                                   
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid-action-btns-mobile mb-2 d-flex row accent-fg">
+                                    <div class="actionbtn-mobile">
+                                        <i class="fa fa-clone" aria-hidden="true" title="Compare"></i>
+                                        <p class="text-center font-size-12">Compare</p>
+                                    </div>
+                                    <div class="actionbtn-mobile">
+                                        <i class="fa fa-file-text" title="Add  to shortlist"></i>
+                                        <p class="text-center font-size-12">Shortlist</p>
+                                    </div>
+                                    <div class="actionbtn-mobile">
+                                        <i class="fa fa-heart-o" title="Contact supplier"></i>
+                                        <p class="text-center font-size-12">Favorite</p>
+                                    </div>
+                                    <div class="actionbtn-mobile">
+                                        <i class="fa fa-cart-plus" title="Add to cart"></i>
+                                        <p class="text-center font-size-12">Add to order</p>
+                                    </div>  
+                                    <div class="actionbtn-mobile">
+                                        <i class="fa fa-envelope-o" title="Chat"></i>
+                                        <p class="text-center font-size-12">Contact</p>
+                                    </div>
+                                   
+                                </div>
+
+                            </div>
+                            <div class="mobile-product-card border">
+                                <div class="d-flex row">
+                                    <div class="col-4 product-search-img">
+                                        <div class="inner_image_block_main">
+                                            <div class="inner_image_block">
+                                                <img src="img/pharma.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-8 p-2">
+                                        <p>
+                                            <a href="product-details.html" class="attrvalue fw-normal fs-6  cursor-pointer">
+                                                Sanitizer</a>
+                                        </p>
+                                        <p class="fs-7 lh-sm">
+                                            <span class="orange-fg">₹3,325.00 / pieces</span>
+                                            <span class="grey-fg text-decoration-line-through ">₹3,500.00</span> 
+                                        </p>
+                                        <p class="">                                           
+                                            <span class="attrname ">20 packets</span>
+                                            <span class="attrvalue">(min. Order)</span>
+                                        </p>
+                                            <p>
+                                                <a href="product-details.html" class="accent-fg fw-normal fs-7 cursor-pointer">
+                                                    Suncrop Pharma</a>
+                                            </p>
+                                            <div class="light-accent-fg">
+                                                 <img src="img/verified-icon.png" alt="v" class="w-12 d-inline-block">
+                                                 <span class="font-size-12">Verified Supplier</span>
+                                            </div>
+                                        <div class="grid-similar-products">
+                                            <p class="">
+                                                <span > Similar Products:</span>
+                                                <span class="">
+                                                    <span class="d-flex">
+                                                        <img class="similar-products-card" src="img/Almonds-1.jpg" alt="">
+                                                        <img class="similar-products-card" src="img/carpets.jpg" alt="">
+                                                        <a  class="similar-products-card link-hover text-center d-flex justify-content-center align-items-center">View More</a>
+                                                    </span>
+                                                   
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid-action-btns-mobile mb-2 d-flex row accent-fg">
+                                    <div class="actionbtn-mobile">
+                                        <i class="fa fa-clone" aria-hidden="true" title="Compare"></i>
+                                        <p class="text-center font-size-12">Compare</p>
+                                    </div>
+                                    <div class="actionbtn-mobile">
+                                        <i class="fa fa-file-text" title="Add  to shortlist"></i>
+                                        <p class="text-center font-size-12">Shortlist</p>
+                                    </div>
+                                    <div class="actionbtn-mobile">
+                                        <i class="fa fa-heart-o" title="Contact supplier"></i>
+                                        <p class="text-center font-size-12">Favorite</p>
+                                    </div>
+                                    <div class="actionbtn-mobile">
+                                        <i class="fa fa-cart-plus" title="Add to cart"></i>
+                                        <p class="text-center font-size-12">Add to order</p>
+                                    </div>  
+                                    <div class="actionbtn-mobile">
+                                        <i class="fa fa-envelope-o" title="Chat"></i>
+                                        <p class="text-center font-size-12">Contact</p>
+                                    </div>
+                                   
+                                </div>
+
+                            </div>
+                            <div class="mobile-product-card border">
+                                <div class="d-flex row">
+                                    <div class="col-4 product-search-img">
+                                        <div class="inner_image_block_main">
+                                            <div class="inner_image_block">
+                                                <img src="img/agriculture.jpg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-8 p-2">
+                                        <p>
+                                            <a href="product-details.html" class="attrvalue fw-normal fs-6  cursor-pointer">
+                                                Paddy</a>
+                                        </p>
+                                        <p class="fs-7 lh-sm">
+                                            <span class="orange-fg">₹3,325.00 / pieces</span>
+                                            <span class="grey-fg text-decoration-line-through ">₹3,500.00</span> 
+                                        </p>
+                                        <p class="">                                           
+                                            <span class="attrname ">20 packets</span>
+                                            <span class="attrvalue">(min. Order)</span>
+                                        </p>
+                                        <p>
+                                            <a href="product-details.html" class="accent-fg fw-normal fs-7 cursor-pointer">
+                                                Organic Products</a>
+                                        </p>
+                                        <div class="light-accent-fg">
+                                            <img src="img/verified-icon.png" alt="v" class="w-12 d-inline-block">
+                                            <span class="font-size-12">Verified Supplier</span>
+                                        </div>
+                                        <div class="grid-similar-products">
+                                            <p class="">
+                                                <span > Similar Products:</span>
+                                                <span class="">
+                                                    <span class="d-flex">
+                                                        <img class="similar-products-card" src="img/Almonds-1.jpg" alt="">
+                                                        <img class="similar-products-card" src="img/carpets.jpg" alt="">
+                                                        <a  class="similar-products-card link-hover text-center d-flex justify-content-center align-items-center">View More</a>
+                                                    </span>
+                                                   
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid-action-btns-mobile mb-2 d-flex row accent-fg">
+                                    <div class="actionbtn-mobile">
+                                        <i class="fa fa-clone" aria-hidden="true" title="Compare"></i>
+                                        <p class="text-center font-size-12">Compare</p>
+                                    </div>
+                                    <div class="actionbtn-mobile">
+                                        <i class="fa fa-file-text" title="Add  to shortlist"></i>
+                                        <p class="text-center font-size-12">Shortlist</p>
+                                    </div>
+                                    <div class="actionbtn-mobile">
+                                        <i class="fa fa-heart-o" title="Contact supplier"></i>
+                                        <p class="text-center font-size-12">Favorite</p>
+                                    </div>
+                                    <div class="actionbtn-mobile">
+                                        <i class="fa fa-cart-plus" title="Add to cart"></i>
+                                        <p class="text-center font-size-12">Add to order</p>
+                                    </div>  
+                                    <div class="actionbtn-mobile">
+                                        <i class="fa fa-envelope-o" title="Chat"></i>
+                                        <p class="text-center font-size-12">Contact</p>
+                                    </div>
+                                   
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- mobile products code ends -->
+                    </div>   
+                    <div class="row mx-2 products-grid-view" id="productGridView">
+                        <div class="d-block d-lg-flex d-md-flex d-sm-block">
+                            <div class="grid-card col border m-2 mt-0">
+                                <div class="grid-img border-bottom">
+                                    <div class="inner_image_block_main">
+                                        <div class="inner_image_block">
+                                            <img src="img/Almonds-1.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid-card-content p-2">
+                                    <div class="grid-product-details">
+                                        <p class=" mb-2 attrname fw-normal fs-6  cursor-pointer">Almonds new</p>
+                                        <a class="accent-fg mb-2 d-block">
+                                            <img src="img/askforprice.svg" alt="" class="h-1rem d-inline">
+                                             Ask for Price
+                                        </a>
+                                        <p class="mb-2">                                           
+                                            <span class="attrname ">20 packets</span>
+                                            <span class="attrvalue">(min. Order)</span>
+                                        </p>
+                                        <!-- <p class="fs-7 lh-sm">
+                                            <span class="orange-fg">₹3,325.00 / pieces</span>
+                                            <span class="grey-fg text-decoration-line-through ">₹3,500.00</span> 
+                                        </p> -->
+                                       
+                                    </div>
+                                    <div class="grid-similar-products mb-3">
+                                        <!-- <p class="">
+                                            <span > Similar Products:</span>
+                                            <span class="">
+                                                <span class="d-flex">
+                                                    <img class="similar-products-card" src="img/Almonds-1.jpg" alt="">
+                                                    <img class="similar-products-card" src="img/carpets.jpg" alt="">
+                                                    <a  class="similar-products-card link-hover text-center d-flex justify-content-center align-items-center">View More</a>
+                                                </span>
+                                               
+                                            </span>
+                                        </p> -->
+                                    </div>
+                                    <div class="grid-action-btns mb-2 d-flex row accent-fg">
+                                        <div class="actionbtn">
+                                            <i class="fa fa-clone" aria-hidden="true" title="Compare"></i>
+                                        </div>
+                                        <div class="actionbtn">
+                                            <i class="fa fa-file-text" title="Add  to shortlist"></i>
+                                        </div>
+                                        <div class="actionbtn">
+                                            <i class="fa fa-envelope-o" title="Contact supplier"></i>
+                                        </div>
+                                        <div class="actionbtn">
+                                            <i class="fa fa-commenting" title="Chat"></i>
+                                        </div>
+                                        <div class="actionbtn">
+                                            <i class="fa fa-cart-plus" title="Add to cart"></i>
+                                        </div>
+                                    </div>
+                                    <div class="grid-supplier-details">
+                                        <div class="mx-1">
+                                            <p>
+                                                <a href="product-details.html" class="accent-fg fw-normal fs-7 cursor-pointer">
+                                                    Tglia Services</a>
+                                            </p>
+                                            <div class="light-accent-fg d-flex mt-1 mb-1">
+                                                <div class="mr-5">
+                                                    <p class="rating-prd light-accent-fg fs-6 lh-1">4.6*</p>
+                                                    <p for="ratings attrvalue" class="grey-fg fs-normal lh-1 font-size-10">Rating</p> 
+                                                </div>                                                
+                                                <img src="img/verified-icon.png" alt="v" class="w-12 mr-2 mt-2px h-50 d-inline-block">
+                                               <span class="font-size-12">Verified Supplier</span> 
+                                            </div>
+                                            <p class="attrvalue">guntur, India</p>
+                                                                                 
+                                        </div> 
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="grid-card col border m-2 mt-0">
+                                <div class="grid-img border-bottom">
+                                    <div class="inner_image_block_main">
+                                        <div class="inner_image_block">
+                                            <img src="img/pharma.png" alt=""> 
+                                        </div>
+                                    </div>  
+                                </div>
+                                <div class="grid-card-content p-2">
+                                    <div class="grid-product-details">
+                                        <p class=" mb-2 attrname fw-normal fs-6  cursor-pointer">Sanitizer</p>
+                                        <!-- <a class="accent-fg mb-2 d-block">
+                                            <img src="img/askforprice.svg" alt="" class="h-1rem d-inline">
+                                             Ask for Price
+                                        </a> -->
+                                        
+                                        <p class="fs-7 lh-sm mb-2">
+                                            <span class="orange-fg">₹3,325.00 / pieces</span>
+                                            <span class="grey-fg text-decoration-line-through ">₹3,500.00</span> 
+                                        </p>
+                                        <p class="mb-2">                                           
+                                            <span class="attrname ">20 packets</span>
+                                            <span class="attrvalue">(min. Order)</span>
+                                        </p>                                       
+                                    </div>
+                                    <div class="grid-similar-products mb-3">
+                                        <p class="">
+                                            <span > Similar Products:</span>
+                                            <span class="">
+                                                <span class="d-flex">
+                                                    <img class="similar-products-card" src="img/Almonds-1.jpg" alt="">
+                                                    <img class="similar-products-card" src="img/carpets.jpg" alt="">
+                                                    <a  class="similar-products-card link-hover text-center d-flex justify-content-center align-items-center">View More</a>
+                                                </span>
+                                               
+                                            </span>
+                                        </p>
+                                    </div>
+                                    <div class="grid-action-btns mb-2 d-flex row accent-fg">
+                                        <div class="actionbtn">
+                                            <i class="fa fa-clone" aria-hidden="true" title="Compare"></i>
+                                        </div>
+                                        <div class="actionbtn">
+                                            <i class="fa fa-file-text" title="Add  to shortlist"></i>
+                                        </div>
+                                        <div class="actionbtn">
+                                            <i class="fa fa-envelope-o" title="Contact supplier"></i>
+                                        </div>
+                                        <div class="actionbtn">
+                                            <i class="fa fa-commenting" title="Chat"></i>
+                                        </div>
+                                        <div class="actionbtn">
+                                            <i class="fa fa-cart-plus" title="Add to cart"></i>
+                                        </div>
+                                    </div>
+                                    <div class="grid-supplier-details">
+                                        <div class="mx-1">
+                                            <p>
+                                                <a href="product-details.html" class="accent-fg fw-normal fs-7 cursor-pointer">
+                                                    Suncrop Pharma</a>
+                                            </p>
+                                            <div class="light-accent-fg d-flex mt-1 mb-1">
+                                                <div class="mr-5">
+                                                    <p class="rating-prd light-accent-fg fs-6 lh-1">4.6*</p>
+                                                    <p for="ratings attrvalue" class="grey-fg fs-normal lh-1 font-size-10">Rating</p> 
+                                                </div>                                                
+                                                <img src="img/verified-icon.png" alt="v" class="w-12 mr-2 mt-2px h-50 d-inline-block">
+                                                <span class="font-size-12">Verified Supplier</span>
+                                            </div>
+                                            <p class="attrvalue">guntur, India</p>
+                                                                                 
+                                        </div> 
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="grid-card col border m-2 mt-0">
+                                <div class="grid-img border-bottom">
+                                    <div class="inner_image_block_main">
+                                        <div class="inner_image_block">
+                                            <img src="img/agriculture.jpg" alt="">
+                                        </div>
+                                    </div> 
+                                </div>
+                                <div class="grid-card-content p-2">
+                                    <div class="grid-product-details">
+                                        <p class=" mb-2 attrname fw-normal fs-6  cursor-pointer">Paddy</p>
+                                        <a class="accent-fg mb-2 d-block">
+                                            <img src="img/askforprice.svg" alt="" class="h-1rem d-inline">
+                                             Ask for Price
+                                        </a>
+                                        <p class="mb-2">                                           
+                                            <span class="attrname ">20 packets</span>
+                                            <span class="attrvalue">(min. Order)</span>
+                                        </p>
+                                        <!-- <p class="fs-7 lh-sm">
+                                            <span class="orange-fg">₹3,325.00 / pieces</span>
+                                            <span class="grey-fg text-decoration-line-through ">₹3,500.00</span> 
+                                        </p> -->
+                                       
+                                    </div>
+                                    <div class="grid-similar-products mb-3">
+                                        <!-- <p class="">
+                                            <span > Similar Products:</span>
+                                            <span class="">
+                                                <span class="d-flex">
+                                                    <img class="similar-products-card" src="img/Almonds-1.jpg" alt="">
+                                                    <img class="similar-products-card" src="img/carpets.jpg" alt="">
+                                                    <a  class="similar-products-card link-hover text-center d-flex justify-content-center align-items-center">View More</a>
+                                                </span>
+                                               
+                                            </span>
+                                        </p> -->
+                                    </div>
+                                    <div class="grid-action-btns mb-2 d-flex row accent-fg">
+                                        <div class="actionbtn">
+                                            <i class="fa fa-clone" aria-hidden="true" title="Compare"></i>
+                                        </div>
+                                        <div class="actionbtn">
+                                            <i class="fa fa-file-text" title="Add  to shortlist"></i>
+                                        </div>
+                                        <div class="actionbtn">
+                                            <i class="fa fa-envelope-o" title="Contact supplier"></i>
+                                        </div>
+                                        <div class="actionbtn">
+                                            <i class="fa fa-commenting" title="Chat"></i>
+                                        </div>
+                                        <div class="actionbtn">
+                                            <i class="fa fa-cart-plus" title="Add to cart"></i>
+                                        </div>
+                                    </div>
+                                    <div class="grid-supplier-details">
+                                        <div class="mx-1">
+                                            <p>
+                                                <a href="product-details.html" class="accent-fg fw-normal fs-7 cursor-pointer">
+                                                    Organic Products</a>
+                                            </p>
+                                            <div class="light-accent-fg d-flex mt-1 mb-1">
+                                                <div class="mr-5">
+                                                    <p class="rating-prd light-accent-fg fs-6 lh-1">4.6*</p>
+                                                    <p for="ratings attrvalue" class="grey-fg fs-normal lh-1 font-size-10">Rating</p> 
+                                                </div>                                                
+                                                <img src="img/verified-icon.png" alt="v" class="w-12 mr-2 mt-2px h-50 d-inline-block">
+                                                <span class="font-size-12">Verified Supplier</span>
+                                            </div>
+                                            <p class="attrvalue">guntur, India</p>
+                                                                                 
+                                        </div> 
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>               
+                </div>
+                <aside  class="col-2 p-3 d-none d-xl-block">
+                        
+                </aside>
+            </div>            
+        </div>
+         <!--End product search results section -->
+
+        <!-- login dialog content starts -->
+        <!-- Modal -->
+        <div class="modal fade" id="Login-register-toggle" aria-hidden="true"
+            aria-labelledby="Login-register-toggle-label" tabindex="-1">
+            <div class="modal-dialog tl-modal-dailog modal-lg modal-dialog-centered">
+                <div class="modal-content tl-modal-content">
+                    <div class="modal-header tl-modal-header">
+                        <h5 class="modal-title tl-modal-title" id="Login-register-toggle-label">Login or Join Free</h5>
+                        <button type="button" class="btn-close tl-btn-close" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex login-register-body">
+                        <div class="col-md-6 col-12 border-end d-md-block" id="registerForm">
+                            <p class="text-center dark-grey-fg pb-2">Not a Member? Join Free Now</p>
+                            <form class="pe-md-4 ps-md-2">
+                                <input class="form-control border-bottom-0 border-radius-0" type="text"
+                                    placeholder="Full Name">
+                                <input class="form-control border-bottom-0 border-radius-0" type="text"
+                                    placeholder="Email">
+                                <input class="form-control border-bottom-0 border-radius-0" type="number"
+                                    placeholder="Phone Number">
+                                <input class="form-control border-bottom-0 border-radius-0" type="text"
+                                    placeholder="Company Name">
+                                <input class="form-control border-bottom-0 border-radius-0" type="password"
+                                    placeholder="Password">
+                                <input class="form-control border-bottom-0 border-radius-0" type="password"
+                                    placeholder="Confirm Password">
+                                <input class="form-control border-radius-0" type="text" placeholder="Referral Source">
+                                <div class="form-check mt-2 mb-3 text-lg-start">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label font-size-13" for="flexCheckDefault">
+                                        I agree to receive SMS.
+                                    </label>
+                                </div>
+                                <div class="text-center mx-3"><button
+                                        class="btn btn-primary-light col-12 px-4 white-fg border-radius-30 font-size-13 mb-3">Register
+                                        your
+                                        account</button></div>
+                                <p class="text-center font-size-13">By registering an account you are agreeing to our
+                                    <a href="#" tabindex="0" class="">terms of use</a>&nbsp;and
+                                    <a href="#" tabindex="0" class="">privacy policy</a>
+                                </p>
+                                <div class="text-center d-block d-md-none">
+                                    <p class="text-center d-block d-md-none">Already a member?
+                                        <a class="accent-fg link-hover" id="mobile-login"
+                                            onclick="showLogin()">Login</a>
+                                    </p>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-12 col-md-6" id="loginForm">
+                            <p class="text-center dark-grey-fg mb-3">Already a Member?</p>
+                            <form class="ms-md-4 me-md-2">
+                                <input class="form-control border-radius-0 mb-3" type="text" placeholder="Enter Email">
+                                <input class="form-control  border-radius-0 mb-3" type="password"
+                                    placeholder="Enter Password">
+                                <div class="form-check mb-2 text-lg-start">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label font-size-13" for="flexCheckDefault">
+                                        Remember Me
+                                    </label>
+                                </div>
+                                <div class="text-center mx-3 mb-3">
+                                    <button
+                                        class="btn btn-primary-light col-12 px-4 white-fg border-radius-30 font-size-13 mb-3">
+                                        Sign In</button>
+                                </div>
+                                <div class="mb-3">
+                                    <a href="" data-bs-toggle="modal" data-bs-target="#forgotPassword"
+                                        data-bs-toggle="modal" data-bs-dismiss="modal"
+                                        class="accent-fg link-hover text-center d-block"> Forgot your password?</a>
+                                </div>
+                                <div class="mb-3">
+                                    <p class="dark-grey-fg  text-center">
+                                        <i class="fa fa-question-circle fst-normal accent-fg"></i>
+                                        Having trouble signing in?
+                                        <a class="accent-fg link-hover d-inline-block">Click here</a>
+                                    </p>
+                                </div>
+                                <div class="text-center d-block d-md-none">
+                                    <p class="text-center dark-grey-fg">Do not have an account?
+                                        <a class="accent-fg link-hover" id="mobile-register"
+                                            onclick="showRegister()">Join Free</a>
+                                    </p>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="forgotPassword" aria-hidden="true" aria-labelledby="forgotPasswordLabel"
+            tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered tl-modal-dailog">
+                <div class="modal-content tl-modal-content">
+                    <div class="modal-header tl-modal-header">
+                        <h5 class="modal-title tl-modal-title" id="forgotPasswordLabel">Forgot Password</h5>
+                        <button type="button" class="btn-close tl-btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="text-center mb-3">Forgot Password</p>
+                        <input class="form-control border-radius-0 mb-3" type="text" placeholder="Enter Email">
+                        <button
+                            class="btn btn-primary-light col-8 margin-auto d-block px-4 white-fg border-radius-30 font-size-13 mb-3">
+                            Continue</button>
+
+                    </div>
+                    <div class="modal-footer">
+                        <a class="aceent-fg link-hover" data-bs-target="#Login-register-toggle" data-bs-toggle="modal"
+                            data-bs-dismiss="modal">back to sign In</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- login dialog content ends -->
+
+         <!-- Footer Code Start Here-->
+         <footer class="p-2 pt-4 pb-4">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="footer_section col-md-3 col-lg-2 col-sm-12">
+                        <h2 class="footer-menu-title">Buy &amp; Sell</h2>
+                        <ul class="pt-4 footer_links">
+                            <li class="">
+                                <a href="#" class="gray-fg font-size-13 font-weight-500">View Marketplace Categories</a>
+                            </li>
+                            <li class="">
+                                <a href="#" class="gray-fg font-size-13 font-weight-500">Login/Join Free</a>
+                            </li>
+                            <li class="">
+                                <a href="#" class="gray-fg font-size-13 font-weight-500">Membership</a>
+                            </li>
+                            <li class="">
+                                <a href="#" class="gray-fg font-size-13 font-weight-500">Buyer Inquiries</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer_section col-md-3 col-lg-2 col-sm-12">
+                        <h2 class="footer-menu-title">SUPPORT</h2>
+                        <ul class="pt-4 footer_links">
+                            <li class="">
+                                <a href="#" class="gray-fg font-size-13 font-weight-500">Blogs & Knowledge Base</a>
+                            </li>
+                            <li class="">
+                                <a href="#" class="gray-fg font-size-13 font-weight-500">FAQs</a>
+                            </li>
+                            <li class="">
+                                <a href="#" class="gray-fg font-size-13 font-weight-500">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer_section col-md-3 col-lg-2 col-sm-12">
+                        <h2 class="footer-menu-title">COMPANY</h2>
+                        <ul class="pt-4 footer_links">
+                            <li class="">
+                                <a href="#" class="gray-fg font-size-13 font-weight-500">Classifieds</a>
+                            </li>
+                            <li class="">
+                                <a href="#" class="gray-fg font-size-13 font-weight-500">About</a>
+                            </li>
+                            <li class="">
+                                <a href="#" class="gray-fg font-size-13 font-weight-500">Privacy Policy</a>
+                            </li>
+                            <li class="">
+                                <a href="#" class="gray-fg font-size-13 font-weight-500">Terms of use & sale</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer_section col-md-3 col-lg-2 col-sm-12">
+                        <a href="index.html">
+                        <img class="mb-3" src="img/TL-Logo.png" alt="Logo" style="height:30px;">
+                        </a>
+                        <p class="gray-fg font-size-13 font-weight-500 mb-3">Business partners to grow your business. Global service
+                            providers to deliver the goods.</p>
+                        <a href="" class="mx-2 gray-fg social_icons"><i class="bi bi-facebook"></i></a>
+                        <a href="" class="mx-2 gray-fg social_icons"><i class="bi bi-twitter"></i></a>
+                        <a href="" class="mx-2 gray-fg social_icons"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                    <div class="pt-4 pb-2">
+                        <p class="font-size-12 gray-fg text-center pb-16 pt-10 footer-menu-links-text">&copy; TradeLeaves,
+                            Inc 2022</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer Code Ends Here-->
+    </div>
+    <div class="fixed-bottom-left explore-tabs">
+        <div class="accordion accordion-flush explore-accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed explore-accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Explore
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body p-0">
+                    <nav>
+                        <div class="nav nav-tabs explore-nav-tabs" id="nav-tab" role="tablist">
+                          <button class="nav-link active explore-tab-btn" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">COMPARE</button>
+                          <button class="nav-link explore-tab-btn" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">SHORTLIST</button>
+                          <button class="nav-link explore-tab-btn" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">FAVORITES</button>
+                        </div>
+                      </nav>
+                      <div class="tab-content px-2 py-2" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                           <!-- if no items to compare start -->
+                              <!-- <p class="dark-grey-fg">You don't have items to compare.</p> -->
+                            <!-- if no items to compare end-->
+
+                            <!-- if there are items to compare start-->
+                                <div class="list-products-main">
+                                    <div class="select-all-clear d-flex justify-content-between">
+                                        <div>
+                                            <input type="checkbox">
+                                            <span class="dark-grey-fg">Select All</span>
+                                        </div>
+                                        <div>
+                                            <a href="" class="accent-fg link-hover font-size-12 mx-2">Clear All</a>
+                                            <a href="" class="accent-fg link-hover font-size-12">Compare</a>
+                                        </div>
+                                    </div>
+                                    <div class="pt-2 list-products">
+                                        <div class="list-product-inner mb-2 d-flex align-items-center">
+                                            <div class="col-1">
+                                                <input type="checkbox">
+                                            </div>
+                                            <div class="col-3">
+                                                <img src="img/Almonds-1.jpg" alt="" class="border">
+                                            </div>
+                                            <div class="col-7">
+                                                <p class="product-name-explore mx-1 grey-fg link-hover">Almonds New</p>
+                                            </div>
+                                            <div class="col-1">
+                                                <a href=""><i class="fa fa-close grey-fg text-center"></i></a> 
+                                            </div>        
+                                        </div>
+                                        <div class="list-product-inner mb-2 d-flex align-items-center">
+                                            <div class="col-1">
+                                                <input type="checkbox">
+                                            </div>
+                                            <div class="col-3">
+                                                <img src="img/carpets.jpg" alt="" class="border">
+                                            </div>
+                                            <div class="col-7">
+                                                <p class="product-name-explore mx-1 grey-fg link-hover">Carpets</p>
+                                            </div>
+                                            <div class="col-1">
+                                                <a href=""><i class="fa fa-close grey-fg text-center"></i></a> 
+                                            </div>        
+                                        </div>
+                                       
+                                    </div>
+                                </div>
+                            <!-- if there are items to compare end-->
+                        </div>
+                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                            <p class="dark-grey-fg">Kindly <a class="login accent-fg link-hover">Login</a> to see Shortlist</p>
+                        </div>
+                        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                            <p class="dark-grey-fg">Kindly <a class="login accent-fg link-hover">Login</a> to see Favorites</p>
+                        </div>
+                      </div>
+                </div>
+              </div>
+            </div>
+          </div>       
+    </div>    
+</body>
+</html>

@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Tradeleaves</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/bootstrap.min.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <script src='js/bootstrap.min.js'></script>    
+</head>
+
+<body>
+    <div class='wrapper'>
+ <!-- Header Code Start Here-->
+ <header class='header-wrapper'>
+    <nav class="navbar navbar-expand-lg navbar-light pt-3">
+        <div class="container-fluid">
+            <div class='col-md-9 col-lg-2 col-xl-3 col-sm-8 col-7'>
+                <a class="navbar-brand d-inline-block p-0 logo" href="index.html">
+                    <img src="img/TL-Logo.png" class="tl-logo-container position-relative" alt="TradeLeaves">
+                    <span class="float-end font-size-16 font-italic orange-fg lh-1">India</span>
+                </a>
+            </div>
+            <div class="mobile-action-btns mobile-search col-5 col-md-3 col-sm-4 end-0 d-flex align-items-center justify-content-around d-lg-none">
+                <span class="abc">
+                    <button class="btn primary-bg" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#searchBar" aria-controls="searchBar" aria-expanded="false"
+                        aria-label="Toggle navigation"> <i class="fa fa-search white-fg" aria-hidden="true"></i>
+                    </button>
+                </span>
+                <div class="dropdown">
+                   <a href="" class="text-center d-inline-block"                           
+                   role="button" data-bs-toggle="dropdown" aria-expanded="false"
+                    id="navbarDropdown-account"> <i class="fa fa-user fs-1"></i><br>
+                    <span class=" accent-fg text-center d-block font-size-14 line-height-10">
+                        Account
+                    </span>
+                     </a>
+                     <div class="dropdown-menu xs-account-dropdown-menu font-size-13"  aria-labelledby="navbarDropdown-account">
+                        <p class="nav-item dropdown-item">
+                            <a data-bs-toggle="modal" data-bs-dismiss="modal"
+                                data-bs-target="#Login-register-toggle" class="primary-fg d-block"
+                                href="#">
+                                 Login/Join Free
+                            </a>
+                        </p>
+                    </div>
+                </div>
+                <a  data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"> <span class="navbar-toggler-icon"></span></a>
+
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                  <div class="offcanvas-header profile-user-avatar">
+                    <div class="nav-item dropdown">
+                        <h5 id="offcanvasRightLabel"><i class="fa fa-user-circle"></i> Guest</h5> 
+                        <a class="nav-link dropdown-toggle white-bg mt-2" href="#" id="navbarDropdown-Lob-mob"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img class="d-inline-block"
+                                style="width: 28px !important; padding-right: 4px;" alt="flag"
+                                src="img/ind-flag.svg">
+                            <span>IN</span>
+                        </a>
+                        <ul class="dropdown-menu font-size-13 drop-down-mobile-lob" aria-labelledby="navbarDropdown-Lob-mob">
+                            <li><a class="dropdown-item" href="#">IN</a></li>
+                            <li><a class="dropdown-item" href="#">US</a></li>
+                        </ul>
+                    </div>                                                       
+                    <button type="button" class="btn-close btn-close-white  text-reset font-size-12" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body">
+                        <ul>
+                            <li>
+                                <a href="" class="dark-grey-fg link-hover font-size-12"> Membership</a>
+                            </li>
+                            <li>
+                                <a href="" class="dark-grey-fg link-hover font-size-12"> Buyer Inquiries</a>
+                            </li>
+                            <li>
+                                <a href="" class="dark-grey-fg link-hover font-size-12"> Categories <i class="fa fa-angle-right grey-fg font-size-14 lh-lg flo-rt"></i></a>
+                            </li>
+                            <li>
+                                <a href="" class="dark-grey-fg link-hover font-size-12"> Post Inquiry</a>
+                            </li>
+                            <li>
+                                <a href="" class="dark-grey-fg link-hover font-size-12"> Help</a>
+                            </li>
+                        </ul>
+                  </div>
+                </div>
+            </div>
+            <div class='col-md-12 col-lg-10 col-xl-9 col-sm-12 col-12 d-flex Ipad_portrait'>
+                <div class="collapse navbar-collapse target1" id="navbarSupportedContent">
+                    <div
+                        class="col-md-5 col-lg-5 col-xl-6 col-12 col-sm-12 Ipad_portrait d-none d-lg-block d-xl-block">
+                        <form
+                            class="col-md-9 col-lg-12 col-12 col-sm-12 flo-rt position-relative Ipad_portrait">
+                            <input
+                                class="form-control search_input me-2 w-100 border-success border-radius-30 p-2 ps-3"
+                                type="search" aria-label="Search" placeholder="Please enter a product name">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 position-absolute right-30 top-0">
+                                <li class="nav-item dropdown mx-2">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-search-lob"
+                                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Products
+                                    </a>
+                                    <ul class="dropdown-menu font-size-13"
+                                        aria-labelledby="navbarDropdown-search-lob">
+                                        <li><a class="dropdown-item" href="#">Products</a></li>
+                                        <li><a class="dropdown-item" href="#">Suppliers</a></li>
+                                        <li><a class="dropdown-item" href="#">Services</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <a class="btn btn-outline-success position-absolute search_btn primary-bg"
+                                href="product-search.html">
+                                <i class="fa fa-search white-fg" style="line-height:35px;"
+                                    aria-hidden="true"></i>
+                            </a>
+                        </form>
+                    </div>
+                    <div class="col-md-12 col-lg-7 col-xl-6 col-12 col-sm-12 Ipad_portrait">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 float-end">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-contact"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Contact Us
+                                </a>
+                                <ul class="dropdown-menu font-size-13" aria-labelledby="navbarDropdown-contact">
+                                    <li><a class="dropdown-item" href="#"><i class="fa fa-phone"
+                                                aria-hidden="true"></i> +91 7702 625 588</a></li>
+                                    <li><a class="dropdown-item" href="#"><i class="fa fa-commenting"
+                                                aria-hidden="true"></i> Chat with Us</a></li>
+                                    <li><a class="dropdown-item" href="#"><i class="fa fa-envelope"
+                                                aria-hidden="true"></i> Contact Us</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="category.html"
+                                    id="navbarDropdown-categories" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Categories
+                                </a>
+                                <ul class="dropdown-menu font-size-13"
+                                    aria-labelledby="navbarDropdown-categories">
+                                    <li><a class="dropdown-item" href="#">Sports</a></li>
+                                    <li><a class="dropdown-item" href="#">Business Services</a></li>
+                                    <li><a class="dropdown-item" href="#">Automobiles</a></li>
+                                    <li><a class="dropdown-item primary-fg" href="category.html">All
+                                            Categories</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a data-bs-toggle="modal" data-bs-dismiss="modal"
+                                    data-bs-target="#Login-register-toggle" class="nav-link primary-fg"
+                                    href="#"><i class="fa fa-user" aria-hidden="true"></i> Login/Join Free</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-Lob"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img class="d-inline-block"
+                                        style="width: 28px !important; padding-right: 4px;" alt="flag"
+                                        src="img/ind-flag.svg">
+                                    <span>IN</span>
+                                </a>
+                                <ul class="dropdown-menu font-size-13" aria-labelledby="navbarDropdown-Lob">
+                                    <li><a class="dropdown-item" href="#">IN</a></li>
+                                    <li><a class="dropdown-item" href="#">US</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="searchBar"
+                    class="collapse navbar-collapse target2 search-bar col-12 justify-content-center">
+                    <div class="Ipad_portrait d-block d-lg-none d-xl-none">
+                        <form class="position-relative Ipad_portrait">
+                            <input
+                                class="form-control search_input me-2 w-100 border-success border-radius-30 p-2 ps-3"
+                                type="search" aria-label="Search" placeholder="Please enter a product name">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 position-absolute right-30 top-0">
+                                <li class="nav-item dropdown mx-2">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-search"
+                                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Products
+                                    </a>
+                                    <ul class="dropdown-menu font-size-13"
+                                        aria-labelledby="navbarDropdown-search">
+                                        <li><a class="dropdown-item" href="#">Products</a></li>
+                                        <li><a class="dropdown-item" href="#">Suppliers</a></li>
+                                        <li><a class="dropdown-item" href="#">Services</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <p class="btn btn-outline-success position-absolute search_btn primary-bg">
+                                <a href="product-search.html"> <i class="fa fa-search white-fg"
+                                        aria-hidden="true"></i></a>
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+<!-- Header Code Ends Here-->
+
+        <!-- Supplier Page Code Start Here-->
+        <div class="container stickyheader-mt">
+            <div class="row pt-2 pb-5">
+                <div class="mt-2 mb-2 primary-fg cursor_pointer">
+                    <i class="bi bi-arrow-left-circle-fill font-size-20"></i> <a href="supplier-search.html" class="align-text-bottom px-1">Back to search results</a>                       
+                </div>
+                <div class="col-xl-9 col-lg-8 col-sm-12 col-12">
+                    <div class="banner_supplier_template">
+                        <div class="p-5">
+                            <h1 class="text-uppercase pb-3"> WORIO INTERNATIONAL </h1>
+                            <p class=" flo-lt mx-2"><i class="bi bi-patch-check-fill secondary-fg"></i> <span class="white-fg">Verified Supplier</span></p>        
+                        </div>
+                    </div>
+                    <div class="mt-2">
+                        <ul class="nav nav-pills mb-3 border-bottom bg-color-f2f2f2 justify-content-between" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active text-uppercase tabs" id="pills-about-tab" data-bs-toggle="pill" data-bs-target="#pills-about" type="button" role="tab" aria-controls="pills-about" aria-selected="true">About</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link text-uppercase tabs" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link text-uppercase tabs" id="pills-products-tab" data-bs-toggle="pill" data-bs-target="#pills-products" type="button" role="tab" aria-controls="pills-products" aria-selected="false">Products</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link text-uppercase tabs" id="pills-awards-and-certification-tab" data-bs-toggle="pill" data-bs-target="#pills-awards-and-certification" type="button" role="tab" aria-controls="pills-awards-and-certification" aria-selected="false">Awareds And Certification</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link text-uppercase tabs" id="pills-contact-details-tab" data-bs-toggle="pill" data-bs-target="#pills-contact-details" type="button" role="tab" aria-controls="pills-contact-details" aria-selected="false">Contact Details</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-about" role="tabpanel" aria-labelledby="pills-about-tab">
+                        <p class="medium-gray-fg mb-3">
+                            Worio International started in the year 2018 at Surat (Gujarat, India). We export fresh vegetables, nuts, spices, rice etc. Under the leadership of Mr. Jitendra Vasoya, the company has emerged as one among the leading merchant exporters from India. India is the exporting hub of fruits, vegetables and grocery since many decades. When we decided to start Worio International, we were committed with the quality and quantity because we have our own farm houses where we sow Vegetables like onions, corn; Fruits like banana, mango; and Pulses like rice and wheat. We are pioneer in exporting food items like: onion, banana, mango, rice (basmati and other types). Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor porro sunt at modi, pariatur possimus blanditiis, expedita ducimus esse nam consectetur laudantium natus nobis iusto? Magnam est neque animi deleniti ipsa! Debitis aliquam laudantium ut quae, beatae vitae inventore quod repudiandae dolores tempora tenetur aliquid dolorem harum sed consectetur eius, assumenda dolorum vel dignissimos, autem excepturi vero rerum corrupti impedit. Deserunt dolor voluptas nisi quaerat ex suscipit neque eveniet. Commodi at ex accusantium porro sapiente voluptas eum vero veritatis quaerat fugit. Obcaecati tempore optio eum aut aperiam aliquam quia officia dolor dolorem odio enim dolorum quo deleniti, velit expedita veritatis voluptate ipsum modi neque exercitationem. Dolore rerum totam, ullam qui, exercitationem, corporis
+                        </p>
+                        </div>
+                        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                            <ul class="mb-4">
+                                <li class="d-lg-flex d-md-flex d-block lh-lg">
+                                    <p class="attrname px-lg-2 width-210">Company Type:</p>
+                                    <p class="attrvalue">Private</p>
+                                </li>
+                                <li class="d-lg-flex d-md-flex d-block lh-lg">
+                                    <p class="attrname px-lg-2 width-210">Industry:</p>
+                                    <p class="attrvalue">Agricultural products</p>
+                                </li>
+                                <li class="d-lg-flex d-md-flex d-block lh-lg">
+                                    <p class="attrname px-lg-2 width-210">No. of years in business:</p>
+                                    <p class="attrvalue">100</p>
+                                </li>
+                                <li class="d-lg-flex d-md-flex d-block lh-lg">
+                                    <p class="attrname px-lg-2 width-210">Number of employees:</p>
+                                    <p class="attrvalue">50 - 100</p>
+                                </li>
+                                <li class="d-lg-flex d-md-flex d-block lh-lg">
+                                    <p class="attrname px-lg-2 width-210">Annual Revenue:</p>
+                                    <p class="attrvalue">₹5 - 10 crores</p>
+                                </li>
+                                <li class="d-lg-flex d-md-flex d-block lh-lg">
+                                    <p class="attrname px-lg-2 width-210">GSTIN:</p>
+                                    <p class="attrvalue">12ACBGHNND225</p>
+                                </li>
+                                <li class="d-lg-flex d-md-flex d-block lh-lg">
+                                    <p class="attrname px-lg-2 width-210">PAN:</p>
+                                    <p class="attrvalue">CZYPM8914M</p>
+                                </li>
+                                <li class="d-lg-flex d-md-flex d-block lh-lg">
+                                    <p class="attrname px-lg-2 width-210">Website:</p>
+                                    <p class="attrvalue">http://www.woriointernational.com/</p>
+                                </li>
+                                <li class="d-lg-flex d-md-flex d-block lh-lg">
+                                    <p class="attrname px-lg-2 width-210">Preferred payment methods:</p>
+                                    <p class="attrvalue">Cash, UPI, DD, Cheque8914M</p>
+                                </li>
+                                <li class="d-lg-flex d-md-flex d-block lh-lg">
+                                    <p class="attrname px-lg-2 width-210">Supported delivery terms:</p>
+                                    <p class="attrvalue">FOB, CIF</p>
+                                </li>
+                            </ul>
+                            <div class="mb-3">
+                                <a href="" class="mx-2 dark-grey-fg social_icons"><i class="bi bi-facebook"></i></a>
+                                <a href="" class="mx-2 dark-grey-fg social_icons"><i class="bi bi-twitter"></i></a>
+                                <a href="" class="mx-2 dark-grey-fg social_icons"><i class="bi bi-linkedin"></i></a>
+                                <a href="" class="mx-2 dark-grey-fg social_icons"><i class="bi bi-youtube"></i></a>
+                                <a href="" class="mx-2 dark-grey-fg social_icons"><i class="bi bi-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-products" role="tabpanel" aria-labelledby="pills-products-tab">
+                            <div class="row justify-content-center">
+                                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
+                                    <div class="cat-card m-auto">
+                                        <div class="cat-img inner_image_block_main">
+                                            <div class="inner_image_block">
+                                                <img src="img/2-New.jpeg" alt="cat-img">
+                                            </div>
+                                        </div>
+                                        <div class="cat-title mt-2 mb-2 mx-2 pb-4">
+                                            <h6 class="mb-1 dark">Dry Fruits</h6>
+                                            <p class="mb-1 medium-gray-fg">5 Kgs (Min. Order)</p>
+                                            <div class="clearfix">
+                                                <p class="orange-fg flo-lt lh-lg">
+                                                    ₹250.00/packet
+                                                </p>
+                                                <button class="btn font-size-12 flo-rt border-success border-radius-30 primary-fg p-1 px-3"><i class="bi bi-envelope"></i> Send Inquiry</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
+                                    <div class="cat-card m-auto">
+                                        <div class="cat-img inner_image_block_main">
+                                            <div class="inner_image_block">
+                                                <img src="img/Pomegranate.jpg" alt="cat-img">
+                                            </div>
+                                        </div>
+                                        <div class="cat-title mt-2 mb-2 mx-2 pb-4">
+                                            <h6 class="mb-1 dark">Dry Fruits</h6>
+                                            <p class="mb-1 medium-gray-fg">5 Kgs (Min. Order)</p>
+                                            <div class="clearfix">
+                                                <a class="primary-fg flo-lt lh-lg">
+                                                    Ask For Price
+                                                </a>
+                                                <button class="btn font-size-12 flo-rt border-success border-radius-30 primary-fg p-1 px-2"><i class="bi bi-envelope"></i> Contact Supplier</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
+                                    <div class="cat-card m-auto">
+                                        <div class="cat-img inner_image_block_main">
+                                            <div class="inner_image_block">
+                                                <img src="img/handicraft1.jpg" alt="cat-img">
+                                            </div>
+                                        </div>
+                                        <div class="cat-title mt-2 mb-2 mx-2 pb-4">
+                                            <h6 class="mb-1 dark">Handicrafts & Dhurries</h6>
+                                            <p class="mb-1 medium-gray-fg">5 Kgs (Min. Order)</p>
+                                            <div class="clearfix">
+                                                <p class="orange-fg flo-lt lh-lg">
+                                                    ₹250.00/packet
+                                                </p>
+                                                <button class="btn font-size-12 flo-rt border-success border-radius-30 primary-fg p-1 px-3"><i class="bi bi-envelope"></i> Send Inquiry</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
+                                    <div class="cat-card m-auto">
+                                        <div class="cat-img inner_image_block_main">
+                                            <div class="inner_image_block">
+                                                <img src="img/2-New.jpeg" alt="cat-img">
+                                            </div>
+                                        </div>
+                                        <div class="cat-title mt-2 mb-2 mx-2 pb-4">
+                                            <h6 class="mb-1 dark">Dry Fruits</h6>
+                                            <p class="mb-1 medium-gray-fg">5 Kgs (Min. Order)</p>
+                                            <div class="clearfix">
+                                                <a class="primary-fg flo-lt lh-lg">
+                                                    Ask For Price
+                                                </a>
+                                                <button class="btn font-size-12 flo-rt border-success border-radius-30 primary-fg p-1 px-2"><i class="bi bi-envelope"></i> Contact Supplier</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                                <div class="text-center mt-2 mb-2">
+                                    <button class="btn border-success border-radius-30 white-fg primary-bg p-1 px-4 text-center">Load More</button>
+                                </div>                                  
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-awards-and-certification" role="tabpanel" aria-labelledby="pills-awards-and-certification-tab">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-3 col-sm-3 col-11 mb-2">       
+                                    <img src="img/group1.png" alt="banner" class="mb-2 h-auto">
+                                    <p class="text-center mt-10">View Certificate</p>
+                                </div>
+                                <div class="col-lg-3 col-sm-3 col-11 mb-2">       
+                                    <img src="img/group1.png" alt="banner" class="mb-2 h-auto">
+                                    <p class="text-center mt-10">View Certificate</p>
+                                </div>
+                                <div class="col-lg-3 col-sm-3 col-11 mb-2">       
+                                    <img src="img/group1.png" alt="banner" class="mb-2 h-auto">
+                                    <p class="text-center mt-10">View Certificate</p>
+                                </div>
+                                <div class="col-lg-3 col-sm-3 col-11 mb-2">       
+                                    <img src="img/group1.png" alt="banner" class="mb-2 h-auto">
+                                    <p class="text-center mt-10">View Certificate</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-contact-details" role="tabpanel" aria-labelledby="pills-contact-details-tab">
+                            <ul class="mb-4">
+                                <li class="d-lg-flex d-block lh-lg">
+                                    <p class="attrname px-lg-2 width-210">CEO:</p>
+                                    <p class="attrvalue">Mr. Jitendra Vasoya</p>
+                                </li>
+                                <li class="d-lg-flex d-block lh-lg">
+                                    <p class="attrname px-lg-2 width-210">Office:</p>
+                                    <p class="attrvalue">+91 9010225222</p>
+                                </li>
+                                <li class="d-lg-flex d-block lh-lg">
+                                    <p class="attrname px-lg-2 width-210">Mobile:</p>
+                                    <p class="attrvalue">+91 9010225222</p>
+                                </li>
+                                <li class="d-lg-flex d-block lh-lg">
+                                    <p class="attrname px-lg-2 width-210">Fax:</p>
+                                    <p class="attrvalue">+91 855-222-4712</p>
+                                </li>
+                                <li class="d-lg-flex d-block lh-lg">
+                                    <p class="attrname px-lg-2 width-210">Email:</p>
+                                    <p class="attrvalue">sales.woriointernational@gmail.com</p>
+                                </li>
+                                <li class="d-lg-flex d-block lh-lg">
+                                    <p class="attrname px-lg-2 width-210">Address:</p>
+                                    <p class="attrvalue address_info">5th Floor, Peoples Point, Dr House , Peoples Bank Char Rasta, Near Gopal Hospital, katargam Main Road, Surat - 395004, Gujarat, India</p>
+                                </li>
+                            </ul>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-sm-12 col-12"> 
+                    <div class="cat-card m-auto">
+                        <div class="cat-img inner_image_block_main">
+                            <div class="inner_image_block">
+                                <img src="img/Pomegranate.jpg" alt="cat-img">
+                            </div>
+                        </div>
+                        <div class="cat-title mt-2 mb-2 mx-2 pb-4">
+                            <h6 class="mb-1 dark">Dry Fruits</h6>
+                            <p class="mb-1 medium-gray-fg">5 Kgs (Min. Order)</p>
+                            <div class="clearfix">
+                                <a class="primary-fg flo-lt lh-lg">
+                                    Ask For Price
+                                </a>
+                                <button class="btn font-size-12 flo-rt border-success border-radius-30 primary-fg p-1 px-2"><i class="bi bi-envelope"></i> Contact Supplier</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Supplier Page Code Ends Here-->
+
+        <!-- Footer Code Start Here-->
+        <footer class="p-2 pt-4 pb-4">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="footer_section col-md-3 col-lg-2 col-sm-12">
+                        <h2 class="footer-menu-title">Buy &amp; Sell</h2>
+                        <ul class="pt-4 footer_links">
+                            <li class="">
+                                <a href="#" class="gray-fg font-size-13 font-weight-500">View Marketplace Categories</a>
+                            </li>
+                            <li class="">
+                                <a href="#" class="gray-fg font-size-13 font-weight-500">Login/Join Free</a>
+                            </li>
+                            <li class="">
+                                <a href="#" class="gray-fg font-size-13 font-weight-500">Membership</a>
+                            </li>
+                            <li class="">
+                                <a href="#" class="gray-fg font-size-13 font-weight-500">Buyer Inquiries</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer_section col-md-3 col-lg-2 col-sm-12">
+                        <h2 class="footer-menu-title">SUPPORT</h2>
+                        <ul class="pt-4 footer_links">
+                            <li class="">
+                                <a href="#" class="gray-fg font-size-13 font-weight-500">Blogs & Knowledge Base</a>
+                            </li>
+                            <li class="">
+                                <a href="#" class="gray-fg font-size-13 font-weight-500">FAQs</a>
+                            </li>
+                            <li class="">
+                                <a href="#" class="gray-fg font-size-13 font-weight-500">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer_section col-md-3 col-lg-2 col-sm-12">
+                        <h2 class="footer-menu-title">COMPANY</h2>
+                        <ul class="pt-4 footer_links">
+                            <li class="">
+                                <a href="#" class="gray-fg font-size-13 font-weight-500">Classifieds</a>
+                            </li>
+                            <li class="">
+                                <a href="#" class="gray-fg font-size-13 font-weight-500">About</a>
+                            </li>
+                            <li class="">
+                                <a href="#" class="gray-fg font-size-13 font-weight-500">Privacy Policy</a>
+                            </li>
+                            <li class="">
+                                <a href="#" class="gray-fg font-size-13 font-weight-500">Terms of use & sale</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer_section col-md-3 col-lg-2 col-sm-12">
+                        <a href="index.html">
+                         <img class="mb-3" src="img/TL-Logo.png" alt="Logo" style="height:30px;">
+                        </a>
+                        <p class="gray-fg font-size-13 font-weight-500 mb-3">Business partners to grow your business. Global service
+                            providers to deliver the goods.</p>
+                        <a href="" class="mx-2 gray-fg social_icons"><i class="bi bi-facebook"></i></a>
+                        <a href="" class="mx-2 gray-fg social_icons"><i class="bi bi-twitter"></i></a>
+                        <a href="" class="mx-2 gray-fg social_icons"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                    <div class="pt-4 pb-2">
+                        <p class="font-size-12 gray-fg text-center pb-16 pt-10 footer-menu-links-text">&copy; TradeLeaves,
+                            Inc 2022</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer Code Ends Here-->
+</div>
+</body>

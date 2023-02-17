@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Tradeleaves</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/bootstrap.min.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <script src='js/bootstrap.min.js'></script>
+</head>
+
+<body>
+    <!-- <div class="tabs-example"> 
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Home</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Profile</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Contact</button>
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">..a.</div>
+        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">..b.</div>
+        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">.c..</div>
+      </div>
+</div> -->
+    <!-- Header Code Start Here-->
+    <header class='header-wrapper'>
+        <nav class="navbar navbar-expand-lg navbar-light pt-3">
+            <div class="container-fluid">
+                <div class='col-md-9 col-lg-2 col-xl-3 col-sm-8 col-7'>
+                    <a class="navbar-brand d-inline-block p-0 logo" href="index.html">
+                        <img src="img/TL-Logo.png" class="tl-logo-container position-relative" alt="TradeLeaves">
+                        <span class="float-end font-size-16 font-italic orange-fg lh-1">India</span>
+                    </a>
+                </div>
+                <div class="mobile-action-btns mobile-search col-5 col-md-3 col-sm-4 end-0 d-flex align-items-center justify-content-around d-lg-none">
+                    <span class="abc">
+                        <button class="btn primary-bg" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#searchBar" aria-controls="searchBar" aria-expanded="false"
+                            aria-label="Toggle navigation"> <i class="fa fa-search white-fg" aria-hidden="true"></i>
+                        </button>
+                    </span>
+                    <div class="dropdown">
+                       <a href="" class="text-center d-inline-block"                           
+                       role="button" data-bs-toggle="dropdown" aria-expanded="false"
+                        id="navbarDropdown-account"> <i class="fa fa-user fs-1"></i><br>
+                        <span class=" accent-fg text-center d-block font-size-14 line-height-10">
+                            Account
+                        </span>
+                         </a>
+                         <div class="dropdown-menu xs-account-dropdown-menu font-size-13"  aria-labelledby="navbarDropdown-account">
+                            <p class="nav-item dropdown-item">
+                                <a data-bs-toggle="modal" data-bs-dismiss="modal"
+                                    data-bs-target="#Login-register-toggle" class="primary-fg d-block"
+                                    href="#">
+                                     Login/Join Free
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <a  data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"> <span class="navbar-toggler-icon"></span></a>
+
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                      <div class="offcanvas-header profile-user-avatar">
+                        <div class="nav-item dropdown">
+                            <h5 id="offcanvasRightLabel"><i class="fa fa-user-circle"></i> Guest</h5> 
+                            <a class="nav-link dropdown-toggle white-bg mt-2" href="#" id="navbarDropdown-Lob-mob"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img class="d-inline-block"
+                                    style="width: 28px !important; padding-right: 4px;" alt="flag"
+                                    src="img/ind-flag.svg">
+                                <span>IN</span>
+                            </a>
+                            <ul class="dropdown-menu font-size-13 drop-down-mobile-lob" aria-labelledby="navbarDropdown-Lob-mob">
+                                <li><a class="dropdown-item" href="#">IN</a></li>
+                                <li><a class="dropdown-item" href="#">US</a></li>
+                            </ul>
+                        </div>                                                       
+                        <button type="button" class="btn-close btn-close-white  text-reset font-size-12" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                      </div>
+                      <div class="offcanvas-body">
+                            <ul>
+                                <li>
+                                    <a href="" class="dark-grey-fg link-hover font-size-12"> Membership</a>
+                                </li>
+                                <li>
+                                    <a href="" class="dark-grey-fg link-hover font-size-12"> Buyer Inquiries</a>
+                                </li>
+                                <li>
+                                    <a href="" class="dark-grey-fg link-hover font-size-12"> Categories <i class="fa fa-angle-right grey-fg font-size-14 lh-lg flo-rt"></i></a>
+                                </li>
+                                <li>
+                                    <a href="" class="dark-grey-fg link-hover font-size-12"> Post Inquiry</a>
+                                </li>
+                                <li>
+                                    <a href="" class="dark-grey-fg link-hover font-size-12"> Help</a>
+                                </li>
+                            </ul>
+                      </div>
+                    </div>
+                </div>
+                <div class='col-md-12 col-lg-10 col-xl-9 col-sm-12 col-12 d-flex Ipad_portrait'>
+                    <div class="collapse navbar-collapse target1" id="navbarSupportedContent">
+                        <div
+                            class="col-md-5 col-lg-5 col-xl-6 col-12 col-sm-12 Ipad_portrait d-none d-lg-block d-xl-block">
+                            <form
+                                class="col-md-9 col-lg-12 col-12 col-sm-12 flo-rt position-relative Ipad_portrait">
+                                <input
+                                    class="form-control search_input me-2 w-100 border-success border-radius-30 p-2 ps-3"
+                                    type="search" aria-label="Search" placeholder="Please enter a product name">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0 position-absolute right-30 top-0">
+                                    <li class="nav-item dropdown mx-2">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-search-lob"
+                                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Products
+                                        </a>
+                                        <ul class="dropdown-menu font-size-13"
+                                            aria-labelledby="navbarDropdown-search-lob">
+                                            <li><a class="dropdown-item" href="#">Products</a></li>
+                                            <li><a class="dropdown-item" href="#">Suppliers</a></li>
+                                            <li><a class="dropdown-item" href="#">Services</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <a class="btn btn-outline-success position-absolute search_btn primary-bg"
+                                    href="product-search.html">
+                                    <i class="fa fa-search white-fg" style="line-height:35px;"
+                                        aria-hidden="true"></i>
+                                </a>
+                            </form>
+                        </div>
+                        <div class="col-md-12 col-lg-7 col-xl-6 col-12 col-sm-12 Ipad_portrait">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 float-end">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-contact"
+                                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Contact Us
+                                    </a>
+                                    <ul class="dropdown-menu font-size-13" aria-labelledby="navbarDropdown-contact">
+                                        <li><a class="dropdown-item" href="#"><i class="fa fa-phone"
+                                                    aria-hidden="true"></i> +91 7702 625 588</a></li>
+                                        <li><a class="dropdown-item" href="#"><i class="fa fa-commenting"
+                                                    aria-hidden="true"></i> Chat with Us</a></li>
+                                        <li><a class="dropdown-item" href="#"><i class="fa fa-envelope"
+                                                    aria-hidden="true"></i> Contact Us</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="category.html"
+                                        id="navbarDropdown-categories" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Categories
+                                    </a>
+                                    <ul class="dropdown-menu font-size-13"
+                                        aria-labelledby="navbarDropdown-categories">
+                                        <li><a class="dropdown-item" href="#">Sports</a></li>
+                                        <li><a class="dropdown-item" href="#">Business Services</a></li>
+                                        <li><a class="dropdown-item" href="#">Automobiles</a></li>
+                                        <li><a class="dropdown-item primary-fg" href="category.html">All
+                                                Categories</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a data-bs-toggle="modal" data-bs-dismiss="modal"
+                                        data-bs-target="#Login-register-toggle" class="nav-link primary-fg"
+                                        href="#"><i class="fa fa-user" aria-hidden="true"></i> Login/Join Free</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-Lob"
+                                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <img class="d-inline-block"
+                                            style="width: 28px !important; padding-right: 4px;" alt="flag"
+                                            src="img/ind-flag.svg">
+                                        <span>IN</span>
+                                    </a>
+                                    <ul class="dropdown-menu font-size-13" aria-labelledby="navbarDropdown-Lob">
+                                        <li><a class="dropdown-item" href="#">IN</a></li>
+                                        <li><a class="dropdown-item" href="#">US</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="searchBar"
+                        class="collapse navbar-collapse target2 search-bar col-12 justify-content-center">
+                        <div class="Ipad_portrait d-block d-lg-none d-xl-none">
+                            <form class="position-relative Ipad_portrait">
+                                <input
+                                    class="form-control search_input me-2 w-100 border-success border-radius-30 p-2 ps-3"
+                                    type="search" aria-label="Search" placeholder="Please enter a product name">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0 position-absolute right-30 top-0">
+                                    <li class="nav-item dropdown mx-2">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-search"
+                                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Products
+                                        </a>
+                                        <ul class="dropdown-menu font-size-13"
+                                            aria-labelledby="navbarDropdown-search">
+                                            <li><a class="dropdown-item" href="#">Products</a></li>
+                                            <li><a class="dropdown-item" href="#">Suppliers</a></li>
+                                            <li><a class="dropdown-item" href="#">Services</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <p class="btn btn-outline-success position-absolute search_btn primary-bg">
+                                    <a href="product-search.html"> <i class="fa fa-search white-fg"
+                                            aria-hidden="true"></i></a>
+                                </p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Header Code Ends Here-->
+    <div class="mt-4">
+        <div class="products-by-category allCategoriesListHeader mb-4">
+            <h2 class="mt-20 font-weight-700 xs-fz-20 gt-xs-fs-34">
+                <span>Sell to the best…</span>
+                <span class="d-block-xs">Buy from the best…</span>
+                <!-- Sell to the best… <span ng-class="{'display-block' : $mdMedia('xs')}">Buy from the best…</span> -->
+            </h2>
+            <p class="font-weight-400  displayed line-height-24 xs-fs-13 gt-xs-fs-16">
+                We have simplified domestic and global business. By elevating the online visibility for suppliers, providing
+                detailed product information, <br />
+                intelligent ratings and reviews, we make it easy for buyers and suppliers to
+                engage with each other and get ahead.
+            </p>
+        </div>
+        <div class="allCategoriesListContainer">
+            <div class="eachCard">
+                <a href="product-search.html">
+                    <div class="imageContainer">
+                        <img src="img/cat-card-img.jpg" alt="c" />
+                    </div>
+                </a>
+                <div class="mainCategoryTitle">
+                    <h2>
+                        <a href="product-search.html">Handicrafts
+                        </a>
+                    </h2>
+        
+                </div>
+                <div class="subCategories">
+                    <span class="eachSubCategory xs-fs-10 gt-xs-fs-13">
+                        <a href="product-search.html">Bamboo
+                        </a>
+                    </span>
+                    <span class="eachSubCategory xs-fs-10 gt-xs-fs-13">
+                        <a href="product-details.html">Wooden Handicrafts
+                        </a>
+                    </span>
+                    <span class="eachSubCategory xs-fs-10 gt-xs-fs-13">
+                        <a href="product-search.html">Bamboo & Wooden Handicrafts
+                        </a>
+                    </span>
+                </div>
+                <div class="viewMoreCTA">
+                    <a href="product-details.html">
+                        <span>View all →
+                        </span>
+                    </a>
+        
+                </div>
+            </div>
+         <div class="eachCard">
+                            <a href="product-details.html">
+                                <div class="imageContainer">
+                                    <img src="img/agriculture.jpg" alt="c" />
+                                </div>
+                            </a>
+                            <div class="mainCategoryTitle">
+                                <h2>
+                                    <a href="product-details.html">Agriculture & Food
+                                    </a>
+                                </h2>
+                    
+                            </div>
+                            <div class="subCategories">
+                                <span class="eachSubCategory xs-fs-10 gt-xs-fs-13">
+                                    <a href="product-details.html">Bamboo
+                                    </a>
+                                </span>
+                                <span class="eachSubCategory xs-fs-10 gt-xs-fs-13">
+                                    <a href="product-details.html">Wooden Handicrafts
+                                    </a>
+                                </span>
+                                <span class="eachSubCategory xs-fs-10 gt-xs-fs-13">
+                                    <a href="product-details.html">Bamboo & Wooden Handicrafts
+                                    </a>
+                                </span>
+                            </div>
+                            <div class="viewMoreCTA">
+                                <a href="product-details.html">
+                                    <span>View all →
+                                    </span>
+                                </a>
+                    
+                            </div>
+                        </div> 
+          <div class="eachCard">
+                <a href="product-details.html">
+                    <div class="imageContainer">
+                        <img src="img/images.jfif" alt="c" />
+                    </div>
+                </a>
+                <div class="mainCategoryTitle">
+                    <h2>
+                        <a href="product-details.html">Electronics
+                        </a>
+                    </h2>
+        
+                </div>
+                <div class="subCategories">
+                    <span class="eachSubCategory xs-fs-10 gt-xs-fs-13">
+                        <a href="product-details.html">Bamboo
+                        </a>
+                    </span>
+                    <span class="eachSubCategory xs-fs-10 gt-xs-fs-13">
+                        <a href="product-details.html">Wooden Handicrafts
+                        </a>
+                    </span>
+                    <span class="eachSubCategory xs-fs-10 gt-xs-fs-13">
+                        <a href="product-details.html">Bamboo & Wooden Handicrafts
+                        </a>
+                    </span>
+                </div>
+                <div class="viewMoreCTA">
+                    <a href="product-details.html">
+                        <span>View all →
+                        </span>
+                    </a>
+        
+                </div>
+            </div>
+            <div class="eachCard">
+                <a href="product-details.html">
+                    <div class="imageContainer">
+                        <img src="img/pharma.png" alt="c" />
+                    </div>
+                </a>
+                <div class="mainCategoryTitle">
+                    <h2>
+                        <a href="product-details.html">Pharmacetical
+                        </a>
+                    </h2>
+        
+                </div>
+                <div class="subCategories">
+                    <span class="eachSubCategory xs-fs-10 gt-xs-fs-13">
+                        <a href="product-details.html">Bamboo
+                        </a>
+                    </span>
+                    <span class="eachSubCategory xs-fs-10 gt-xs-fs-13">
+                        <a href="product-details.html">Wooden Handicrafts
+                        </a>
+                    </span>
+                    <span class="eachSubCategory xs-fs-10 gt-xs-fs-13">
+                        <a href="product-details.html">Bamboo & Wooden Handicrafts
+                        </a>
+                    </span>
+                </div>
+                <div class="viewMoreCTA">
+                    <a href="product-details.html">
+                        <span>View all →
+                        </span>
+                    </a>
+        
+                </div>
+            </div>
+            <div class="eachCard">
+                <a href="product-details.html">
+                    <div class="imageContainer">
+                        <img src="img/cat-card-img.jpg" alt="c" />
+                    </div>
+                </a>
+                <div class="mainCategoryTitle">
+                    <h2>
+                        <a href="product-details.html">Handicrafts
+                        </a>
+                    </h2>
+        
+                </div>
+                <div class="subCategories">
+                    <span class="eachSubCategory xs-fs-10 gt-xs-fs-13">
+                        <a href="product-details.html">Bamboo
+                        </a>
+                    </span>
+                    <span class="eachSubCategory xs-fs-10 gt-xs-fs-13">
+                        <a href="product-details.html">Wooden Handicrafts
+                        </a>
+                    </span>
+                    <span class="eachSubCategory xs-fs-10 gt-xs-fs-13">
+                        <a href="product-details.html">Bamboo & Wooden Handicrafts
+                        </a>
+                    </span>
+                </div>
+                <div class="viewMoreCTA">
+                    <a href="product-details.html">
+                        <span>View all →
+                        </span>
+                    </a>
+        
+                </div>
+            </div>
+            <div class="eachCard">
+                <a href="product-details.html">
+                    <div class="imageContainer">
+                        <img src="img/agriculture.jpg" alt="c" />
+                    </div>
+                </a>
+                <div class="mainCategoryTitle">
+                    <h2>
+                        <a href="product-details.html">Agriculture & Food
+                        </a>
+                    </h2>
+        
+                </div>
+                <div class="subCategories">
+                    <span class="eachSubCategory xs-fs-10 gt-xs-fs-13">
+                        <a href="product-details.html">Bamboo
+                        </a>
+                    </span>
+                    <span class="eachSubCategory xs-fs-10 gt-xs-fs-13">
+                        <a href="product-details.html">Wooden Handicrafts
+                        </a>
+                    </span>
+                    <span class="eachSubCategory xs-fs-10 gt-xs-fs-13">
+                        <a href="product-details.html">Bamboo & Wooden Handicrafts
+                        </a>
+                    </span>
+                </div>
+                <div class="viewMoreCTA">
+                    <a href="product-details.html">
+                        <span>View all →
+                        </span>
+                    </a>
+        
+                </div>
+            </div>
+            <div class="eachCard">
+                <a href="product-details.html">
+                    <div class="imageContainer">
+                        <img src="img/images.jfif" alt="c" />
+                    </div>
+                </a>
+                <div class="mainCategoryTitle">
+                    <h2>
+                        <a href="product-details.html">Electronics
+                        </a>
+                    </h2>
+        
+                </div>
+                <div class="subCategories">
+                    <span class="eachSubCategory xs-fs-10 gt-xs-fs-13">
+                        <a href="product-details.html">Bamboo
+                        </a>
+                    </span>
+                    <span class="eachSubCategory xs-fs-10 gt-xs-fs-13">
+                        <a href="product-details.html">Wooden Handicrafts
+                        </a>
+                    </span>
+                    <span class="eachSubCategory xs-fs-10 gt-xs-fs-13">
+                        <a href="product-details.html">Bamboo & Wooden Handicrafts
+                        </a>
+                    </span>
+                </div>
+                <div class="viewMoreCTA">
+                    <a href="product-details.html">
+                        <span>View all →
+                        </span>
+                    </a>
+        
+                </div>
+            </div>
+            <div class="eachCard">
+                <a href="product-details.html">
+                    <div class="imageContainer">
+                        <img src="img/pharma.png" alt="c" />
+                    </div>
+                </a>
+                <div class="mainCategoryTitle">
+                    <h2>
+                        <a href="product-details.html">Pharmacetical
+                        </a>
+                    </h2>
+        
+                </div>
+                <div class="subCategories">
+                    <span class="eachSubCategory xs-fs-10 gt-xs-fs-13">
+                        <a href="product-details.html">Bamboo
+                        </a>
+                    </span>
+                    <span class="eachSubCategory xs-fs-10 gt-xs-fs-13">
+                        <a href="product-details.html">Wooden Handicrafts
+                        </a>
+                    </span>
+                    <span class="eachSubCategory xs-fs-10 gt-xs-fs-13">
+                        <a href="product-details.html">Bamboo & Wooden Handicrafts
+                        </a>
+                    </span>
+                </div>
+                <div class="viewMoreCTA">
+                    <a href="product-details.html">
+                        <span>View all →
+                        </span>
+                    </a>
+        
+                </div>
+            </div>
+            <div class="eachCard">
+                <a href="product-details.html">
+                    <div class="imageContainer">
+                        <img src="img/cat-card-img.jpg" alt="c" />
+                    </div>
+                </a>
+                <div class="mainCategoryTitle">
+                    <h2>
+                        <a href="product-details.html">Handicrafts
+                        </a>
+                    </h2>
+        
+                </div>
+                <div class="subCategories">
+                    <span class="eachSubCategory xs-fs-10 gt-xs-fs-13">
+                        <a href="product-details.html">Bamboo
+                        </a>
+                    </span>
+                    <span class="eachSubCategory xs-fs-10 gt-xs-fs-13">
+                        <a href="product-details.html">Wooden Handicrafts
+                        </a>
+                    </span>
+                    <span class="eachSubCategory xs-fs-10 gt-xs-fs-13">
+                        <a href="product-details.html">Bamboo & Wooden Handicrafts
+                        </a>
+                    </span>
+                </div>
+                <div class="viewMoreCTA">
+                    <a href="product-details.html">
+                        <span>View all →
+                        </span>
+                    </a>
+        
+                </div>
+            </div>
+            <div class="eachCard">
+                <a href="product-details.html">
+                    <div class="imageContainer">
+                        <img src="img/agriculture.jpg" alt="c" />
+                    </div>
+                </a>
+                <div class="mainCategoryTitle">
+                    <h2>
+                        <a href="product-details.html">Agriculture & Food
+                        </a>
+                    </h2>
+        
+                </div>
+                <div class="subCategories">
+                    <span class="eachSubCategory xs-fs-10 gt-xs-fs-13">
+                        <a href="product-details.html">Bamboo
+                        </a>
+                    </span>
+                    <span class="eachSubCategory xs-fs-10 gt-xs-fs-13">
+                        <a href="product-details.html">Wooden Handicrafts
+                        </a>
+                    </span>
+                    <span class="eachSubCategory xs-fs-10 gt-xs-fs-13">
+                        <a href="product-details.html">Bamboo & Wooden Handicrafts
+                        </a>
+                    </span>
+                </div>
+                <div class="viewMoreCTA">
+                    <a href="product-details.html">
+                        <span>View all →
+                        </span>
+                    </a>
+        
+                </div>
+            </div>
+            <div class="eachCard">
+                <a href="product-details.html">
+                    <div class="imageContainer">
+                        <img src="img/images.jfif" alt="c" />
+                    </div>
+                </a>
+                <div class="mainCategoryTitle">
+                    <h2>
+                        <a href="product-details.html">Electronics
+                        </a>
+                    </h2>
+        
+                </div>
+                <div class="subCategories">
+                    <span class="eachSubCategory xs-fs-10 gt-xs-fs-13">
+                        <a href="product-details.html">Bamboo
+                        </a>
+                    </span>
+                    <span class="eachSubCategory xs-fs-10 gt-xs-fs-13">
+                        <a href="product-details.html">Wooden Handicrafts
+                        </a>
+                    </span>
+                    <span class="eachSubCategory xs-fs-10 gt-xs-fs-13">
+                        <a href="product-details.html">Bamboo & Wooden Handicrafts
+                        </a>
+                    </span>
+                </div>
+                <div class="viewMoreCTA">
+                    <a href="product-details.html">
+                        <span>View all →
+                        </span>
+                    </a>
+        
+                </div>
+            </div>
+            <div class="eachCard">
+                <a href="product-details.html">
+                    <div class="imageContainer">
+                        <img src="img/pharma.png" alt="c" />
+                    </div>
+                </a>
+                <div class="mainCategoryTitle">
+                    <h2>
+                        <a href="product-details.html">Pharmacetical
+                        </a>
+                    </h2>
+        
+                </div>
+                <div class="subCategories">
+                    <span class="eachSubCategory xs-fs-10 gt-xs-fs-13">
+                        <a href="product-details.html">Bamboo
+                        </a>
+                    </span>
+                    <span class="eachSubCategory xs-fs-10 gt-xs-fs-13">
+                        <a href="product-details.html">Wooden Handicrafts
+                        </a>
+                    </span>
+                    <span class="eachSubCategory xs-fs-10 gt-xs-fs-13">
+                        <a href="product-details.html">Bamboo & Wooden Handicrafts
+                        </a>
+                    </span>
+                </div>
+                <div class="viewMoreCTA">
+                    <a href="product-details.html">
+                        <span>View all →
+                        </span>
+                    </a>
+        
+                </div>
+            </div> 
+        </div>
+    </div>
+    
+          <!-- Footer Code Start Here-->
+          <footer class="p-2 pt-4 pb-4">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="footer_section col-md-3 col-lg-2 col-sm-12">
+                        <h2 class="footer-menu-title">Buy &amp; Sell</h2>
+                        <ul class="pt-4 footer_links">
+                            <li class="">
+                                <a href="#" class="gray-fg font-size-13 font-weight-500">View Marketplace Categories</a>
+                            </li>
+                            <li class="">
+                                <a href="#" class="gray-fg font-size-13 font-weight-500">Login/Join Free</a>
+                            </li>
+                            <li class="">
+                                <a href="#" class="gray-fg font-size-13 font-weight-500">Membership</a>
+                            </li>
+                            <li class="">
+                                <a href="#" class="gray-fg font-size-13 font-weight-500">Buyer Inquiries</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer_section col-md-3 col-lg-2 col-sm-12">
+                        <h2 class="footer-menu-title">SUPPORT</h2>
+                        <ul class="pt-4 footer_links">
+                            <li class="">
+                                <a href="#" class="gray-fg font-size-13 font-weight-500">Blogs & Knowledge Base</a>
+                            </li>
+                            <li class="">
+                                <a href="#" class="gray-fg font-size-13 font-weight-500">FAQs</a>
+                            </li>
+                            <li class="">
+                                <a href="#" class="gray-fg font-size-13 font-weight-500">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer_section col-md-3 col-lg-2 col-sm-12">
+                        <h2 class="footer-menu-title">COMPANY</h2>
+                        <ul class="pt-4 footer_links">
+                            <li class="">
+                                <a href="#" class="gray-fg font-size-13 font-weight-500">Classifieds</a>
+                            </li>
+                            <li class="">
+                                <a href="#" class="gray-fg font-size-13 font-weight-500">About</a>
+                            </li>
+                            <li class="">
+                                <a href="#" class="gray-fg font-size-13 font-weight-500">Privacy Policy</a>
+                            </li>
+                            <li class="">
+                                <a href="#" class="gray-fg font-size-13 font-weight-500">Terms of use & sale</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer_section col-md-3 col-lg-2 col-sm-12">
+                        <a href="index.html">
+                         <img class="mb-3" src="img/TL-Logo.png" alt="Logo" style="height:30px;">
+                         </a>
+                        <p class="gray-fg font-size-13 font-weight-500 mb-3">Business partners to grow your business. Global service
+                            providers to deliver the goods.</p>
+                        <a href="" class="mx-2 gray-fg social_icons"><i class="bi bi-facebook"></i></a>
+                        <a href="" class="mx-2 gray-fg social_icons"><i class="bi bi-twitter"></i></a>
+                        <a href="" class="mx-2 gray-fg social_icons"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                    <div class="pt-4 pb-2">
+                        <p class="font-size-12 gray-fg text-center pb-16 pt-10 footer-menu-links-text">&copy; TradeLeaves,
+                            Inc 2022</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer Code Ends Here-->
+</body>
+
+</html>

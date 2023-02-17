@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="content-type" content="text-html; charset=utf-8">
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Tradeleaves</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/bootstrap.min.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <script src='js/bootstrap.min.js'></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Header Code Start Here-->
+        <header class='header-wrapper'>
+            <nav class="navbar navbar-expand-lg navbar-light pt-3">
+                <div class="container-fluid">
+                    <div class='col-md-9 col-lg-2 col-xl-3 col-sm-8 col-7'>
+                        <a class="navbar-brand d-inline-block p-0 logo" href="index.html">
+                            <img src="img/TL-Logo.png" class="tl-logo-container position-relative" alt="TradeLeaves">
+                            <span class="float-end font-size-16 font-italic orange-fg lh-1">India</span>
+                        </a>
+                    </div>
+                    <div class="mobile-action-btns mobile-search col-5 col-md-3 col-sm-4 end-0 d-flex align-items-center justify-content-around d-lg-none">
+                        <span class="abc">
+                            <button class="btn primary-bg" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#searchBar" aria-controls="searchBar" aria-expanded="false"
+                                aria-label="Toggle navigation"> <i class="fa fa-search white-fg" aria-hidden="true"></i>
+                            </button>
+                        </span>
+                        <div class="dropdown">
+                           <a href="" class="text-center d-inline-block"                           
+                           role="button" data-bs-toggle="dropdown" aria-expanded="false"
+                            id="navbarDropdown-account"> <i class="fa fa-user fs-1"></i><br>
+                            <span class=" accent-fg text-center d-block font-size-14 line-height-10">
+                                Account
+                            </span>
+                             </a>
+                             <div class="dropdown-menu xs-account-dropdown-menu font-size-13"  aria-labelledby="navbarDropdown-account">
+                                <p class="nav-item dropdown-item">
+                                    <a data-bs-toggle="modal" data-bs-dismiss="modal"
+                                        data-bs-target="#Login-register-toggle" class="primary-fg d-block"
+                                        href="#">
+                                         Login/Join Free
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                        <a  data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"> <span class="navbar-toggler-icon"></span></a>
+
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                          <div class="offcanvas-header profile-user-avatar">
+                            <div class="nav-item dropdown">
+                                <h5 id="offcanvasRightLabel"><i class="fa fa-user-circle"></i> Guest</h5> 
+                                <a class="nav-link dropdown-toggle white-bg mt-2" href="#" id="navbarDropdown-Lob-mob"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img class="d-inline-block"
+                                        style="width: 28px !important; padding-right: 4px;" alt="flag"
+                                        src="img/ind-flag.svg">
+                                    <span>IN</span>
+                                </a>
+                                <ul class="dropdown-menu font-size-13 drop-down-mobile-lob" aria-labelledby="navbarDropdown-Lob-mob">
+                                    <li><a class="dropdown-item" href="#">IN</a></li>
+                                    <li><a class="dropdown-item" href="#">US</a></li>
+                                </ul>
+                            </div>                                                       
+                            <button type="button" class="btn-close btn-close-white  text-reset font-size-12" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                          </div>
+                          <div class="offcanvas-body">
+                                <ul>
+                                    <li>
+                                        <a href="" class="dark-grey-fg link-hover font-size-12"> Membership</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="dark-grey-fg link-hover font-size-12"> Buyer Inquiries</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="dark-grey-fg link-hover font-size-12"> Categories <i class="fa fa-angle-right grey-fg font-size-14 lh-lg flo-rt"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="dark-grey-fg link-hover font-size-12"> Post Inquiry</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="dark-grey-fg link-hover font-size-12"> Help</a>
+                                    </li>
+                                </ul>
+                          </div>
+                        </div>
+                    </div>
+                    <div class='col-md-12 col-lg-10 col-xl-9 col-sm-12 col-12 d-flex Ipad_portrait'>
+                        <div class="collapse navbar-collapse target1" id="navbarSupportedContent">
+                            <div
+                                class="col-md-5 col-lg-5 col-xl-6 col-12 col-sm-12 Ipad_portrait d-none d-lg-block d-xl-block">
+                                <form
+                                    class="col-md-9 col-lg-12 col-12 col-sm-12 flo-rt position-relative Ipad_portrait">
+                                    <input
+                                        class="form-control search_input me-2 w-100 border-success border-radius-30 p-2 ps-3"
+                                        type="search" aria-label="Search" placeholder="Please enter a product name">
+                                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 position-absolute right-30 top-0">
+                                        <li class="nav-item dropdown mx-2">
+                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-search-lob"
+                                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Products
+                                            </a>
+                                            <ul class="dropdown-menu font-size-13"
+                                                aria-labelledby="navbarDropdown-search-lob">
+                                                <li><a class="dropdown-item" href="#">Products</a></li>
+                                                <li><a class="dropdown-item" href="#">Suppliers</a></li>
+                                                <li><a class="dropdown-item" href="#">Services</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <a class="btn btn-outline-success position-absolute search_btn primary-bg"
+                                        href="product-search.html">
+                                        <i class="fa fa-search white-fg" style="line-height:35px;"
+                                            aria-hidden="true"></i>
+                                    </a>
+                                </form>
+                            </div>
+                            <div class="col-md-12 col-lg-7 col-xl-6 col-12 col-sm-12 Ipad_portrait">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0 float-end">
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-contact"
+                                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Contact Us
+                                        </a>
+                                        <ul class="dropdown-menu font-size-13" aria-labelledby="navbarDropdown-contact">
+                                            <li><a class="dropdown-item" href="#"><i class="fa fa-phone"
+                                                        aria-hidden="true"></i> +91 7702 625 588</a></li>
+                                            <li><a class="dropdown-item" href="#"><i class="fa fa-commenting"
+                                                        aria-hidden="true"></i> Chat with Us</a></li>
+                                            <li><a class="dropdown-item" href="#"><i class="fa fa-envelope"
+                                                        aria-hidden="true"></i> Contact Us</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="category.html"
+                                            id="navbarDropdown-categories" role="button" data-bs-toggle="dropdown"
+                                            aria-expanded="false">
+                                            Categories
+                                        </a>
+                                        <ul class="dropdown-menu font-size-13"
+                                            aria-labelledby="navbarDropdown-categories">
+                                            <li><a class="dropdown-item" href="#">Sports</a></li>
+                                            <li><a class="dropdown-item" href="#">Business Services</a></li>
+                                            <li><a class="dropdown-item" href="#">Automobiles</a></li>
+                                            <li><a class="dropdown-item primary-fg" href="category.html">All
+                                                    Categories</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a data-bs-toggle="modal" data-bs-dismiss="modal"
+                                            data-bs-target="#Login-register-toggle" class="nav-link primary-fg"
+                                            href="#"><i class="fa fa-user" aria-hidden="true"></i> Login/Join Free</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-Lob"
+                                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <img class="d-inline-block"
+                                                style="width: 28px !important; padding-right: 4px;" alt="flag"
+                                                src="img/ind-flag.svg">
+                                            <span>IN</span>
+                                        </a>
+                                        <ul class="dropdown-menu font-size-13" aria-labelledby="navbarDropdown-Lob">
+                                            <li><a class="dropdown-item" href="#">IN</a></li>
+                                            <li><a class="dropdown-item" href="#">US</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div id="searchBar"
+                            class="collapse navbar-collapse target2 search-bar col-12 justify-content-center">
+                            <div class="Ipad_portrait d-block d-lg-none d-xl-none">
+                                <form class="position-relative Ipad_portrait">
+                                    <input
+                                        class="form-control search_input me-2 w-100 border-success border-radius-30 p-2 ps-3"
+                                        type="search" aria-label="Search" placeholder="Please enter a product name">
+                                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 position-absolute right-30 top-0">
+                                        <li class="nav-item dropdown mx-2">
+                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-search"
+                                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Products
+                                            </a>
+                                            <ul class="dropdown-menu font-size-13"
+                                                aria-labelledby="navbarDropdown-search">
+                                                <li><a class="dropdown-item" href="#">Products</a></li>
+                                                <li><a class="dropdown-item" href="#">Suppliers</a></li>
+                                                <li><a class="dropdown-item" href="#">Services</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <p class="btn btn-outline-success position-absolute search_btn primary-bg">
+                                        <a href="product-search.html"> <i class="fa fa-search white-fg"
+                                                aria-hidden="true"></i></a>
+                                    </p>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- Header Code Ends Here-->
+
+        <!--start Supplier search results section -->
+        <div class="search-results">
+            <div class="results-action-filters row gx-0 border-bottom p-2 align-items-center">
+                <div class=" px-xl-3 left-text d-flex col-10 col-sm-10 col-md-9 col-xl-4 align-items-center">
+                        <div class="mr-5 d-block d-sm-block d-md-block d-xl-none d-xxl-none">
+                            <a class="" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                                <i class="fa fa-filter fs-5 accent-fg"></i>
+                              </a>  
+                            </div>
+                        <p>Total 
+                            <span class="black-fg accent-fg"> 50 </span>product(s)
+                             from 
+                             <span class="black-fg accent-fg"> 31 </span>supplier(s) found for
+                            <span class="black-fg"> "leather"</span>
+                        </p>
+                </div>
+                <div class="right-actions col-2 col-sm-2 col-md-3 col-xl-8 d-flex justify-content-end">
+                    <div class="d-flex gx-0 align-items-center">
+                        <!-- <div class="mx-3 d-none d-sm-none d-md-none  d-xl-block" >
+                            <a class="contact-supplier" href="supplier-search.html">View Suppliers</a>
+                        </div> -->
+                        <div class="mx-3 d-none d-sm-none d-md-none d-xl-block">
+                            <div class="gx-0 align-items-center">
+                               <span class="attrvalue">Sold By:</span> 
+                                <select name="" id="" class="select-dropdown">
+                                    <option value="Relevance" selected="selected">Relevance</option>
+                                    <option value="Rating">rating</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="mx-3 d-none d-sm-none d-md-none  d-xl-block"> 
+                            <div class="row gx-0 align-items-center">
+                                <label for="" class="col mx-1 attrvalue">Show:</label>
+                                <p class="col accent-fg br px-2">10</p>
+                                <p class="col br px-2">20</p>
+                                <p class="col px-2">50</p>
+                            </div>
+                        </div>
+                        <div class="pagination-search mx-3 d-none d-sm-none d-md-none  d-xl-block">
+                            <div class="row gx-0 align-items-center">
+                                <a href="" class="col">
+                                    <i class="fa fa-caret-left fs-6 mx-2 gx-0 grey-fg"></i>
+                                </a>
+                                <span class="col"> 
+                                    <button class="page-no-box">1</button>
+                                </span>
+                                <span class="col mx-1">/</span>
+                                <span class="col"> 
+                                    <button class="page-no-box">6</button>
+                                </span>
+                                <a href="" class="col">
+                                    <i class="fa fa-caret-right fs-6 mx-2 gx-0 "></i>
+                                </a>
+                            </div>                            
+                        </div>  
+                        <div class="mx-3 d-none d-sm-none d-md-none  d-xl-block" >
+                            <a class="contact-supplier">Post Inquiry</a>
+                        </div>                      
+                        <ul class="change-view d-md-flex d-flex d-sm-flex d-xl-none">
+                            <li class="mx-1">
+                                <a title="Post Inquiry"> 
+                                    <i class="fa fa-wpforms fs-5 accent-fg"></i>
+                                    <!-- <img src="img/postinquiry.svg" class="w-50" alt=""> -->
+                                </a>
+                            <!-- </li>
+                            <li class="mx-1">
+                               <a title="View Products" href="supplier-search.html"><i class="fa fa-users accent-fg fs-5"></i></a>
+                            </li> -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="search-results-main row gx-0">
+                <!-- desktop filter -->
+                <div class="search-sidenav search-sidenav-supplier col-2 d-none d-sm-none d-md-none d-lg-block">
+                    <div class="d-none d-sm-none d-md-block">
+                        <div class="accordion" id="accordionPanelsStayOpenExample">
+                            <div class="accordion-item">
+                              <ul class="accordion-header" id="panelsStayOpen-headingOne">
+                                <li class="accordion-button accordion-custom-btn p-2 bg-grey cursor-pointer position-relative" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                                    Categories
+                                    <span class="accent-fg link-hover  text-right float-right position-absolute right-24">
+                                        Clear 
+                                    </span>
+                                </li>
+                              </ul>
+                              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                                <div class="accordion-body p-0">
+                                    <div class="border-bottom pb-2">
+                                        <p class="d-flex justify-content-between px-3 mb-1 py-0 pt-2 accordion-custom-btn" data-bs-toggle="collapse"
+                                            data-bs-target="#panelsStayOpen-collapseOne-1" aria-expanded="true"
+                                            aria-controls="panelsStayOpen-collapseOne">
+                                            <span class="filter-title"> Order Eligibility </span>
+                                            
+                                        </p>
+                                        <div id="panelsStayOpen-collapseOne-1" class="accordion-collapse collapse show"
+                                            aria-labelledby="panelsStayOpen-headingOne">
+                                            <p class="px-4 b-2 cursor-pointer lh-base d-flex justify-content-between">
+                                                <span>Almonds New</span>
+                                                <span class="available-pr-count">(15)</span>
+                                                <!-- <span class="fa fa-angle-down text-right right-align-icon fs-6"></span> -->
+                                            </p>
+                                            <p class="px-4 cursor-pointer lh-base d-flex justify-content-between">
+                                                <span>Almonds</span>
+                                                <span  class="available-pr-count ">(14)</span>
+                                                <!-- <span class="fa fa-angle-down text-right right-align-icon fs-6"></span> -->
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="border-bottom pb-2">
+                                        <p class="d-flex justify-content-between px-3 mb-1 py-0 pt-2 accordion-custom-btn" data-bs-toggle="collapse"
+                                            data-bs-target="#panelsStayOpen-collapseOne-1" aria-expanded="true"
+                                            aria-controls="panelsStayOpen-collapseOne">
+                                            <span class="filter-title"> Order Eligibility </span>
+                                            
+                                        </p>
+                                        <div id="panelsStayOpen-collapseOne-1" class="accordion-collapse collapse show"
+                                            aria-labelledby="panelsStayOpen-headingOne">
+                                            <p class="px-4 b-2 cursor-pointer lh-base d-flex justify-content-between">
+                                                <span>Almonds New</span>
+                                                <span class="available-pr-count">(15)</span>
+                                                <!-- <span class="fa fa-angle-down text-right right-align-icon fs-6"></span> -->
+                                            </p>
+                                            <p class="px-4 cursor-pointer lh-base d-flex justify-content-between">
+                                                <span>Almonds</span>
+                                                <span  class="available-pr-count ">(14)</span>
+                                                <!-- <span class="fa fa-angle-down text-right right-align-icon fs-6"></span> -->
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion-item">
+                              <ul class="accordion-header" id="panelsStayOpen-headingTwo">
+                                <li class="accordion-button accordion-custom-btn p-2 bg-grey cursor-pointer"  data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="true" aria-controls="panelsStayOpen-collapseTwo">
+                                    Supplier Attributes
+                                </li>
+                            </ul>
+                              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingTwo">
+                                <div class="accordion-body p-0">
+                                    <div class="border-bottom pb-2">
+                                        <p class="d-flex justify-content-between px-2 mb-1 py-0 pt-2 accordion-custom-btn no-bg accordion-button position-relative" data-bs-toggle="collapse"
+                                            data-bs-target="#panelsStayOpen-collapseOne-3" aria-expanded="true"
+                                            aria-controls="panelsStayOpen-collapseOne">
+                                            <span class="filter-title"> Supplier Revenue </span>
+                                            <span class="accent-fg link-hover  text-right float-right position-absolute right-24">Clear</span>
+                                        </p>
+                                        <div id="panelsStayOpen-collapseOne-3" class="accordion-collapse collapse show"
+                                            aria-labelledby="panelsStayOpen-headingOne">
+                                            <p class="px-3 b-2 cursor-pointer justify-content-between d-flex lh-lg">
+                                                <span> <input type="checkbox" name="" value="" class="align-text-top mr-3"><span>1-50000</span></span>
+                                                <span class="available-pr-count">(15)</span>
+                                                <!-- <span class="fa fa-angle-down text-right right-align-icon fs-6"></span> -->
+                                            </p>
+                                            <p class="px-3 cursor-pointer justify-content-between d-flex lh-lg">
+                                                <span> <input type="checkbox" name="" value="" class="align-text-top mr-3"><span>20-40000</span></span>
+                                                <span class="available-pr-count">(1)</span>
+                                                <!-- <span class="fa fa-angle-down text-right right-align-icon fs-6"></span> -->
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="pb-2">
+                                        <p class="d-flex justify-content-between px-2 mb-1 py-0 pt-2 accordion-custom-btn no-bg accordion-button" data-bs-toggle="collapse"
+                                            data-bs-target="#panelsStayOpen-collapseOne-4" aria-expanded="true"
+                                            aria-controls="panelsStayOpen-collapseOne">
+                                            <span class="filter-title"> Supplier Country </span>
+                                            <span class="accent-fg link-hover  text-right float-right position-absolute right-24">Clear</span>
+                                        </p>
+                                        <div id="panelsStayOpen-collapseOne-4" class="accordion-collapse collapse show"
+                                            aria-labelledby="panelsStayOpen-headingOne">
+                                            <p class="px-3 b-2 cursor-pointer justify-content-between d-flex lh-lg">
+                                                <span> <input type="checkbox" name="" value="" class="align-text-top mr-3"><span>India</span></span>
+                                                <span class="available-pr-count">(15)</span>
+                                                <!-- <span class="fa fa-angle-down text-right right-align-icon fs-6"></span> -->
+                                            </p>
+                                            <p class="px-3 cursor-pointer justify-content-between d-flex lh-lg">
+                                                <span> <input type="checkbox" name="" value="" class="align-text-top mr-3"><span>United States of America</span></span>
+                                                <span class="available-pr-count">(1)</span>
+                                                <!-- <span class="fa fa-angle-down text-right right-align-icon fs-6"></span> -->
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- desktop filter ends -->
+                <!-- mobile filter starts -->
+                <div class="offcanvas offcanvas-start" tabindex="-1"
+                     id="offcanvasExample" aria-labelledby="offcanvasExampleLabel"
+                     class="search-sidenav col-2 d-block d-sm-block d-md-block d-lg-none d-xl-none">
+                     <div class="offcanvas-header pt-3 pb-2">
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                      </div>
+                    <div class="offcanvas-body">
+                        <div class="accordion" id="accordionPanelsStayOpenExample">
+                            <div class="accordion-item">
+                              <ul class="accordion-header" id="panelsStayOpen-headingOne">
+                                <!-- <button class="d-flex justify-content-between accordion-custom-btn" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                                    Product Attributes
+                                </button> -->
+                                <li class="accordion-button accordion-custom-btn p-2 bg-grey cursor-pointer position-relative" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                                    Categories
+                                    <span class="accent-fg link-hover  text-right float-right position-absolute right-24">
+                                        Clear 
+                                    </span>
+                                    <!-- <span class="fa fa-angle-down text-right right-align-icon fs-6"></span> -->
+                                </li>
+                              </ul>
+                              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                                <div class="accordion-body p-0">
+                                    <div class="border-bottom pb-2">
+                                        <p class="d-flex justify-content-between px-3 mb-1 py-0 pt-2 accordion-custom-btn" data-bs-toggle="collapse"
+                                            data-bs-target="#panelsStayOpen-collapseOne-1" aria-expanded="true"
+                                            aria-controls="panelsStayOpen-collapseOne">
+                                            <span class="filter-title"> Order Eligibility </span>
+                                            
+                                        </p>
+                                        <div id="panelsStayOpen-collapseOne-1" class="accordion-collapse collapse show"
+                                            aria-labelledby="panelsStayOpen-headingOne">
+                                            <p class="px-4 b-2 cursor-pointer lh-base d-flex justify-content-between">
+                                                <span>Almonds New</span>
+                                                <span class="available-pr-count">(15)</span>
+                                                <!-- <span class="fa fa-angle-down text-right right-align-icon fs-6"></span> -->
+                                            </p>
+                                            <p class="px-4 cursor-pointer lh-base d-flex justify-content-between">
+                                                <span>Almonds</span>
+                                                <span  class="available-pr-count ">(14)</span>
+                                                <!-- <span class="fa fa-angle-down text-right right-align-icon fs-6"></span> -->
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="border-bottom pb-2">
+                                        <p class="d-flex justify-content-between px-3 mb-1 py-0 pt-2 accordion-custom-btn" data-bs-toggle="collapse"
+                                            data-bs-target="#panelsStayOpen-collapseOne-1" aria-expanded="true"
+                                            aria-controls="panelsStayOpen-collapseOne">
+                                            <span class="filter-title"> Order Eligibility </span>
+                                            
+                                        </p>
+                                        <div id="panelsStayOpen-collapseOne-1" class="accordion-collapse collapse show"
+                                            aria-labelledby="panelsStayOpen-headingOne">
+                                            <p class="px-4 b-2 cursor-pointer lh-base d-flex justify-content-between">
+                                                <span>Almonds New</span>
+                                                <span class="available-pr-count">(15)</span>
+                                                <!-- <span class="fa fa-angle-down text-right right-align-icon fs-6"></span> -->
+                                            </p>
+                                            <p class="px-4 cursor-pointer lh-base d-flex justify-content-between">
+                                                <span>Almonds</span>
+                                                <span  class="available-pr-count ">(14)</span>
+                                                <!-- <span class="fa fa-angle-down text-right right-align-icon fs-6"></span> -->
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion-item">
+                              <ul class="accordion-header" id="panelsStayOpen-headingTwo">
+                                <li class="accordion-button accordion-custom-btn p-2 bg-grey cursor-pointer"  data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="true" aria-controls="panelsStayOpen-collapseTwo">
+                                    Supplier Attributes
+                                </li>
+                            </ul>
+                              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingTwo">
+                                <div class="accordion-body p-0">
+                                    <div class="border-bottom pb-2">
+                                        <p class="d-flex justify-content-between px-2 mb-1 py-0 pt-2 accordion-custom-btn no-bg accordion-button position-relative" data-bs-toggle="collapse"
+                                            data-bs-target="#panelsStayOpen-collapseOne-3" aria-expanded="true"
+                                            aria-controls="panelsStayOpen-collapseOne">
+                                            <span class="filter-title"> Supplier Revenue </span>
+                                            <span class="accent-fg link-hover  text-right float-right position-absolute right-24">Clear</span>
+                                        </p>
+                                        <div id="panelsStayOpen-collapseOne-3" class="accordion-collapse collapse show"
+                                            aria-labelledby="panelsStayOpen-headingOne">
+                                            <p class="px-3 b-2 cursor-pointer justify-content-between d-flex lh-lg">
+                                                <span> <input type="checkbox" name="" value="" class="align-text-top mr-3"><span>1-50000</span></span>
+                                                <span class="available-pr-count">(15)</span>
+                                                <!-- <span class="fa fa-angle-down text-right right-align-icon fs-6"></span> -->
+                                            </p>
+                                            <p class="px-3 cursor-pointer justify-content-between d-flex lh-lg">
+                                                <span> <input type="checkbox" name="" value="" class="align-text-top mr-3"><span>20-40000</span></span>
+                                                <span class="available-pr-count">(1)</span>
+                                                <!-- <span class="fa fa-angle-down text-right right-align-icon fs-6"></span> -->
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="pb-2">
+                                        <p class="d-flex justify-content-between px-2 mb-1 py-0 pt-2 accordion-custom-btn no-bg accordion-button" data-bs-toggle="collapse"
+                                            data-bs-target="#panelsStayOpen-collapseOne-4" aria-expanded="true"
+                                            aria-controls="panelsStayOpen-collapseOne">
+                                            <span class="filter-title"> Supplier Country </span>
+                                            <span class="accent-fg link-hover  text-right float-right position-absolute right-24">Clear</span>
+                                        </p>
+                                        <div id="panelsStayOpen-collapseOne-4" class="accordion-collapse collapse show"
+                                            aria-labelledby="panelsStayOpen-headingOne">
+                                            <p class="px-3 b-2 cursor-pointer justify-content-between d-flex lh-lg">
+                                                <span> <input type="checkbox" name="" value="" class="align-text-top mr-3"><span>India</span></span>
+                                                <span class="available-pr-count">(15)</span>
+                                                <!-- <span class="fa fa-angle-down text-right right-align-icon fs-6"></span> -->
+                                            </p>
+                                            <p class="px-3 cursor-pointer justify-content-between d-flex lh-lg">
+                                                <span> <input type="checkbox" name="" value="" class="align-text-top mr-3"><span>United States of America</span></span>
+                                                <span class="available-pr-count">(1)</span>
+                                                <!-- <span class="fa fa-angle-down text-right right-align-icon fs-6"></span> -->
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>                       
+                    </div>
+                </div>
+                <!-- mobile filter ends -->
+                <!-- Desktop Code Start -->
+                <div class="results-main-supplier col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12 mt-4 mx-3 d-none d-sm-none d-md-block d-lg-block">
+                    <div class="row mx-2 products-list-view" id="productListView">
+                        <div class="border row mb-2 pb-2 pt-1 p-0">
+                            <div class="col-xl-4 col-md-4 col-sm-12 col-12 pt-2">
+                                <div class="">
+                                    <a href="supplier-template-default-static.html">
+                                        <p class="attrvalue fw-normal fs-6  cursor-pointer">sp suppliers1</p>
+                                    </a>                                    
+                                    <small class="rating-prd light-accent-fg fs-6">4.6*</small>
+                                    <small for="ratings attrname" class="font-size-10 grey-fg d-block pb-2">Rating</small>
+                                    <p class="lh-lg">
+                                        <span class="attrname">City:</span>
+                                        <span class="attrvalue ">Hyderabad</span>
+                                    </p>
+                                    <p class="lh-lg">
+                                        <span class="attrname">Country:</span>
+                                        <span class="attrvalue ">India</span>
+                                    </p>
+                                    <p class="lh-lg">
+                                        <span class="attrname">Turn Over:</span>
+                                        <span class="attrvalue ">₹430,000</span>
+                                    </p>
+                                    <p class="lh-lg">
+                                        <span class="attrname">No. of Years In Business:</span>
+                                        <span class="attrvalue ">120</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-md-5 col-sm-12 col-12 pt-2 row">
+                                <div class="w-30">
+                                    <div class="border inner_image_block_main">
+                                        <div class="inner_image_block">
+                                            <img src="img/Almonds-1.jpg" alt="img">
+                                        </div>
+                                    </div>
+                                    <span class="d-block text-center lh-lg">Almonds</span>
+                                </div>
+                                <div class="w-30">
+                                    <div class="border inner_image_block_main">
+                                        <div class="inner_image_block">
+                                            <img src="img/Almonds-1.jpg" alt="img">
+                                        </div>
+                                    </div>
+                                    <span class="d-block text-center lh-lg">Almonds</span>
+                                </div>
+                                <div class="w-30">
+                                    <div class="border inner_image_block_main">
+                                        <div class="inner_image_block">
+                                            <img src="img/Almonds-1.jpg" alt="img">
+                                        </div>
+                                    </div>
+                                    <span class="d-block text-center lh-lg">Almonds</span>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-md-3 col-sm-12 col-12 pt-2">
+                                <p class=" flo-lt secondary-fg mb-3"><i class="bi bi-patch-check-fill"></i> <span>Verified Supplier</span></p>
+                                <button class="btn-secondary on-hover-img d-flex position-relative mb-2"> 
+                                    <i class="bi bi-heart supplier_heart_icon"></i>
+                                     <span>Add to Favorites</span>
+                                </button>
+                                <button class="btn-secondary d-flex position-relative mb-2"> 
+                                    <i class="fa fa-envelope-o fa-icon-tl-btn supplier_heart_icon mr-0"></i>
+                                     Contact Supplier
+                                </button>
+                                <button class="btn-secondary position-relative"> 
+                                    <i class="bi bi-chat-dots-fill supplier_heart_icon"></i>
+                                    <span class="">Chat Now</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="border row mb-2 pb-2 pt-1 p-0">
+                            <div class="col-xl-4 col-md-4 col-sm-12 col-12 pt-2">
+                                <div class="">
+                                    <a href="supplier-template-default-static.html">
+                                        <p class="attrvalue fw-normal fs-6  cursor-pointer">sp suppliers1</p>
+                                    </a>                                    
+                                    <small class="rating-prd light-accent-fg fs-6">4.6*</small>
+                                    <small for="ratings attrname" class="font-size-10 grey-fg d-block pb-2">Rating</small>
+                                    <p class="lh-lg">
+                                        <span class="attrname">City:</span>
+                                        <span class="attrvalue ">Hyderabad</span>
+                                    </p>
+                                    <p class="lh-lg">
+                                        <span class="attrname">Country:</span>
+                                        <span class="attrvalue ">India</span>
+                                    </p>
+                                    <p class="lh-lg">
+                                        <span class="attrname">Turn Over:</span>
+                                        <span class="attrvalue ">₹430,000</span>
+                                    </p>
+                                    <p class="lh-lg">
+                                        <span class="attrname">No. of Years In Business:</span>
+                                        <span class="attrvalue ">120</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-md-5 col-sm-12 col-12 pt-2 row">
+                                <div class="w-30">
+                                    <div class="border inner_image_block_main">
+                                        <div class="inner_image_block">
+                                            <img src="img/Almonds-1.jpg" alt="img">
+                                        </div>
+                                    </div>
+                                    <span class="d-block text-center lh-lg">Almonds</span>
+                                </div>
+                                <div class="w-30">
+                                    <div class="border inner_image_block_main">
+                                        <div class="inner_image_block">
+                                            <img src="img/Almonds-1.jpg" alt="img">
+                                        </div>
+                                    </div>
+                                    <span class="d-block text-center lh-lg">Almonds</span>
+                                </div>
+                                <div class="w-30">
+                                    <div class="border inner_image_block_main">
+                                        <div class="inner_image_block">
+                                            <img src="img/Almonds-1.jpg" alt="img">
+                                        </div>
+                                    </div>
+                                    <span class="d-block text-center lh-lg">Almonds</span>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-md-3 col-sm-12 col-12 pt-2">
+                                <p class=" flo-lt secondary-fg mb-3"><i class="bi bi-patch-check-fill"></i> <span>Verified Supplier</span></p>
+                                <button class="btn-secondary on-hover-img d-flex position-relative mb-2"> 
+                                    <i class="bi bi-heart supplier_heart_icon"></i>
+                                     <span>Add to Favorites</span>
+                                </button>
+                                <button class="btn-secondary d-flex position-relative mb-2"> 
+                                    <i class="fa fa-envelope-o fa-icon-tl-btn supplier_heart_icon mr-0"></i>
+                                     Contact Supplier
+                                </button>
+                                <button class="btn-secondary position-relative"> 
+                                    <i class="bi bi-chat-dots-fill supplier_heart_icon"></i>
+                                    <span class="">Chat Now</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="border row mb-2 pb-2 pt-1 p-0">
+                            <div class="col-xl-4 col-md-4 col-sm-12 col-12 pt-2">
+                                <div class="">
+                                    <a href="supplier-template-default-static.html">
+                                        <p class="attrvalue fw-normal fs-6  cursor-pointer">sp suppliers1</p>
+                                    </a>                                    
+                                    <small class="rating-prd light-accent-fg fs-6">4.6*</small>
+                                    <small for="ratings attrname" class="font-size-10 grey-fg d-block pb-2">Rating</small>
+                                    <p class="lh-lg">
+                                        <span class="attrname">City:</span>
+                                        <span class="attrvalue ">Hyderabad</span>
+                                    </p>
+                                    <p class="lh-lg">
+                                        <span class="attrname">Country:</span>
+                                        <span class="attrvalue ">India</span>
+                                    </p>
+                                    <p class="lh-lg">
+                                        <span class="attrname">Turn Over:</span>
+                                        <span class="attrvalue ">₹430,000</span>
+                                    </p>
+                                    <p class="lh-lg">
+                                        <span class="attrname">No. of Years In Business:</span>
+                                        <span class="attrvalue ">120</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-md-5 col-sm-12 col-12 pt-2 row">
+                                <div class="w-30">
+                                    <div class="border inner_image_block_main">
+                                        <div class="inner_image_block">
+                                            <img src="img/Almonds-1.jpg" alt="img">
+                                        </div>
+                                    </div>
+                                    <span class="d-block text-center lh-lg">Almonds</span>
+                                </div>
+                                <div class="w-30">
+                                    <div class="border inner_image_block_main">
+                                        <div class="inner_image_block">
+                                            <img src="img/Almonds-1.jpg" alt="img">
+                                        </div>
+                                    </div>
+                                    <span class="d-block text-center lh-lg">Almonds</span>
+                                </div>
+                                <div class="w-30">
+                                    <div class="border inner_image_block_main">
+                                        <div class="inner_image_block">
+                                            <img src="img/Almonds-1.jpg" alt="img">
+                                        </div>
+                                    </div>
+                                    <span class="d-block text-center lh-lg">Almonds</span>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-md-3 col-sm-12 col-12 pt-2">
+                                <p class=" flo-lt secondary-fg mb-3"><i class="bi bi-patch-check-fill"></i> <span>Verified Supplier</span></p>
+                                <button class="btn-secondary on-hover-img d-flex position-relative mb-2"> 
+                                    <i class="bi bi-heart supplier_heart_icon"></i>
+                                     <span>Add to Favorites</span>
+                                </button>
+                                <button class="btn-secondary d-flex position-relative mb-2"> 
+                                    <i class="fa fa-envelope-o fa-icon-tl-btn supplier_heart_icon mr-0"></i>
+                                     Contact Supplier
+                                </button>
+                                <button class="btn-secondary position-relative"> 
+                                    <i class="bi bi-chat-dots-fill supplier_heart_icon"></i>
+                                    <span class="">Chat Now</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>              
+                </div>
+                <!-- Desktop Code Ends -->
+
+                <!-- Mobile Code Start -->
+                <div class="px-4 col-12 mt-3 d-md-none d-sm-block d-block">
+                    <div class="border row mb-2 pb-2 pt-1 p-0">
+                        <div class="col-sm-4 col-4 pt-2">
+                            <div class="w-100">
+                                <div class="border inner_image_block_main">
+                                    <div class="inner_image_block">
+                                        <img src="img/Almonds-1.jpg" alt="img">
+                                    </div>
+                                </div>
+                                <span class="d-block text-center lh-lg">Almonds</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-7 col-7 pt-2">
+                            <div class="">
+                                <a href="supplier-template-default-static.html">
+                                    <p class="attrvalue fw-normal fs-6  cursor-pointer">sp suppliers1</p>
+                                </a>                                    
+                                <small class="rating-prd light-accent-fg fs-6">4.6*</small>
+                                <small for="ratings attrname" class="font-size-10 grey-fg d-block pb-2">Rating</small>
+                                <p class="lh-lg">
+                                    <span class="attrname">City:</span>
+                                    <span class="attrvalue ">Hyderabad</span>
+                                </p>
+                                <p class="lh-lg">
+                                    <span class="attrname">Country:</span>
+                                    <span class="attrvalue ">India</span>
+                                </p>
+                                <p class="lh-lg">
+                                    <span class="attrname">Turn Over:</span>
+                                    <span class="attrvalue ">₹430,000</span>
+                                </p>
+                                <p class="lh-lg">
+                                    <span class="attrname">No. of Years In Business:</span>
+                                    <span class="attrvalue ">120</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-1 col-1 pt-2 p-0">
+                            <i class="bi bi-heart font-size-16 text-center d-block primary-fg mb-1"></i>                       
+                            <i class="bi bi-envelope font-size-16 text-center d-block m-0 mb-2 primary-fg"></i>         
+                            <i class="bi bi-chat-dots-fill font-size-16 text-center d-block primary-fg"></i>
+                        </div>
+                    </div>
+                    <div class="border row mb-2 pb-2 pt-1 p-0">
+                        <div class="col-sm-4 col-4 pt-2">
+                            <div class="w-100">
+                                <div class="border inner_image_block_main">
+                                    <div class="inner_image_block">
+                                        <img src="img/Almonds-1.jpg" alt="img">
+                                    </div>
+                                </div>
+                                <span class="d-block text-center lh-lg">Almonds</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-7 col-7 pt-2">
+                            <div class="">
+                                <a href="supplier-template-default-static.html">
+                                    <p class="attrvalue fw-normal fs-6  cursor-pointer">sp suppliers1</p>
+                                </a>                                    
+                                <small class="rating-prd light-accent-fg fs-6">4.6*</small>
+                                <small for="ratings attrname" class="font-size-10 grey-fg d-block pb-2">Rating</small>
+                                <p class="lh-lg">
+                                    <span class="attrname">City:</span>
+                                    <span class="attrvalue ">Hyderabad</span>
+                                </p>
+                                <p class="lh-lg">
+                                    <span class="attrname">Country:</span>
+                                    <span class="attrvalue ">India</span>
+                                </p>
+                                <p class="lh-lg">
+                                    <span class="attrname">Turn Over:</span>
+                                    <span class="attrvalue ">₹430,000</span>
+                                </p>
+                                <p class="lh-lg">
+                                    <span class="attrname">No. of Years In Business:</span>
+                                    <span class="attrvalue ">120</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-1 col-1 pt-2 p-0">
+                            <i class="bi bi-heart font-size-16 text-center d-block primary-fg mb-1"></i>                       
+                            <i class="bi bi-envelope font-size-16 text-center d-block m-0 mb-2 primary-fg"></i>         
+                            <i class="bi bi-chat-dots-fill font-size-16 text-center d-block primary-fg"></i>
+                        </div>
+                    </div>                            
+                </div>
+                <!-- Mobile Code Ends -->
+
+                <aside  class="col-xl-2 col-md-2 col-sm-12 col-12 p-3 d-none d-sm-none d-md-none d-lg-block">
+                        
+                </aside>
+            </div>            
+        </div>
+
+         <!--End Supplier search results section -->
+        <!-- Footer Code Start Here-->
+        <footer class="p-2 pt-4 pb-4">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="footer_section col-md-3 col-lg-2 col-sm-12">
+                        <h2 class="footer-menu-title">Buy &amp; Sell</h2>
+                        <ul class="pt-4 footer_links">
+                            <li class="">
+                                <a href="#" class="gray-fg font-size-13 font-weight-500">View Marketplace Categories</a>
+                            </li>
+                            <li class="">
+                                <a href="#" class="gray-fg font-size-13 font-weight-500">Login/Join Free</a>
+                            </li>
+                            <li class="">
+                                <a href="#" class="gray-fg font-size-13 font-weight-500">Membership</a>
+                            </li>
+                            <li class="">
+                                <a href="#" class="gray-fg font-size-13 font-weight-500">Buyer Inquiries</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer_section col-md-3 col-lg-2 col-sm-12">
+                        <h2 class="footer-menu-title">SUPPORT</h2>
+                        <ul class="pt-4 footer_links">
+                            <li class="">
+                                <a href="#" class="gray-fg font-size-13 font-weight-500">Blogs & Knowledge Base</a>
+                            </li>
+                            <li class="">
+                                <a href="#" class="gray-fg font-size-13 font-weight-500">FAQs</a>
+                            </li>
+                            <li class="">
+                                <a href="#" class="gray-fg font-size-13 font-weight-500">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer_section col-md-3 col-lg-2 col-sm-12">
+                        <h2 class="footer-menu-title">COMPANY</h2>
+                        <ul class="pt-4 footer_links">
+                            <li class="">
+                                <a href="#" class="gray-fg font-size-13 font-weight-500">Classifieds</a>
+                            </li>
+                            <li class="">
+                                <a href="#" class="gray-fg font-size-13 font-weight-500">About</a>
+                            </li>
+                            <li class="">
+                                <a href="#" class="gray-fg font-size-13 font-weight-500">Privacy Policy</a>
+                            </li>
+                            <li class="">
+                                <a href="#" class="gray-fg font-size-13 font-weight-500">Terms of use & sale</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer_section col-md-3 col-lg-2 col-sm-12">
+                        <a href="index.html">
+                        <img class="mb-3" src="img/TL-Logo.png" alt="Logo" style="height:30px;">
+                        </a>
+                        <p class="gray-fg font-size-13 font-weight-500 mb-3">Business partners to grow your business. Global service
+                            providers to deliver the goods.</p>
+                        <a href="" class="mx-2 gray-fg social_icons"><i class="bi bi-facebook"></i></a>
+                        <a href="" class="mx-2 gray-fg social_icons"><i class="bi bi-twitter"></i></a>
+                        <a href="" class="mx-2 gray-fg social_icons"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                    <div class="pt-4 pb-2">
+                        <p class="font-size-12 gray-fg text-center pb-16 pt-10 footer-menu-links-text">&copy; TradeLeaves,
+                            Inc 2022</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer Code Ends Here-->
+    </div>
+
+</body>
+</html>

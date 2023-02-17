@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <title>Tradeleaves</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/bootstrap.min.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <script src='js/bootstrap.min.js'></script>
+    
+</head>
+
+<body>
+    <div class='wrapper'>
+      <!-- Header Code Start Here-->
+      <header class='header-wrapper'>
+        <nav class="navbar navbar-expand-lg navbar-light pt-3">
+            <div class="container-fluid">
+                <div class='col-md-9 col-lg-2 col-xl-3 col-sm-8 col-7'>
+                    <a class="navbar-brand d-inline-block p-0 logo" href="index.html">
+                        <img src="img/TL-Logo.png" class="tl-logo-container position-relative" alt="TradeLeaves">
+                        <span class="float-end font-size-16 font-italic orange-fg lh-1">India</span>
+                    </a>
+                </div>
+                <div class="mobile-action-btns mobile-search col-5 col-md-3 col-sm-4 end-0 d-flex align-items-center justify-content-around d-lg-none">
+                    <span class="abc">
+                        <button class="btn primary-bg" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#searchBar" aria-controls="searchBar" aria-expanded="false"
+                            aria-label="Toggle navigation"> <i class="fa fa-search white-fg" aria-hidden="true"></i>
+                        </button>
+                    </span>
+                    <div class="dropdown">
+                       <a href="" class="text-center d-inline-block"                           
+                       role="button" data-bs-toggle="dropdown" aria-expanded="false"
+                        id="navbarDropdown-account"> <i class="fa fa-user fs-1"></i><br>
+                        <span class=" accent-fg text-center d-block font-size-14 line-height-10">
+                            Account
+                        </span>
+                         </a>
+                         <div class="dropdown-menu xs-account-dropdown-menu font-size-13"  aria-labelledby="navbarDropdown-account">
+                            <p class="nav-item dropdown-item">
+                                <a data-bs-toggle="modal" data-bs-dismiss="modal"
+                                    data-bs-target="#Login-register-toggle" class="primary-fg d-block"
+                                    href="#">
+                                     Login/Join Free
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <a  data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"> <span class="navbar-toggler-icon"></span></a>
+
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                      <div class="offcanvas-header profile-user-avatar">
+                        <div class="nav-item dropdown">
+                            <h5 id="offcanvasRightLabel"><i class="fa fa-user-circle"></i> Guest</h5> 
+                            <a class="nav-link dropdown-toggle white-bg mt-2" href="#" id="navbarDropdown-Lob-mob"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img class="d-inline-block"
+                                    style="width: 28px !important; padding-right: 4px;" alt="flag"
+                                    src="img/ind-flag.svg">
+                                <span>IN</span>
+                            </a>
+                            <ul class="dropdown-menu font-size-13 drop-down-mobile-lob" aria-labelledby="navbarDropdown-Lob-mob">
+                                <li><a class="dropdown-item" href="#">IN</a></li>
+                                <li><a class="dropdown-item" href="#">US</a></li>
+                            </ul>
+                        </div>                                                       
+                        <button type="button" class="btn-close btn-close-white  text-reset font-size-12" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                      </div>
+                      <div class="offcanvas-body">
+                            <ul>
+                                <li>
+                                    <a href="" class="dark-grey-fg link-hover font-size-12"> Membership</a>
+                                </li>
+                                <li>
+                                    <a href="" class="dark-grey-fg link-hover font-size-12"> Buyer Inquiries</a>
+                                </li>
+                                <li>
+                                    <a href="" class="dark-grey-fg link-hover font-size-12"> Categories <i class="fa fa-angle-right grey-fg font-size-14 lh-lg flo-rt"></i></a>
+                                </li>
+                                <li>
+                                    <a href="" class="dark-grey-fg link-hover font-size-12"> Post Inquiry</a>
+                                </li>
+                                <li>
+                                    <a href="" class="dark-grey-fg link-hover font-size-12"> Help</a>
+                                </li>
+                            </ul>
+                      </div>
+                    </div>
+                </div>
+                <div class='col-md-12 col-lg-10 col-xl-9 col-sm-12 col-12 d-flex Ipad_portrait'>
+                    <div class="collapse navbar-collapse target1" id="navbarSupportedContent">
+                        <div
+                            class="col-md-5 col-lg-5 col-xl-6 col-12 col-sm-12 Ipad_portrait d-none d-lg-block d-xl-block">
+                            <form
+                                class="col-md-9 col-lg-12 col-12 col-sm-12 flo-rt position-relative Ipad_portrait">
+                                <input
+                                    class="form-control search_input me-2 w-100 border-success border-radius-30 p-2 ps-3"
+                                    type="search" aria-label="Search" placeholder="Please enter a product name">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0 position-absolute right-30 top-0">
+                                    <li class="nav-item dropdown mx-2">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-search-lob"
+                                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Products
+                                        </a>
+                                        <ul class="dropdown-menu font-size-13"
+                                            aria-labelledby="navbarDropdown-search-lob">
+                                            <li><a class="dropdown-item" href="#">Products</a></li>
+                                            <li><a class="dropdown-item" href="#">Suppliers</a></li>
+                                            <li><a class="dropdown-item" href="#">Services</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <a class="btn btn-outline-success position-absolute search_btn primary-bg"
+                                    href="product-search.html">
+                                    <i class="fa fa-search white-fg" style="line-height:35px;"
+                                        aria-hidden="true"></i>
+                                </a>
+                            </form>
+                        </div>
+                        <div class="col-md-12 col-lg-7 col-xl-6 col-12 col-sm-12 Ipad_portrait">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 float-end">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-contact"
+                                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Contact Us
+                                    </a>
+                                    <ul class="dropdown-menu font-size-13" aria-labelledby="navbarDropdown-contact">
+                                        <li><a class="dropdown-item" href="#"><i class="fa fa-phone"
+                                                    aria-hidden="true"></i> +91 7702 625 588</a></li>
+                                        <li><a class="dropdown-item" href="#"><i class="fa fa-commenting"
+                                                    aria-hidden="true"></i> Chat with Us</a></li>
+                                        <li><a class="dropdown-item" href="#"><i class="fa fa-envelope"
+                                                    aria-hidden="true"></i> Contact Us</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="category.html"
+                                        id="navbarDropdown-categories" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Categories
+                                    </a>
+                                    <ul class="dropdown-menu font-size-13"
+                                        aria-labelledby="navbarDropdown-categories">
+                                        <li><a class="dropdown-item" href="#">Sports</a></li>
+                                        <li><a class="dropdown-item" href="#">Business Services</a></li>
+                                        <li><a class="dropdown-item" href="#">Automobiles</a></li>
+                                        <li><a class="dropdown-item primary-fg" href="category.html">All
+                                                Categories</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a data-bs-toggle="modal" data-bs-dismiss="modal"
+                                        data-bs-target="#Login-register-toggle" class="nav-link primary-fg"
+                                        href="#"><i class="fa fa-user" aria-hidden="true"></i> Login/Join Free</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-Lob"
+                                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <img class="d-inline-block"
+                                            style="width: 28px !important; padding-right: 4px;" alt="flag"
+                                            src="img/ind-flag.svg">
+                                        <span>IN</span>
+                                    </a>
+                                    <ul class="dropdown-menu font-size-13" aria-labelledby="navbarDropdown-Lob">
+                                        <li><a class="dropdown-item" href="#">IN</a></li>
+                                        <li><a class="dropdown-item" href="#">US</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="searchBar"
+                        class="collapse navbar-collapse target2 search-bar col-12 justify-content-center">
+                        <div class="Ipad_portrait d-block d-lg-none d-xl-none">
+                            <form class="position-relative Ipad_portrait">
+                                <input
+                                    class="form-control search_input me-2 w-100 border-success border-radius-30 p-2 ps-3"
+                                    type="search" aria-label="Search" placeholder="Please enter a product name">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0 position-absolute right-30 top-0">
+                                    <li class="nav-item dropdown mx-2">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-search"
+                                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Products
+                                        </a>
+                                        <ul class="dropdown-menu font-size-13"
+                                            aria-labelledby="navbarDropdown-search">
+                                            <li><a class="dropdown-item" href="#">Products</a></li>
+                                            <li><a class="dropdown-item" href="#">Suppliers</a></li>
+                                            <li><a class="dropdown-item" href="#">Services</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <p class="btn btn-outline-success position-absolute search_btn primary-bg">
+                                    <a href="product-search.html"> <i class="fa fa-search white-fg"
+                                            aria-hidden="true"></i></a>
+                                </p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Header Code Ends Here-->
+
+        <!-- Product detail page Code Start Here-->
+        <section class="pb-5 stickyheader-mt">
+            <div class='container-fluid homepage-wrapper'>
+                <div class="row">
+                    <div class="mt-2 mb-2 primary-fg cursor_pointer">
+                        <i class="bi bi-arrow-left-circle-fill font-size-20"></i> <a href="product-search.html" class="align-text-bottom px-1">Back to search results</a>                       
+                    </div>
+                    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                        <ol class="breadcrumb mb-2">
+                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Library</li>
+                        </ol>
+                    </nav>  
+                    <div class="col-xxl-4 col-xl-5 col-lg-4 col-sm-12 col-12">
+                        <div id="carouselExampleDark" class="carousel slide  carousel-fade" data-interval="false">
+                            <div class="carousel-inner border">
+                              <div class="carousel-item active" data-bs-interval="10000">
+                                <div class="inner_image_block_main">
+                                    <div class="inner_image_block">
+                                         <img src="http://qc.tradeleaves.internal/tl/public/assest/get/b21c3a39-266f-440a-93ec-9f99069b681b/Almonds-1.jpg" class="d-block w-100" alt="...">
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="carousel-item" data-bs-interval="2000">
+                                <div class="inner_image_block_main">
+                                    <div class="inner_image_block">
+                                       <img src="https://tradeleaves.com/tl/public/assest/get/a35be992-8ce1-46a2-a6e4-fd487b1ac9bb/tlbg-hexf9dcd2tlbg-hex/Almond-Mini-Special-500gm-Prod128-2-2008200104081.jpeg" class="d-block w-100" alt="...">
+                                    </div>
+                                </div>
+                              </div>                              
+                              <div class="carousel-item">
+                                <div class="inner_image_block_main">
+                                    <div class="inner_image_block">
+                                          <img src="https://tradeleaves.com/tl/public/assest/get/2a1bcddc-452b-42c9-be99-7af6e165d6c8/tlbg-hexfad7d1tlbg-hex/800373559_1-hotel-saroj-sweet-mart-dry-fruits-almond-badam-mamro-special.jpeg" class="d-block w-100" alt="...">
+                                    </div>
+                                </div>
+                              </div>
+                              <!-- 
+                              <div class="carousel-item">
+                                <img src="https://m.media-amazon.com/images/I/61wIVtrz54L._SX679_.jpg" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="https://m.media-amazon.com/images/I/81-hHbjQGSL._SX679_.jpg" class="d-block w-100" alt="...">
+                              </div> -->
+                            </div>
+                            <div class="carousel-indicators mt-2">
+                              <div data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">
+                                <div class="inner_image_block_main">
+                                    <div class="inner_image_block">
+                                         <img src="http://qc.tradeleaves.internal/tl/public/assest/get/b21c3a39-266f-440a-93ec-9f99069b681b/Almonds-1.jpg" alt="XZ">
+                                    </div>
+                                </div>    
+                            </div>
+                              <div data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2">
+                                <div class="inner_image_block_main">
+                                    <div class="inner_image_block">
+                                             <img src="https://tradeleaves.com/tl/public/assest/get/a35be992-8ce1-46a2-a6e4-fd487b1ac9bb/tlbg-hexf9dcd2tlbg-hex/Almond-Mini-Special-500gm-Prod128-2-2008200104081.jpeg" alt="XZ">
+                                    </div>
+                                </div>
+                            </div>
+                              <div  data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 2">
+                                <div class="inner_image_block_main">
+                                    <div class="inner_image_block">
+                                         <img src="https://tradeleaves.com/tl/public/assest/get/2a1bcddc-452b-42c9-be99-7af6e165d6c8/tlbg-hexfad7d1tlbg-hex/800373559_1-hotel-saroj-sweet-mart-dry-fruits-almond-badam-mamro-special.jpeg" alt="XZ">
+                                    </div>
+                                </div>
+                            </div>
+                              <!--                               
+                              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 3">
+                                <img src="https://m.media-amazon.com/images/I/31QMjAhkUbL._SX38_SY50_CR,0,0,38,50_.jpg" alt="XZ">
+                              </button>
+                              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 4">
+                                <img src="https://m.media-amazon.com/images/I/410m1o0Q4zL._SX38_SY50_CR,0,0,38,50_.jpg" alt="XZ">
+                              </button> -->
+                            </div>
+                            <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button> -->
+                        </div>
+
+                        
+                    </div>
+                    <div class="col-xxl-5 col-xl-4 col-lg-4 col-sm-12 col-12">
+                        <h5 class="mb-2">Almonds</h5>
+                        <p class="medium-gray-fg mb-4">Almonds are considered to be the richest in nutrients among all varieties of almonds. Perfect for early morning meal and snacking. 
+
+                            Almonds are one of the most nutrient rich nuts and a rich source of anti-oxidants, vitamins, proteins, fiber and minerals. 
+                            
+                            Health benefits include help in weight management, good for heart and maintenance of skincare, dental care and healthy hair. 
+                            
+                            Pop-in a couple of our almonds every morning and bet on a sharper brain!  
+                            
+                            Store in a cool, dry place away from direct sunlight to retain quality; preferably refrigerate</p>
+                        <div class="pb-1">
+                            <span class="attrname">Min Order:</span>
+                            <span class="attrvalue"> 1  Kilograms</span>
+                        </div>
+                        <div class="">
+                            <!-- <h6 class="font-size-14 pb-1">Estimated Landed Costs</h6> -->
+                            <div class="table-responsive">
+                                <table class="table table-bordered text-center mb-0">
+                                    <thead class="table-light">
+                                        <tr>
+                                            <td>Price</td>
+                                            <td>Quantity</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <span class="orange-fg">₹980.00 /Kilograms</span>  <span class="grey-fg">*</span> </td>
+                                           
+                                        <td>1 - 10 Kilograms</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <span class="grey-fg">*Inclusive of all taxes and shipping charges</span>
+                        </div>
+                    </div>
+                    <div class="aside-product-details-page">
+                        <div class="border p-3 mb-3">
+                            <div class="text-center border-bottom pb-3">
+                                <button class="btn w-100 border-success border-radius-30 primary-fg text-uppercase">Add to Order</button>
+                            </div>
+                            <div class="mt-3 pdetail_icons">
+                                <a href="" class="mb-3 d-block text-uppercase">
+                                    <img src="img/askforprice.svg" alt="a" class="pdetail_icons d-inline-block">
+                                    <span class="">Ask For Price</span>
+                                </a>
+                                <a href="" class="mb-3 d-block text-uppercase">
+                                    <i class="bi bi-heart"></i>
+                                    <span class="align-text-bottom">Add To Favorites</span>
+                                </a>
+                                <a href="" class="mb-1 d-block text-uppercase">
+                                    <i class="bi bi-file-earmark-text"></i>
+                                    <span class="align-text-bottom">Add To Shortlist</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="supplier_section p-2">
+                            <h5 class="mb-2">
+                                <a href="supplier-template-default-static.html" class="dark-grey-fg">Axiom Ltd edited</a>
+                            </h5>                            
+                            <div class="clearfix mb-3">
+                                <p class="standard-rating flo-lt">0.4*</p>
+                                <p class=" flo-lt mx-2 secondary-fg"><i class="bi bi-patch-check-fill"></i> <span>Verified Supplier</span></p>
+                            </div>
+                            <div class="pb-3">
+                                <span class="attrvalue">Country:</span>
+                                <span class="attrname">India</span>
+                            </div>
+                            <div class="text-center">
+                                <a href="" class="mb-3 d-block text-uppercase primary-fg white-bg border-success btn border-radius-30">
+                                    <i class="bi bi-envelope-fill"></i>
+                                    <span class="">Contact Supplier</span>
+                                </a>
+                                <a href="" class="mb-3 d-block text-uppercase primary-fg white-bg border-success btn border-radius-30">
+                                    <i class="bi bi-chat-dots-fill"></i>
+                                    <span class="">Chat Now</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-5">
+                        <ul class="nav nav-pills mb-3 border-bottom bg-light" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link active text-uppercase tabs" id="pills-product-details-tab" data-bs-toggle="pill" data-bs-target="#pills-product-details" type="button" role="tab" aria-controls="pills-product-details" aria-selected="true">Product Details</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link text-uppercase tabs" id="pills-technical-specs-tab" data-bs-toggle="pill" data-bs-target="#pills-technical-specs" type="button" role="tab" aria-controls="pills-technical-specs" aria-selected="false">Technical Specs</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link text-uppercase tabs" id="pills-faqs-tab" data-bs-toggle="pill" data-bs-target="#pills-faqs" type="button" role="tab" aria-controls="pills-faqs" aria-selected="false">Fas's</button>
+                            </li>
+                          </ul>
+                          <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-product-details" role="tabpanel" aria-labelledby="pills-product-details-tab">
+                                <ul class="grid-list">
+                                    <li class="d-lg-flex d-md-flex d-block lh-lg">
+                                        <p class="attrname px-lg-2 width-150">Product Id:</p>
+                                        <p class="attrvalue">46127082529</p>
+                                    </li>
+                                    <li class="d-lg-flex d-md-flex d-block lh-lg">
+                                        <p class="attrname px-lg-2 width-150">City:</p>
+                                        <p class="attrvalue">Hyderabad</p>
+                                    </li>
+                                    <li class="d-lg-flex d-md-flex d-block lh-lg">
+                                        <p class="attrname px-lg-2 width-150">Product Type:</p>
+                                        <p class="attrvalue">Apple</p>
+                                    </li>
+                                    <li class="d-lg-flex d-md-flex d-block lh-lg">
+                                        <p class="attrname px-lg-2 width-150">Memory Storage:</p>
+                                        <p class="attrvalue">128 GB</p>
+                                    </li>
+                                    <li class="d-lg-flex d-md-flex d-block lh-lg">
+                                        <p class="attrname px-lg-2 width-150">Place of Origin:</p>
+                                        <p class="attrvalue">India</p>
+                                    </li>
+                                    <li class="d-lg-flex d-md-flex d-block lh-lg">
+                                        <p class="attrname px-lg-2 width-150">Variety:</p>
+                                        <p class="attrvalue">California</p>
+                                    </li>
+                                    <li class="d-lg-flex d-md-flex d-block lh-lg">
+                                        <p class="attrname px-lg-2 width-150">Network Service:</p>
+                                        <p class="attrvalue">Unlocked for All Carriers</p>
+                                    </li>
+                                    <li class="d-lg-flex d-md-flex d-block lh-lg">
+                                        <p class="attrname px-lg-2 width-150">Sample Orders:</p>
+                                        <p class="attrvalue">Paid Sample - With Courier Charges</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane fade" id="pills-technical-specs" role="tabpanel" aria-labelledby="pills-technical-specs-tab">
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <tbody>
+                                            <tr>
+                                                <td>Flavour/Size:</td>
+                                                <td>Special</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Origin:</td>
+                                                <td>California</td>
+                                            </tr>
+                                            <tr>
+                                                <td>About the product:</td>
+                                                <td>Almonds are a healthful food. They provide a range of essential nutrients and can be good source of protein for people who follow a plant-based diet.They are also vesatile, and people can incorporate them into the diet in many ways.People with a nut allergy should not eat almonds or almond products.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>How to Use:</td>
+                                                <td>People can eat almonds raw or toasted as a snack or add them to sweet or savory dishes. They are also available sliced, flaked, slivered, as flour, oil, butter, or almond milk.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Benefits:</td>
+                                                <td>Almond milk has similar nutrients to almonds but in much lower amounts. <br> An ounce of almonds will provide more protein and fiber, which will increase feelings of fullness compared to a cup of almond milk.
+                                                    However, there are fewer calories in a cup of almond milk, and it can be a good alternative milk to use if dairy is an issue.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Nutritional Facts:</td>
+                                                <td>Almond nuts are rich sources of protein, omega 3's, vitamins, minerals, and numerous health-promoting antioxidants. Almonds are gluten free food items.Almonds are packed with many important B-complex groups of vitamins such as riboflavin, niacin, thiamin, pantothenic acid, vitamin B-6, and folates.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Clean And Processed By:	</td>
+                                                <td>Occasions Dry Fruit</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-faqs" role="tabpanel" aria-labelledby="pills-faqs-tab">
+                                <p class="text-center attrvalue">No Faqs posted</p>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Product detail page Code Ends Here-->
+
+        
+
+        <!-- Footer Code Start Here-->
+        <footer class="p-2 pt-4 pb-4">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="footer_section col-md-3 col-lg-2 col-sm-12">
+                        <h2 class="footer-menu-title">Buy &amp; Sell</h2>
+                        <ul class="pt-4 footer_links">
+                            <li class="">
+                                <a href="#" class="gray-fg font-size-13 font-weight-500">View Marketplace Categories</a>
+                            </li>
+                            <li class="">
+                                <a href="#" class="gray-fg font-size-13 font-weight-500">Login/Join Free</a>
+                            </li>
+                            <li class="">
+                                <a href="#" class="gray-fg font-size-13 font-weight-500">Membership</a>
+                            </li>
+                            <li class="">
+                                <a href="#" class="gray-fg font-size-13 font-weight-500">Buyer Inquiries</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer_section col-md-3 col-lg-2 col-sm-12">
+                        <h2 class="footer-menu-title">SUPPORT</h2>
+                        <ul class="pt-4 footer_links">
+                            <li class="">
+                                <a href="#" class="gray-fg font-size-13 font-weight-500">Blogs & Knowledge Base</a>
+                            </li>
+                            <li class="">
+                                <a href="#" class="gray-fg font-size-13 font-weight-500">FAQs</a>
+                            </li>
+                            <li class="">
+                                <a href="#" class="gray-fg font-size-13 font-weight-500">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer_section col-md-3 col-lg-2 col-sm-12">
+                        <h2 class="footer-menu-title">COMPANY</h2>
+                        <ul class="pt-4 footer_links">
+                            <li class="">
+                                <a href="#" class="gray-fg font-size-13 font-weight-500">Classifieds</a>
+                            </li>
+                            <li class="">
+                                <a href="#" class="gray-fg font-size-13 font-weight-500">About</a>
+                            </li>
+                            <li class="">
+                                <a href="#" class="gray-fg font-size-13 font-weight-500">Privacy Policy</a>
+                            </li>
+                            <li class="">
+                                <a href="#" class="gray-fg font-size-13 font-weight-500">Terms of use & sale</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer_section col-md-3 col-lg-2 col-sm-12">
+                        <a href="index.html">
+                          <img class="mb-3" src="img/TL-Logo.png" alt="Logo" style="height:30px;">
+                        </a>
+                        <p class="gray-fg font-size-13 font-weight-500 mb-3">Business partners to grow your business. Global service
+                            providers to deliver the goods.</p>
+                        <a href="" class="mx-2 gray-fg social_icons"><i class="bi bi-facebook"></i></a>
+                        <a href="" class="mx-2 gray-fg social_icons"><i class="bi bi-twitter"></i></a>
+                        <a href="" class="mx-2 gray-fg social_icons"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                    <div class="pt-4 pb-2">
+                        <p class="font-size-12 gray-fg text-center pb-16 pt-10 footer-menu-links-text">&copy; TradeLeaves,
+                            Inc 2022</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer Code Ends Here-->
+
+    </div>
+</body>
+
+</html>
